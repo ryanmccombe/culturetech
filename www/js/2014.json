@@ -1,0 +1,154 @@
+{
+  "events": [
+    {
+      "name": "Ministry of Science Live!",
+        "img": "ministry_of_science_live.png",
+      "desc_short": "Ministry of Science Live is not your ordinary science show – it comes with a bang. It comes with a whoosh. But most of all it comes with a Hovercraft built on stage.",
+      "desc_full": "WARNING. WARNING. This is a public safety announcement… Please keep your head firmly on your shoulders and your arms, legs and feet firmly inside the ride at all times – Ministry of Science Live is about to explode onto a stage near you soon! Ministry of Science Live is not your ordinary science show – it comes with a bang. It comes with a whoosh. But most of all it comes with a Hovercraft built on stage.\n\nFrom liquid nitrogen frozen flowers to hydrogen bottle rockets fired right at you the show will take you on a journey using demonstrations and a few loud bangs to lead the way. From the creative team behind Brainiac Live, Guinness World Records Officially Amazing Science Live and a whole load of other educational shows with an anarchic twist – Ministry of Science Live is not to be missed….\n\nMinistry of Science is supported by Seagate and ILEX",
+      "tags": ["Schools Only"],
+      "times": [{
+        "start": 1410771600,
+        "end": 1410793200
+      },{
+        "start": 1410858000,
+        "end": 1410879600
+      },{
+        "start": 1410944400,
+        "end": 1410966000
+      }],
+      "locations": [0],
+      "partners": [0, 1]
+    }
+  ],
+  "locations": [
+    {
+      "id": "millennium_forum",
+      "name": "Millennium Forum",
+      "address": "Millennium Forum,\nOrchard Street,\nDerry-Londonderry",
+      "lat": 54.995462,
+      "long": -7.319436
+    }
+  ],
+  "partners": [
+    {
+      "id": "ilex",
+      "name": "Ilex",
+      "title": "Principal Funder",
+      "image": "ilex.png",
+      "descriptionShort": "Ilex urc was established to promote the physical, economic and social regeneration of Derry~Londonderry",
+      "description": "Ilex urc was established to promote the physical, economic and social regeneration of Derry~Londonderry and has specific responsibility to manage and re-develop the former military base of Ebrington (26 acres). Mixed use development is envisaged for the site and revitalisation of the riverfront is a key objective. Derry~Londonderry has a population of almost 110,000 and a hinterland of over 330,000."
+    }, {
+      "id": "dcal",
+      "name": "Department of Culture, Arts and Leisure",
+      "title": "Principal Funder",
+      "image": "dcal.png",
+      "descriptionShort": "",
+      "description": ""
+    }, {
+      "id": "uu",
+      "name": "University of Ulster",
+      "title": "Principal Funder",
+      "image": "uu.png",
+      "descriptionShort": "",
+      "description": ""
+    }, {
+      "id": "niscreen",
+      "name": "Northern Ireland Screen",
+      "title": "Principal Funder",
+      "image": "niscreen.png",
+      "descriptionShort": "",
+      "description": ""
+    }, {
+      "id": "derrycitycouncil",
+      "name": "Derry City Council",
+      "title": "Principal Funder",
+      "image": "derrycitycouncil.png",
+      "descriptionShort": "",
+      "description": ""
+    }, {
+      "id": "londonderrychamber",
+      "name": "Londonderry Chamber",
+      "title": "Principal Funder",
+      "image": "londonderrychamber.png",
+      "descriptionShort": "",
+      "description": ""
+    }, {
+      "id": "touristboard",
+      "name": "Londonderry Tourist Board",
+      "title": "Principal Funder",
+      "image": "touristboard.png",
+      "descriptionShort": "",
+      "description": ""
+    }, {
+      "id": "honeycomb",
+      "name": "Honeycomb",
+      "title": "Principal Funder",
+      "image": "honeycomb.png",
+      "descriptionShort": "",
+      "description": ""
+    }, {
+      "id": "artsandbusiness",
+      "name": "Arts and Business",
+      "title": "Principal Funder",
+      "image": "artsandbusiness.png",
+      "descriptionShort": "",
+      "description": ""
+    }, {
+      "id": "investni",
+      "name": "Invest Northern Ireland",
+      "title": "Major Sponsor",
+      "image": "investni.png",
+      "descriptionShort": "",
+      "description": ""
+    },  {
+      "id": "bt",
+      "name": "BT",
+      "title": "Major Sponsor",
+      "image": "bt.png",
+      "descriptionShort": "",
+      "description": ""
+    },  {
+      "id": "learningpool",
+      "name": "Learning Pool",
+      "title": "Major Sponsor",
+      "image": "learningpool.png",
+      "descriptionShort": "",
+      "description": ""
+    }, {
+      "id": "seagate",
+      "name": "Seagate",
+      "title": "Major Sponsor",
+      "image": "seagate.png",
+      "descriptionShort": "Founded in 1979, Seagate is the industry leader in hard disk drives and storage solutions.",
+      "description": "Founded in 1979, Seagate is the industry leader in hard disk drives and storage solutions.\n\nFrom the videos, music and documents that we share with friends and family on social networks, to servers that form the backbone of enterprise data centres and cloud-based computing, to desktop and notebook computers that fuel our personal productivity, Seagate products help more people to store, share and protect their valuable digital content.\n\nSeagate offers the industry’s broadest portfolio of hard disk drives, solid state drives and solid state hybrid drives. In addition, the Company offers an extensive line of retail storage products for consumers and small businesses, along with data recovery services for any brand of hard drive and digital media type.\n\nSeagate employs more than 50,000 people around the world - including over 1,000 in Derry-Londonderry"
+    }, {
+      "id": "syncni",
+      "name": "Sync NI",
+      "title": "Partner",
+      "image": "syncni.png",
+      "descriptionShort": "",
+      "description": ""
+    }, {
+      "id": "bbcni",
+      "name": "BBC Northern Ireland",
+      "title": "Partner",
+      "image": "bbcni.png",
+      "descriptionShort": "",
+      "description": ""
+    }, {
+      "id": "downtownradio",
+      "name": "Downtown Radio",
+      "title": "Partner",
+      "image": "downtownradio.png",
+      "descriptionShort": "",
+      "description": ""
+    }, {
+      "id": "derryjournal",
+      "name": "Derry Journal",
+      "title": "Partner",
+      "image": "derryjournal.png",
+      "descriptionShort": "",
+      "description": ""
+    }
+  ]
+}
