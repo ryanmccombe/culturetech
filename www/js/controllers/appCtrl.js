@@ -6,7 +6,13 @@ angular.module('cultureTech')
 
     .controller('AppCtrl', [function () {
         var app = this;
+
+        // Level of demanding animations / effects
+        app.effects = 0;
+
+        // Is the search bar activated?
         app.searching = false;
+
         app.toggleSearch = function () {
             app.searching = !app.searching;
         }

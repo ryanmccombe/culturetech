@@ -16,4 +16,11 @@ angular.module('cultureTech', ['ionic', 'ionic-material'])
                 StatusBar.styleDefault();
             }
         });
-    });
+    })
+
+    .config(['$ionicConfigProvider', function ($ionicConfigProvider) {
+        $ionicConfigProvider.tabs.position('bottom');
+        $ionicConfigProvider.tabs.style('default');
+        $ionicConfigProvider.navBar.alignTitle('center');
+        $ionicConfigProvider.scrolling.jsScrolling(false);
+    }]);

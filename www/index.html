@@ -44,7 +44,8 @@
 
     <ion-content ng-class="{'has-subheader': app.searching}" ng-controller="PartnersCtrl as vm">
         <ion-list>
-            <ion-item ng-repeat="item in vm.partners" class="item-text-wrap item-thumbnail-left ink">
+            <ion-item ng-repeat="item in vm.partners" ng-class="{'ink': app.effects}"
+                      class="item-text-wrap item-thumbnail-left">
                 <img class="partner-logo" ng-src="img/partners/{{item.image}}" alt="{{item.name}} Logo"/>
 
                 <h2>{{item.name}}</h2>
