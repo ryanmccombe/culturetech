@@ -21,3 +21,73 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+$grey100: #F5F5F5;
+$grey200: #EEEEEE;
+$grey400: #BDBDBD;
+$grey600: #757575;
+$grey900: #212121;
+
+$primary: #43474A;
+$secondary: #516061;
+$dark: #D44100;
+$light: #FF6600;
+$white: #E3EAE6;
+
+/* Empty. Add your own CSS if you like */
+
+body, ion-content{
+  background-color: white !important;
+}
+
+ion-header-bar, .tabs{
+  background-color: $primary !important;
+  color: $white !important;
+}
+
+.tab-item-active{
+  color: $light !important;
+}
+
+.bar-search {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+
+label.item-input-wrapper{
+  background: $white !important;
+}
+
+#search{
+  color: $primary;
+}
+
+
+.partner {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border-bottom: 1px $white solid !important;
+}
+
+.partner-logo {
+  border-radius: 6px !important;
+  margin: 6px;
+
+}
+
+.partner-title {
+  font-weight: 400;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: $secondary
+}
+
+.partner-name {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $primary;
+}
+
+.ion-arrow-right-b {
+  font-size: 20px !important;
+  color: $secondary;
+}

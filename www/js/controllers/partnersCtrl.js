@@ -12,5 +12,5 @@ angular.module('cultureTech')
             $timeout(function() {
                 ionicMaterialInk.displayEffect();
             }, 0);
-        })
+        });
     }]);

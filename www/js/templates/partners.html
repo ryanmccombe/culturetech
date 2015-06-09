@@ -1,0 +1,26 @@
+<ion-header-bar class="bar-dark">
+    <h2 class="title">Partners</h2>
+
+    <div class="buttons buttons-right header-item">
+            <span class="right-buttons">
+                <button class="button button-icon button-clear"
+                        ng-class="{'ion-search': !app.searching, 'ion-close': app.searching}"
+                        ng-click="app.toggleSearch()"></button>
+            </span>
+    </div>
+</ion-header-bar>
+
+<ng-include ng-show="app.searching" src="'js/templates/search.html'"></ng-include>
+
+<ion-content has-bouncing="true" ng-class="{'has-subheader': app.searching}" ng-controller="PartnersCtrl as vm">
+    <ion-list>
+        <ion-item ng-repeat="item in vm.partners" ng-class="{'ink': app.effects}"
+                  class="partner item-text-wrap item-avatar-left item-icon-right">
+            <img class="partner-logo" ng-src="img/partners/{{item.image}}" alt="{{item.name}} Logo"/>
+            <i class="icon ion-arrow-right-b"></i>
+
+            <div class="partner-title">{{item.title}}</div>
+            <div class="partner-name">{{item.name}}</div>
+        </ion-item>
+    </ion-list>
+</ion-content>

@@ -23,4 +23,24 @@ angular.module('cultureTech', ['ionic', 'ionic-material'])
         $ionicConfigProvider.tabs.style('default');
         $ionicConfigProvider.navBar.alignTitle('center');
         $ionicConfigProvider.scrolling.jsScrolling(false);
-    }]);
+    }])
+
+    .config(function ($stateProvider, $urlRouterProvider) {
+        $stateProvider
+            .state('tabs', {
+                abstract: true,
+                url: '/tab',
+                templateUrl: 'js/templates/tabs.html'
+            })
+            .state('tabs.partners', {
+                url: '/partners',
+                views: {
+                    'partners-tab': {
+                        templateUrl: 'js/templates/partners.html',
+                        controller: 'PartnersCtrl'
+                    }
+                }
+            });
+
+        $urlRouterProvider.otherwise('/tab/partners')
+    });
