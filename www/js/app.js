@@ -23,7 +23,8 @@ angular.module('cultureTech', ['ionic', 'ionic-material'])
         $ionicConfigProvider.tabs.position('bottom');
         $ionicConfigProvider.tabs.style('default');
         $ionicConfigProvider.navBar.alignTitle('center');
-        $ionicConfigProvider.scrolling.jsScrolling(true);
+        $ionicConfigProvider.backButton.text('');
+        $ionicConfigProvider.scrolling.jsScrolling(false);
     }])
 
     .config(function ($stateProvider, $urlRouterProvider) {

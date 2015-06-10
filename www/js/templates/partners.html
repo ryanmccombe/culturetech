@@ -1,17 +1,11 @@
-<ion-header-bar class="bar-dark">
-    <h2 class="title">Partners</h2>
-
-    <div class="buttons buttons-right header-item">
-            <span class="right-buttons">
-                <button class="button button-icon button-clear"
-                        ng-class="{'ion-search': !app.searching, 'ion-close': app.searching}"
-                        ng-click="app.toggleSearch()"></button>
-            </span>
-    </div>
-</ion-header-bar>
-
+<ion-view title="Partners">
+<ion-nav-buttons side="right">
+    <button class="button button-icon button-clear"
+            ng-class="{'ion-search': !app.searching, 'ion-close': app.searching}"
+            ng-click="app.toggleSearch()"></button>
+</ion-nav-buttons>
 <ng-include ng-show="app.searching" src="'js/templates/search.html'"></ng-include>
-<ion-view>
+
     <ion-content has-bouncing="true" ng-class="{'has-subheader': app.searching}" ng-controller="PartnersCtrl as vm">
         <ion-list>
             <ion-item ng-repeat="item in vm.partners" ng-class="{'ink': app.effects}"
