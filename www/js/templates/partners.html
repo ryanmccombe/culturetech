@@ -11,16 +11,18 @@
 </ion-header-bar>
 
 <ng-include ng-show="app.searching" src="'js/templates/search.html'"></ng-include>
+<ion-view>
+    <ion-content has-bouncing="true" ng-class="{'has-subheader': app.searching}" ng-controller="PartnersCtrl as vm">
+        <ion-list>
+            <ion-item ng-repeat="item in vm.partners" ng-class="{'ink': app.effects}"
+                      class="partner item-text-wrap item-avatar-left item-icon-right"
+                      ui-sref="tabs.partnerDetail({id: item.id})">
+                <img class="partner-logo" ng-src="img/partners/{{item.image}}" alt="{{item.name}} Logo"/>
+                <i class="icon ion-arrow-right-b"></i>
 
-<ion-content has-bouncing="true" ng-class="{'has-subheader': app.searching}" ng-controller="PartnersCtrl as vm">
-    <ion-list>
-        <ion-item ng-repeat="item in vm.partners" ng-class="{'ink': app.effects}"
-                  class="partner item-text-wrap item-avatar-left item-icon-right">
-            <img class="partner-logo" ng-src="img/partners/{{item.image}}" alt="{{item.name}} Logo"/>
-            <i class="icon ion-arrow-right-b"></i>
-
-            <div class="partner-title">{{item.title}}</div>
-            <div class="partner-name">{{item.name}}</div>
-        </ion-item>
-    </ion-list>
-</ion-content>
+                <div class="partner-title">{{item.title}}</div>
+                <div class="partner-name">{{item.name}}</div>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

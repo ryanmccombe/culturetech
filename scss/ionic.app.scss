@@ -27,67 +27,83 @@ $grey400: #BDBDBD;
 $grey600: #757575;
 $grey900: #212121;
 
-$primary: #43474A;
-$secondary: #516061;
-$dark: #D44100;
-$light: #FF6600;
-$white: #E3EAE6;
+$dark: #2C3338;
+$primary: #363F45;
+$mid: #4B5F6D;
+$light: #94A0A8;
+$white: #E1E6E8;
+$accent: #FEB41C;
 
-/* Empty. Add your own CSS if you like */
+/* Headers + Tabs */
 
-body, ion-content{
-  background-color: white !important;
-}
-
-ion-header-bar, .tabs{
-  background-color: $primary !important;
+ion-header-bar, .tabs {
+  background-color: $dark !important;
   color: $white !important;
 }
 
-.tab-item-active{
-  color: $light !important;
+.title {
+  color: $white !important;
 }
+
+.tab-item-active {
+  color: $accent !important;
+}
+
+/* Home Page */
+
+.splash {
+  background-color: $primary !important;
+}
+
+/* Search */
 
 .bar-search {
   padding-left: 10px !important;
   padding-right: 10px !important;
 }
 
-label.item-input-wrapper{
+.right-buttons .ion-search {
+  color: $white !important;
+}
+
+.ion-close {
+  color: $accent !important;
+}
+
+#search {
+  color: $dark;
+}
+
+label.item-input-wrapper {
   background: $white !important;
 }
 
-#search{
-  color: $primary;
-}
-
+/* Partner List */
 
 .partner {
   padding-top: 20px;
-  padding-bottom: 30px;
   border-bottom: 1px $white solid !important;
 }
 
 .partner-logo {
   border-radius: 6px !important;
   margin: 6px;
-
 }
 
 .partner-title {
   font-weight: 400;
   font-size: 0.8rem;
   text-transform: uppercase;
-  color: $secondary
+  color: $light;
 }
 
 .partner-name {
   font-weight: 700;
   text-transform: uppercase;
-  color: $primary;
+  color: $dark;
 }
 
 .ion-arrow-right-b {
-  font-size: 20px !important;
-  color: $secondary;
+  font-size: 18px !important;
+  color: $light;
 }

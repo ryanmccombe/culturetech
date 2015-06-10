@@ -8,7 +8,7 @@ angular.module('cultureTech')
         var app = this;
 
         // Level of demanding animations / effects
-        app.effects = 1;
+        app.effects = 0;
 
         // Is the search bar activated?
         app.searching = false;

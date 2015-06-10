@@ -7675,31 +7675,42 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
-/* Empty. Add your own CSS if you like */
-body, ion-content {
-  background-color: white !important; }
-
+/* Headers + Tabs */
 ion-header-bar, .tabs {
-  background-color: #43474A !important;
-  color: #E3EAE6 !important; }
+  background-color: #2C3338 !important;
+  color: #E1E6E8 !important; }
+
+.title {
+  color: #E1E6E8 !important; }
 
 .tab-item-active {
-  color: #FF6600 !important; }
+  color: #FEB41C !important; }
 
+/* Home Page */
+.splash {
+  background-color: #363F45 !important; }
+
+/* Search */
 .bar-search {
   padding-left: 10px !important;
   padding-right: 10px !important; }
 
-label.item-input-wrapper {
-  background: #E3EAE6 !important; }
+.right-buttons .ion-search {
+  color: #E1E6E8 !important; }
+
+.ion-close {
+  color: #FEB41C !important; }
 
 #search {
-  color: #43474A; }
+  color: #2C3338; }
 
+label.item-input-wrapper {
+  background: #E1E6E8 !important; }
+
+/* Partner List */
 .partner {
   padding-top: 20px;
-  padding-bottom: 30px;
-  border-bottom: 1px #E3EAE6 solid !important; }
+  border-bottom: 1px #E1E6E8 solid !important; }
 
 .partner-logo {
   border-radius: 6px !important;
@@ -7709,13 +7720,13 @@ label.item-input-wrapper {
   font-weight: 400;
   font-size: 0.8rem;
   text-transform: uppercase;
-  color: #516061; }
+  color: #94A0A8; }
 
 .partner-name {
   font-weight: 700;
   text-transform: uppercase;
-  color: #43474A; }
+  color: #2C3338; }
 
 .ion-arrow-right-b {
-  font-size: 20px !important;
-  color: #516061; }
+  font-size: 18px !important;
+  color: #94A0A8; }

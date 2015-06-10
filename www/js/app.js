@@ -19,10 +19,11 @@ angular.module('cultureTech', ['ionic', 'ionic-material'])
     })
 
     .config(['$ionicConfigProvider', function ($ionicConfigProvider) {
+        $ionicConfigProvider.views.transition('ios');
         $ionicConfigProvider.tabs.position('bottom');
         $ionicConfigProvider.tabs.style('default');
         $ionicConfigProvider.navBar.alignTitle('center');
-        $ionicConfigProvider.scrolling.jsScrolling(false);
+        $ionicConfigProvider.scrolling.jsScrolling(true);
     }])
 
     .config(function ($stateProvider, $urlRouterProvider) {
@@ -32,15 +33,32 @@ angular.module('cultureTech', ['ionic', 'ionic-material'])
                 url: '/tab',
                 templateUrl: 'js/templates/tabs.html'
             })
+            .state('tabs.home', {
+                url: '/home',
+                views: {
+                    'home-tab': {
+                        templateUrl: 'js/templates/home.html'
+                    }
+                }
+            })
             .state('tabs.partners', {
                 url: '/partners',
                 views: {
                     'partners-tab': {
                         templateUrl: 'js/templates/partners.html',
-                        controller: 'PartnersCtrl'
+                        controller: 'PartnersCtrl as vm'
+                    }
+                }
+            })
+            .state('tabs.partnerDetail', {
+                url: '/partners/:id',
+                views: {
+                    'partners-tab': {
+                        templateUrl: 'js/templates/partnerDetail.html',
+                        controller: 'PartnersCtrl as vm'
                     }
                 }
             });
 
-        $urlRouterProvider.otherwise('/tab/partners')
+        $urlRouterProvider.otherwise('/tab/home')
     });
