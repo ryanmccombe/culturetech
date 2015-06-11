@@ -2,8 +2,10 @@
     <ion-nav-title>{{vm.partner.name}}</ion-nav-title>
     <ion-content>
 
-        <div class="partner-splash"
-             style="background: url('img/partners/{{vm.partner.id}}_p.jpg') no-repeat center center; background-size: cover;">
+        <div class="partner-splash" ng-style="{
+            'background': 'url(img/partners/'+vm.partner.id+'_p.jpg) no-repeat center center',
+            'background-size': 'cover'
+            }">
             <div class="partner-splash-content">
             </div>
         </div>

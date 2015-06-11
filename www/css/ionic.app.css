@@ -7745,7 +7745,8 @@ label.item-input-wrapper {
 
 .partner-splash {
   height: 250px;
-  position: relative; }
+  position: relative;
+  background-size: cover; }
 
 .partner-splash-content {
   text-align: center;
