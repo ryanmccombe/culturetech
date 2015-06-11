@@ -7761,10 +7761,14 @@ label.item-input-wrapper {
   color: #94A0A8; }
 
 /* Partner Detail */
-.button-transparant {
+.icon-transparent {
   background-color: transparent !important;
+  font-size: 50px !important;
+  height: 90px !important;
+  width: 100px !important;
   color: white !important;
-  margin: 0 !important; }
+  padding: 20px 0 0 !important;
+  float: right; }
 
 .partner-splash {
   height: 250px;
@@ -7774,7 +7778,7 @@ label.item-input-wrapper {
 .partner-splash-content {
   text-align: center;
   position: absolute;
-  padding-top: 200px;
+  padding-top: 160px;
   top: 0;
   left: 0;
   width: 100%;
@@ -7782,13 +7786,13 @@ label.item-input-wrapper {
   background: #2C3338;
   /* The Fallback */
   background: rgba(44, 51, 56, 0.8);
-  background: -webkit-linear-gradient(to top, #2C3338, transparent 40%);
+  background: -webkit-linear-gradient(to top, #2C3338 2%, transparent 40%);
   /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
-  background: -moz-linear-gradient(to top, #2C3338, transparent 40%);
+  background: -moz-linear-gradient(to top, #2C3338 2%, transparent 40%);
   /* For Firefox (3.6 to 15) */
-  background: -o-linear-gradient(to top, #2C3338, transparent 40%);
+  background: -o-linear-gradient(to top, #2C3338 2%, transparent 40%);
   /* For old Opera (11.1 to 12.0) */
-  background: linear-gradient(to top, #2C3338, transparent 40%);
+  background: linear-gradient(to top, #2C3338 2%, transparent 40%);
   /* Standard syntax; must be last */ }
 
 .partner-splash-logo {
