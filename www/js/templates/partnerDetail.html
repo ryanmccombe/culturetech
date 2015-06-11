@@ -17,13 +17,13 @@
         <div class="double-padding partner-description" ng-bind-html="vm.partner.description">
         </div>
         <div class="row partner-navigation">
-            <div ng-if="vm.previous" class="col ink partner-back" nav-direction="back"
-                 ui-sref="tabs.partnerDetail({id: vm.previous.id})">
+            <div ng-if="vm.previous" class="col ink partner-back"
+                 ng-click="vm.previousPartner(vm.previous.id)">
                 <div class="partner-title">Prev</div>
                 <div class="partner-name">{{vm.previous.name}}</div>
             </div>
-            <div ng-if="vm.next" class="col ink partner-forward" nav-direction="forward"
-                 ui-sref="tabs.partnerDetail({id: vm.next.id})">
+            <div ng-if="vm.next" class="col ink partner-forward"
+                 ng-click="vm.nextPartner(vm.next.id)">
                 <div class="partner-title" style="text-align: right;">Next</div>
                 <div class="partner-name" style="text-align: right;">{{vm.next.name}}</div>
             </div>

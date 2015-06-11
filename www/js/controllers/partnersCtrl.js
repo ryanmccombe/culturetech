@@ -5,8 +5,8 @@
 angular.module('cultureTech')
 
     .controller('PartnersCtrl',
-    ['$state', '$http', 'ionicMaterialInk', '$timeout', 'find',
-        function ($state, $http, ionicMaterialInk, $timeout, find) {
+    ['$state', '$http', 'ionicMaterialInk', '$timeout', 'find', '$ionicViewSwitcher',
+        function ($state, $http, ionicMaterialInk, $timeout, find, $ionicViewSwitcher) {
             var vm = this;
 
             $timeout(function () {
@@ -23,4 +23,12 @@ angular.module('cultureTech')
                     vm.partner.description = vm.partner.description.replace(/(?:\r\n|\r|\n)/g, '<br>');
                 }
             });
+            vm.previousPartner = function(id){
+                $ionicViewSwitcher.nextDirection("back");
+                $state.go("tabs.partnerDetail", {'id': id});
+            };
+            vm.nextPartner = function(id){
+                $ionicViewSwitcher.nextDirection("forward");
+                $state.go("tabs.partnerDetail", {'id': id});
+            };
         }]);
