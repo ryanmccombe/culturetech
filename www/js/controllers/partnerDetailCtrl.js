@@ -3,25 +3,25 @@
  */
 
 angular.module('cultureTech')
-.controller('PartnerDetailCtrl', ['$http', function($http){
-        var vm = this;
-        $http.get('js/2014.json').success(function (response) {
-            vm.partners = response.partners;
-            if ($state.params.id) {
-                var index = find.inArray(vm.partners, 'id', $state.params.id);
-                vm.partner = vm.partners[index];
-                vm.previous = vm.partners[index-1];
-                vm.next = vm.partners[index+1];
-                vm.partner.description = vm.partner.description.replace(/(?:\r\n|\r|\n)/g, '<br>');
-            }
+    .controller('PartnerDetailCtrl', [
+        '$state', '$ionicViewSwitcher', 'partnerData', '$timeout', 'ionicMaterialInk',
+        function ($state, $ionicViewSwitcher, partnerData, $timeout, ionicMaterialInk) {
+            $timeout(function () {
+                ionicMaterialInk.displayEffect();
+            }, 0);
 
-            vm.previousPartner = function(id){
+            var vm = this;
+            vm.partner = partnerData.partner;
+            vm.next = partnerData.next;
+            vm.previous = partnerData.previous;
+
+            vm.previousPartner = function (id) {
                 $ionicViewSwitcher.nextDirection("back");
                 $state.go("tabs.partnerDetail", {'id': id});
             };
-            vm.nextPartner = function(id){
+
+            vm.nextPartner = function (id) {
                 $ionicViewSwitcher.nextDirection("forward");
                 $state.go("tabs.partnerDetail", {'id': id});
             };
-        });
-    }]);
+        }]);
