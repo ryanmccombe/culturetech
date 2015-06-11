@@ -3,7 +3,7 @@
  */
 
 angular.module('cultureTech')
-    .controller('AppCtrl', ['ionicMaterialInk', '$timeout', function (ionicMaterialInk, $timeout) {
+    .controller('AppCtrl', ['ionicMaterialInk', '$timeout', '$ionicScrollDelegate', function (ionicMaterialInk, $timeout, $ionicScrollDelegate) {
         var app = this;
 
         $timeout(function () {
@@ -29,5 +29,8 @@ angular.module('cultureTech')
         // Do this when the keyboard is deactivated
         app.keyboardGone = function () {
             app.keyboard = false;
+            $timeout(function () {
+                $ionicScrollDelegate.resize();
+            }, 50);
         };
     }]);
