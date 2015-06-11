@@ -5,11 +5,11 @@
 angular.module('cultureTech')
     .factory('find', function () {
 
-        // Return first object in an array where property = value
+        // Return index of first object in an array where property = value
         var findInArray = function(array, property, value) {
             for (var i = 0, l = array.length; i < l; i++) {
                 if (array[i][property] === value) {
-                    return array[i];
+                    return i;
                 }
             }
             throw 'Could not find object with ' + property + ': ' + value;

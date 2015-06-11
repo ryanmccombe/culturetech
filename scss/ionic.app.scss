@@ -33,15 +33,16 @@ $primary: #363F45;
 $mid: #4B5F6D;
 $light: #94A0A8;
 $white: #E1E6E8;
-$accent: #FEB41C;
+$accent: #FE6C0B;
 
 /* Headers + Tabs */
 
-.keyboard-open .tabs{
-  display:none;
+.keyboard-open .tabs {
+  display: none;
 }
-.keyboard-open .has-tabs{
-  bottom:0;
+
+.keyboard-open .has-tabs {
+  bottom: 0;
 }
 
 ion-header-bar, .tabs {
@@ -114,4 +115,63 @@ label.item-input-wrapper {
 .ion-arrow-right-b {
   font-size: 18px !important;
   color: $light;
+}
+
+/* Partner Detail */
+
+.button-accent {
+  background-color: $accent !important;
+  color: white !important;
+  margin: 0 !important;
+}
+
+.partner-splash {
+  height: 250px;
+  position: relative;
+}
+
+.partner-splash-content {
+  text-align: center;
+  position: absolute;
+  padding-top: 200px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to top, $dark 2%, rgba(0, 0, 0, 0) 40%);
+  opacity: 1;
+}
+
+.partner-splash-logo{
+  display: none;
+  background-color: white !important;
+  margin: 150px auto 0 auto;
+  padding: 10px;
+  height: 100px !important;
+  width: 100px;
+  border-radius: 100%;
+  border: 4px solid $primary;
+}
+
+.partner-splash-name{
+  display: none;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: white;
+  line-height: 50px;
+}
+
+.partner-description{
+  padding: 15px 15px 20px 15px !important;
+  background-color: white !important;
+  color: $black;
+}
+
+.partner-navigation{
+  background-color: $white !important;
+  padding: 0 !important;
+}
+
+.partner-back, .partner-forward{
+  padding: 10px 15px
 }

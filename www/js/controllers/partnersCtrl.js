@@ -16,7 +16,11 @@ angular.module('cultureTech')
             $http.get('js/2014.json').success(function (response) {
                 vm.partners = response.partners;
                 if ($state.params.id) {
-                    vm.partner = find.inArray(vm.partners, 'id', $state.params.id)
+                    var index = find.inArray(vm.partners, 'id', $state.params.id);
+                    vm.partner = vm.partners[index];
+                    vm.previous = vm.partners[index-1];
+                    vm.next = vm.partners[index+1];
+                    vm.partner.description = vm.partner.description.replace(/(?:\r\n|\r|\n)/g, '<br>');
                 }
             });
         }]);

@@ -2,5 +2,29 @@
     <ion-nav-title>{{vm.partner.name}}</ion-nav-title>
     <ion-content>
 
+        <div class="partner-splash"
+             style="background: url('img/partners/{{vm.partner.id}}_p.jpg') no-repeat center center; background-size: cover;">
+            <div class="partner-splash-content">
+            </div>
+        </div>
+
+        <button class="button button-full button-dark button-accent icon-right ion-wifi flat ink">
+            Visit Website
+        </button>
+
+        <div class="double-padding partner-description" ng-bind-html="vm.partner.description">
+        </div>
+        <div class="row partner-navigation">
+            <div ng-if="vm.previous" class="col ink partner-back" nav-direction="back"
+                 ui-sref="tabs.partnerDetail({id: vm.previous.id})">
+                <div class="partner-title">Prev</div>
+                <div class="partner-name">{{vm.previous.name}}</div>
+            </div>
+            <div ng-if="vm.next" class="col ink partner-forward" nav-direction="forward"
+                 ui-sref="tabs.partnerDetail({id: vm.next.id})">
+                <div class="partner-title" style="text-align: right;">Next</div>
+                <div class="partner-name" style="text-align: right;">{{vm.next.name}}</div>
+            </div>
+        </div>
     </ion-content>
 </ion-view>

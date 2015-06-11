@@ -31,6 +31,6 @@ angular.module('cultureTech')
             app.keyboard = false;
             $timeout(function () {
                 $ionicScrollDelegate.resize();
-            }, 50);
+            }, 200);
         };
     }]);
