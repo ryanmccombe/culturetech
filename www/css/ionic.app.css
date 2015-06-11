@@ -7676,6 +7676,12 @@ a.button {
   transition-duration: 0s; }
 
 /* Headers + Tabs */
+.keyboard-open .tabs {
+  display: none; }
+
+.keyboard-open .has-tabs {
+  bottom: 0; }
+
 ion-header-bar, .tabs {
   background-color: #2C3338 !important;
   color: #E1E6E8 !important; }

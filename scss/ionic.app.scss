@@ -37,6 +37,13 @@ $accent: #FEB41C;
 
 /* Headers + Tabs */
 
+.keyboard-open .tabs{
+  display:none;
+}
+.keyboard-open .has-tabs{
+  bottom:0;
+}
+
 ion-header-bar, .tabs {
   background-color: $dark !important;
   color: $white !important;
