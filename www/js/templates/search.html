@@ -1,7 +1,8 @@
 <div class="bar bar-subheader bar-search item-input-inset bar-light">
     <label class="item-input-wrapper" for="search">
         <i class="icon ion-search placeholder-icon"></i>
-        <input name="search" id="search" type="search" set-focus="app.searching"/>
+        <input name="search" id="search" type="search" set-focus="app.searching"
+               ng-focus="app.focusSearch()" ng-blur="app.blurSearch()"/>
     </label>
 </div>
 

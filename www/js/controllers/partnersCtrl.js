@@ -5,25 +5,18 @@
 angular.module('cultureTech')
 
     .controller('PartnersCtrl',
-    ['$state', '$http', 'ionicMaterialInk', '$timeout',
-        function ($state, $http, ionicMaterialInk, $timeout) {
-            ionicMaterialInk.displayEffect();
+    ['$state', '$http', 'ionicMaterialInk', '$timeout', 'find',
+        function ($state, $http, ionicMaterialInk, $timeout, find) {
             var vm = this;
-            function findById(array, id) {
-                for (var i = 0, l = array.length; i < l; i++) {
-                    if (array[i].id === id) {
-                        return array[i];
-                    }
-                }
-                throw "Couldn't find partner with id: " + id;
-            }
+
+            $timeout(function () {
+                ionicMaterialInk.displayEffect();
+            }, 0);
+
             $http.get('js/2014.json').success(function (response) {
                 vm.partners = response.partners;
-                if ($state.params.id){
-                    vm.partner = findById(vm.partners, $state.params.id)
+                if ($state.params.id) {
+                    vm.partner = find.inArray(vm.partners, 'id', $state.params.id)
                 }
-                $timeout(function () {
-                    ionicMaterialInk.displayEffect();
-                }, 0);
             });
         }]);
