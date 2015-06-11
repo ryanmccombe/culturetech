@@ -13,19 +13,20 @@
             </div>
         </div>
 
-        <div class="double-padding partner-description" ng-bind-html="vm.partner.description">
-        </div>
         <div class="row partner-navigation">
             <div ng-if="vm.previous" class="col ink partner-back"
                  ng-click="vm.previousPartner(vm.previous.id)">
                 <div class="partner-title">Previous</div>
-                <div class="partner-name">{{vm.previous.name}}</div>
+                <div class="partner-name">{{vm.previous.nameShort || vm.previous.name}}</div>
             </div>
             <div ng-if="vm.next" class="col ink partner-forward"
                  ng-click="vm.nextPartner(vm.next.id)">
                 <div class="partner-title" style="text-align: right;">Next</div>
-                <div class="partner-name" style="text-align: right;">{{vm.next.name}}</div>
+                <div class="partner-name" style="text-align: right;">{{vm.next.nameShort || vm.next.name}}</div>
             </div>
+        </div>
+
+        <div class="double-padding partner-description" ng-bind-html="vm.partner.description">
         </div>
     </ion-content>
 </ion-view>

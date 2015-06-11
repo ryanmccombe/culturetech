@@ -66,7 +66,7 @@ ion-header-bar, .tabs {
 /* Home Page */
 
 .splash {
-  background: url('/img/partners/syncni_p.jpg') no-repeat center center;
+  background: url('../img/partners/syncni_p.jpg') no-repeat center center;
   background-size: cover
 }
 
@@ -79,7 +79,7 @@ ion-header-bar, .tabs {
   @include background-opacity($dark, 0.92);
 }
 
-.splash-logo{
+.splash-logo {
   position: absolute;
   margin: 0 auto;
   width: 60%;
@@ -167,11 +167,14 @@ label.item-input-wrapper {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to top, $dark, rgba(0, 0, 0, 0) 40%);
-  opacity: 1;
+  @include background-opacity($dark, 0.8);
+  background:  -webkit-linear-gradient(to top, $dark, rgba(0, 0, 0, 0) 40%); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+  background:     -moz-linear-gradient(to top, $dark, rgba(0, 0, 0, 0) 40%); /* For Firefox (3.6 to 15) */
+  background:       -o-linear-gradient(to top, $dark, rgba(0, 0, 0, 0) 40%); /* For old Opera (11.1 to 12.0) */
+  background:          linear-gradient(to top, $dark, rgba(0, 0, 0, 0) 40%); /* Standard syntax; must be last */
 }
 
-.partner-splash-logo{
+.partner-splash-logo {
   display: none;
   background-color: white !important;
   margin: 150px auto 0 auto;
@@ -182,7 +185,7 @@ label.item-input-wrapper {
   border: 4px solid $primary;
 }
 
-.partner-splash-name{
+.partner-splash-name {
   display: none;
   font-size: 50px;
   text-transform: uppercase;
@@ -190,17 +193,17 @@ label.item-input-wrapper {
   line-height: 50px;
 }
 
-.partner-description{
+.partner-description {
   padding: 15px 15px 20px 15px !important;
   background-color: white !important;
   color: $black;
 }
 
-.partner-navigation{
+.partner-navigation {
   background-color: $white !important;
   padding: 0 !important;
 }
 
-.partner-back, .partner-forward{
+.partner-back, .partner-forward {
   padding: 10px 15px
 }
