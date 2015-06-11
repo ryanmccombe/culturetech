@@ -7694,7 +7694,30 @@ ion-header-bar, .tabs {
 
 /* Home Page */
 .splash {
-  background-color: #363F45 !important; }
+  background: url('/img/partners/syncni_p.jpg') no-repeat center center;
+  background-size: cover; }
+
+.splash-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #2C3338;
+  /* The Fallback */
+  background: rgba(44, 51, 56, 0.92); }
+
+.splash-logo {
+  position: absolute;
+  margin: 0 auto;
+  width: 60%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  -o-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%); }
 
 /* Search */
 .bar-search {
@@ -7738,8 +7761,8 @@ label.item-input-wrapper {
   color: #94A0A8; }
 
 /* Partner Detail */
-.button-accent {
-  background-color: #FE6C0B !important;
+.button-transparant {
+  background-color: transparent !important;
   color: white !important;
   margin: 0 !important; }
 
@@ -7756,7 +7779,7 @@ label.item-input-wrapper {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to top, #2C3338 2%, transparent 40%);
+  background-image: linear-gradient(to top, #2C3338, transparent 40%);
   opacity: 1; }
 
 .partner-splash-logo {

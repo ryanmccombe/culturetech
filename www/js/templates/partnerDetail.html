@@ -7,19 +7,18 @@
             'background-size': 'cover'
             }">
             <div class="partner-splash-content">
+                <button class="button button-full button-dark button-transparant icon-right ion-wifi flat ink">
+                    Visit Website
+                </button>
             </div>
         </div>
-
-        <button class="button button-full button-dark button-accent icon-right ion-wifi flat ink">
-            Visit Website
-        </button>
 
         <div class="double-padding partner-description" ng-bind-html="vm.partner.description">
         </div>
         <div class="row partner-navigation">
             <div ng-if="vm.previous" class="col ink partner-back"
                  ng-click="vm.previousPartner(vm.previous.id)">
-                <div class="partner-title">Prev</div>
+                <div class="partner-title">Previous</div>
                 <div class="partner-name">{{vm.previous.name}}</div>
             </div>
             <div ng-if="vm.next" class="col ink partner-forward"
