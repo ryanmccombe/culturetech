@@ -21,13 +21,13 @@ angular.module('cultureTech')
             app.searching = !app.searching;
         };
 
-        // Do this when the search bar is focused
-        app.focusSearch = function(){
+        // Do this when the keyboard is activated
+        app.keyboardActive = function(){
             app.keyboard = true;
         };
 
-        // Do this when the search bar is blurred
-        app.blurSearch = function () {
+        // Do this when the keyboard is deactivated
+        app.keyboardGone = function () {
             app.keyboard = false;
         };
     }]);

@@ -2,7 +2,7 @@
     <label class="item-input-wrapper" for="search">
         <i class="icon ion-search placeholder-icon"></i>
         <input name="search" id="search" type="search" set-focus="app.searching"
-               ng-focus="app.focusSearch()" ng-blur="app.blurSearch()"/>
+               ng-focus="app.keyboardActive()" ng-blur="app.keyboardGone()"/>
     </label>
 </div>
 
