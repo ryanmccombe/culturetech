@@ -43,6 +43,11 @@ angular.module('cultureTech', ['ionic', 'ngCordova', 'ionic-material'])
                 url: '/partners',
                 views: {
                     'partners-tab': {
+                        resolve: {
+                            JSONData:  function($http){
+                                return $http.get('js/2014.json');
+                            }
+                        },
                         templateUrl: 'js/templates/partners.html',
                         controller: 'PartnersCtrl as vm'
                     }
@@ -53,7 +58,7 @@ angular.module('cultureTech', ['ionic', 'ngCordova', 'ionic-material'])
                 views: {
                     'partners-tab': {
                         templateUrl: 'js/templates/partnerDetail.html',
-                        controller: 'PartnersCtrl as vm'
+                        controller: 'PartnerDetailCtrl as vm'
                     }
                 }
             });

@@ -6,7 +6,7 @@
 </ion-nav-buttons>
 <ng-include ng-show="app.searching" src="'js/templates/search.html'"></ng-include>
 
-    <ion-content has-bouncing="true" ng-class="{'has-subheader': app.searching}" ng-controller="PartnersCtrl as vm">
+    <ion-content has-bouncing="true" ng-class="{'has-subheader': app.searching}">
         <ion-list>
             <ion-item ng-repeat="item in vm.partners" ng-class="{'ink': app.effects}"
                       class="partner item-text-wrap item-avatar-left item-icon-right"
