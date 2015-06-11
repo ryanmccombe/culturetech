@@ -7,19 +7,20 @@
             'background-size': 'cover'
             }">
             <div class="partner-splash-content">
-                <i class="icon-transparent button flat ion-ios-world-outline ink"></i>
+                <i class="icon-transparent button flat ion-ios-world ink"
+                   ng-click="app.loadExternalUrl(partner.url || 'http://www.google.com', {})"></i>
             </div>
         </div>
 
         <div class="row partner-navigation">
-            <div ng-if="vm.previous" class="col ink partner-back"
-                 ng-click="vm.previousPartner(vm.previous.id)">
-                <div class="partner-title">Previous</div>
+            <div class="col ink partner-back"
+                 ng-click="vm.previous ? vm.previousPartner(vm.previous.id) : ''">
+                <div ng-if="vm.previous" class="partner-title">Previous</div>
                 <div class="partner-name">{{vm.previous.nameShort || vm.previous.name}}</div>
             </div>
-            <div ng-if="vm.next" class="col ink partner-forward"
-                 ng-click="vm.nextPartner(vm.next.id)">
-                <div class="partner-title" style="text-align: right;">Next</div>
+            <div class="col ink partner-forward"
+                 ng-click="vm.next ? vm.nextPartner(vm.next.id) : ''">
+                <div ng-if="vm.next" class="partner-title" style="text-align: right;">Next</div>
                 <div class="partner-name" style="text-align: right;">{{vm.next.nameShort || vm.next.name}}</div>
             </div>
         </div>

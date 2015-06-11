@@ -33,4 +33,9 @@ angular.module('cultureTech')
                 $ionicScrollDelegate.resize();
             }, 200);
         };
+
+        app.loadExternalUrl = function(url, options){
+            // TODO
+            console.log (url, options);
+        }
     }]);

@@ -44,7 +44,7 @@ angular.module('cultureTech', ['ionic', 'ngCordova', 'ionic-material'])
                 views: {
                     'partners-tab': {
                         resolve: {
-                            JSONData:  function($http){
+                            JSONData: function ($http) {
                                 return $http.get('js/2014.json');
                             }
                         },
@@ -58,16 +58,22 @@ angular.module('cultureTech', ['ionic', 'ngCordova', 'ionic-material'])
                 views: {
                     'partners-tab': {
                         resolve: {
-                            partnerData:  function($http, find, $stateParams){
+                            partnerData: function ($http, find, $stateParams) {
                                 return $http.get('js/2014.json')
-                                    .then(function(response){
+                                    .then(function (response) {
                                         var partnerData = response.data.partners;
-                                        var returnData = {};
 
+                                        // Find which partner we are looking for
                                         var index = find.inArray(partnerData, 'id', $stateParams.id);
+
+                                        // Populate the returnData object with 3 sub- objects - current partner,
+                                        // previous partner, and next partner
+                                        var returnData = {};
                                         returnData.partner = partnerData[index];
-                                        returnData.previous = partnerData[index-1];
-                                        returnData.next = partnerData[index+1];
+                                        returnData.previous = partnerData[index - 1];
+                                        returnData.next = partnerData[index + 1];
+
+                                        // Replace line breaks in the JSON with <br> tags
                                         returnData.partner.description = returnData.partner.description.replace(/(?:\r\n|\r|\n)/g, '<br>');
 
                                         return returnData;

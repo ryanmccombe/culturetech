@@ -7763,8 +7763,8 @@ label.item-input-wrapper {
 /* Partner Detail */
 .icon-transparent {
   background-color: transparent !important;
-  font-size: 50px !important;
-  height: 90px !important;
+  font-size: 70px !important;
+  height: 110px !important;
   width: 100px !important;
   color: white !important;
   padding: 20px 0 0 !important;
@@ -7778,7 +7778,7 @@ label.item-input-wrapper {
 .partner-splash-content {
   text-align: center;
   position: absolute;
-  padding-top: 160px;
+  padding-top: 140px;
   top: 0;
   left: 0;
   width: 100%;

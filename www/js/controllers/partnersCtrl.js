@@ -10,6 +10,8 @@ angular.module('cultureTech')
             $timeout(function () {
                 ionicMaterialInk.displayEffect();
             }, 0);
+
             var vm = this;
             vm.partners = JSONData.data.partners;
+
         }]);

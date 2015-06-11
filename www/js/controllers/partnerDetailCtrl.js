@@ -15,13 +15,15 @@ angular.module('cultureTech')
             vm.next = partnerData.next;
             vm.previous = partnerData.previous;
 
-            vm.previousPartner = function (id) {
-                $ionicViewSwitcher.nextDirection("back");
-                $state.go("tabs.partnerDetail", {'id': id});
-            };
+            // Force the transition direction such that going to next partner animates
+            // forward and going to previous animates back, regardless of history
 
             vm.nextPartner = function (id) {
                 $ionicViewSwitcher.nextDirection("forward");
+                $state.go("tabs.partnerDetail", {'id': id});
+            };
+            vm.previousPartner = function (id) {
+                $ionicViewSwitcher.nextDirection("back");
                 $state.go("tabs.partnerDetail", {'id': id});
             };
         }]);
