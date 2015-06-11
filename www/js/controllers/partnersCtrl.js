@@ -9,11 +9,10 @@ angular.module('cultureTech')
         function ($state, $http, ionicMaterialInk, $timeout, find, $ionicViewSwitcher) {
             var vm = this;
 
-            $timeout(function () {
-                ionicMaterialInk.displayEffect();
-            }, 0);
-
             $http.get('js/2014.json').success(function (response) {
+                $timeout(function () {
+                    ionicMaterialInk.displayEffect();
+                }, 0);
                 vm.partners = response.partners;
                 if ($state.params.id) {
                     var index = find.inArray(vm.partners, 'id', $state.params.id);

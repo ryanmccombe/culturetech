@@ -35,15 +35,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="partnerDetail.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="partnerDetail.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/templates/partnerDetail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.55520993" vertical-offset="0" max-vertical-offset="643">
+            <state vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="629">
               <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
-                <marker date="1434039737690" expanded="true" signature="131:280" placeholder="{&quot;background-size&quot;: 'cover'...}" />
+                <marker date="1434039810142" expanded="true" signature="131:280" placeholder="{&quot;background-size&quot;: 'cover'...}" />
               </folding>
             </state>
           </provider>
@@ -59,11 +59,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="partnersCtrl.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="partnersCtrl.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/controllers/partnersCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
-              <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.47360703" vertical-offset="0" max-vertical-offset="682">
+              <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
               </folding>
@@ -87,6 +87,16 @@
                 <element signature="e#1989#2057#0" expanded="false" />
                 <element signature="e#2078#2128#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tabs.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/templates/tabs.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="425">
+              <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -130,7 +140,6 @@
         <option value="$PROJECT_DIR$/www/js/app.js" />
         <option value="$PROJECT_DIR$/www/js/directives/keyboardHandler.js" />
         <option value="$PROJECT_DIR$/www/js/templates/search.html" />
-        <option value="$PROJECT_DIR$/www/js/templates/tabs.html" />
         <option value="$PROJECT_DIR$/www/js/templates/partners.html" />
         <option value="$PROJECT_DIR$/www/js/controllers/appCtrl.js" />
         <option value="$PROJECT_DIR$/www/js/filters/newLineToBr.js" />
@@ -139,8 +148,9 @@
         <option value="$PROJECT_DIR$/www/index.html" />
         <option value="$PROJECT_DIR$/www/js/directives/backgroundImage.js" />
         <option value="$PROJECT_DIR$/scss/ionic.app.scss" />
-        <option value="$PROJECT_DIR$/www/js/controllers/partnersCtrl.js" />
         <option value="$PROJECT_DIR$/www/js/templates/partnerDetail.html" />
+        <option value="$PROJECT_DIR$/www/js/templates/tabs.html" />
+        <option value="$PROJECT_DIR$/www/js/controllers/partnersCtrl.js" />
       </list>
     </option>
   </component>
@@ -639,12 +649,12 @@
       <workItem from="1433934942088" duration="6453000" />
       <workItem from="1433974158352" duration="694000" />
       <workItem from="1433978333993" duration="8249000" />
-      <workItem from="1434028051722" duration="11567000" />
+      <workItem from="1434028051722" duration="11848000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59687000" />
+    <option name="totallyTimeSpent" value="59968000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1538" height="1176" extended-state="0" />
@@ -765,7 +775,7 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
-            <marker date="1434039737690" expanded="true" signature="131:280" placeholder="{&quot;background-size&quot;: 'cover'...}" />
+            <marker date="1434039810142" expanded="true" signature="131:280" placeholder="{&quot;background-size&quot;: 'cover'...}" />
           </folding>
         </state>
       </provider>
@@ -829,7 +839,7 @@
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
-            <marker date="1434039737690" expanded="true" signature="131:280" placeholder="{&quot;background-size&quot;: 'cover'...}" />
+            <marker date="1434039810142" expanded="true" signature="131:280" placeholder="{&quot;background-size&quot;: 'cover'...}" />
           </folding>
         </state>
       </provider>
@@ -1034,14 +1044,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/templates/tabs.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39050537" vertical-offset="0" max-vertical-offset="653">
-          <caret line="15" column="72" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/controllers/appCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7912913" vertical-offset="0" max-vertical-offset="666">
@@ -1091,14 +1093,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.346153" vertical-offset="51" max-vertical-offset="799">
-          <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/directives/keyboardClass.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="408">
@@ -1145,24 +1139,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/partnersCtrl.js">
+    <entry file="file://$PROJECT_DIR$/www/js/templates/tabs.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
-          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
+        <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="425">
+          <caret line="9" column="61" selection-start-line="9" selection-start-column="61" selection-end-line="9" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.346153" vertical-offset="51" max-vertical-offset="799">
+          <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/templates/partnerDetail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55520993" vertical-offset="0" max-vertical-offset="643">
+        <state vertical-scroll-proportion="-13.730769" vertical-offset="0" max-vertical-offset="629">
           <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#1;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#2;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
-            <marker date="1434039737690" expanded="true" signature="131:280" placeholder="{&quot;background-size&quot;: 'cover'...}" />
+            <marker date="1434039810142" expanded="true" signature="131:280" placeholder="{&quot;background-size&quot;: 'cover'...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers/partnersCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47360703" vertical-offset="0" max-vertical-offset="682">
+          <caret line="21" column="54" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="54" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
           </folding>
         </state>
       </provider>
