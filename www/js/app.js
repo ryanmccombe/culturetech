@@ -35,7 +35,8 @@ angular.module('cultureTech', ['ionic', 'ngCordova', 'ionic-material'])
                 url: '/home',
                 views: {
                     'home-tab': {
-                        templateUrl: 'js/templates/home.html'
+                        templateUrl: 'js/templates/home.html',
+                        controller: 'HomeCtrl'
                     }
                 }
             })

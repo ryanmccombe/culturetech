@@ -7785,7 +7785,7 @@ label.item-input-wrapper {
   height: 100%;
   background: #2C3338;
   /* The Fallback */
-  background: rgba(44, 51, 56, 0.8);
+  background: rgba(44, 51, 56, 0.4);
   background: -webkit-linear-gradient(to top, #2C3338 2%, transparent 40%);
   /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
   background: -moz-linear-gradient(to top, #2C3338 2%, transparent 40%);
