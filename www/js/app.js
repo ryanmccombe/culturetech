@@ -45,8 +45,8 @@ angular.module('cultureTech', ['ionic', 'ngCordova', 'ionic-material'])
                 views: {
                     'partners-tab': {
                         resolve: {
-                            JSONData: function ($http) {
-                                return $http.get('js/2014.json');
+                            partners: function ($http) {
+                                return $http.get('js/data/2014/partners.json');
                             }
                         },
                         templateUrl: 'js/templates/partners.html',
@@ -59,25 +59,25 @@ angular.module('cultureTech', ['ionic', 'ngCordova', 'ionic-material'])
                 views: {
                     'partners-tab': {
                         resolve: {
-                            partnerData: function ($http, find, $stateParams) {
-                                return $http.get('js/2014.json')
+                            partner: function ($http, find, $stateParams) {
+                                return $http.get('js/data/2014/partners.json')
                                     .then(function (response) {
-                                        var partnerData = response.data.partners;
+                                        var partnerData = response.data;
 
                                         // Find which partner we are looking for
                                         var index = find.inArray(partnerData, 'id', $stateParams.id);
 
                                         // Populate the returnData object with 3 sub- objects - current partner,
                                         // previous partner, and next partner
-                                        var returnData = {};
-                                        returnData.partner = partnerData[index];
-                                        returnData.previous = partnerData[index - 1];
-                                        returnData.next = partnerData[index + 1];
+                                        var partner = {};
+                                        partner.this = partnerData[index];
+                                        partner.previous = partnerData[index - 1];
+                                        partner.next = partnerData[index + 1];
 
                                         // Replace line breaks in the JSON with <br> tags
-                                        returnData.partner.description = returnData.partner.description.replace(/(?:\r\n|\r|\n)/g, '<br>');
+                                        partner.this.description = partner.this.description.replace(/(?:\r\n|\r|\n)/g, '<br>');
 
-                                        return returnData;
+                                        return partner;
                                     });
                             }
                         },

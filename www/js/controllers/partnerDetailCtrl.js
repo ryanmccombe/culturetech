@@ -4,16 +4,16 @@
 
 angular.module('cultureTech')
     .controller('PartnerDetailCtrl', [
-        '$state', '$ionicViewSwitcher', 'partnerData', '$timeout', 'ionicMaterialInk',
-        function ($state, $ionicViewSwitcher, partnerData, $timeout, ionicMaterialInk) {
+        '$state', '$ionicViewSwitcher', 'partner', '$timeout', 'ionicMaterialInk',
+        function ($state, $ionicViewSwitcher, partner, $timeout, ionicMaterialInk) {
             $timeout(function () {
                 ionicMaterialInk.displayEffect();
             }, 0);
 
             var vm = this;
-            vm.partner = partnerData.partner;
-            vm.next = partnerData.next;
-            vm.previous = partnerData.previous;
+            vm.partner = partner.this;
+            vm.next = partner.next;
+            vm.previous = partner.previous;
 
             // Force the transition direction such that going to next partner animates
             // forward and going to previous animates back, regardless of history

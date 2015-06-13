@@ -28,7 +28,6 @@ angular.module('cultureTech')
                 promises.push(promise.promise);
                 img.src = images[i];
             }
-            console.log(promises);
             return $q.all(promises);
         }
 

@@ -5,17 +5,24 @@
 angular.module('cultureTech')
 
     .controller('PartnersCtrl',
-    ['$http', 'ionicMaterialInk', '$timeout', 'JSONData', 'imagePreloader',
-        function ($http, ionicMaterialInk, $timeout, JSONData, imagePreloader) {
+    ['$http', 'ionicMaterialInk', '$timeout', 'partners', 'imagePreloader',
+        function ($http, ionicMaterialInk, $timeout, partners, imagePreloader) {
             $timeout(function () {
                 ionicMaterialInk.displayEffect();
             }, 0);
 
-            $http.get('js/2014partnerposters.json')
+            $http.get('js/data/2014/partnerPosters.json')
                 .success(function (data) {
-                    imagePreloader.preload(data);
+                    imagePreloader.preload(data)
+                        .then(function () {
+                            // success
+                        },
+                        function (error) {
+                            console.log('couldn\'t load ', error)
+                        }
+                    );
                 });
 
             var vm = this;
-            vm.partners = JSONData.data.partners;
+            vm.partners = partners.data;
         }]);
