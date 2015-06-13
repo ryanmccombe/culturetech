@@ -7737,6 +7737,50 @@ label.item-input-wrapper {
   background: #E1E6E8 !important; }
 
 /* Event List */
+.featured-event-poster {
+  background: url('../img/events/digitaldna.jpg') no-repeat center center;
+  background-size: cover;
+  height: 200px;
+  position: relative; }
+
+.featured-event-poster-content {
+  text-align: left;
+  color: white;
+  position: absolute;
+  padding-left: 40px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #2C3338;
+  /* The Fallback */
+  background: rgba(44, 51, 56, 0.8);
+  background: -webkit-linear-gradient(to top, #2C3338 6%, rgba(44, 51, 56, 0.6) 40%, transparent 80%);
+  /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+  background: -moz-linear-gradient(to top, #2C3338 6%, rgba(44, 51, 56, 0.6) 40%, transparent 80%);
+  /* For Firefox (3.6 to 15) */
+  background: -o-linear-gradient(to top, #2C3338 6%, rgba(44, 51, 56, 0.6) 40%, transparent 80%);
+  /* For old Opera (11.1 to 12.0) */
+  background: linear-gradient(to top, #2C3338 6%, rgba(44, 51, 56, 0.6) 40%, transparent 80%);
+  /* Standard syntax; must be last */ }
+
+.bottom {
+  position: absolute;
+  bottom: 20px; }
+
+.featured-event-time {
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase; }
+
+.featured-event-title {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
+.featured-event-description {
+  margin-top: 12px; }
+
 .date-box {
   overflow: hidden;
   height: 44px;
@@ -7756,7 +7800,7 @@ label.item-input-wrapper {
   display: none !important; }
 
 .date-box-expanded {
-  height: 188px !important; }
+  height: 329px !important; }
 
 .date-select {
   font-size: 16px !important;
