@@ -67,12 +67,10 @@ angular.module('cultureTech', ['ionic', 'ngCordova', 'ionic-material'])
                                         // Populate the partner object with 3 sub- objects - this partner,
                                         // previous partner, and next partner
                                         var partner = {};
-                                        partner.this = partnerData[parseInt($stateParams.id, 10)];
-                                        partner.previous = partnerData[parseInt($stateParams.id, 10) - 1];
-                                        partner.next = partnerData[parseInt($stateParams.id, 10) + 1];
-
-                                        // Replace line breaks in the JSON with <br> tags
-                                        partner.this.description = partner.this.description.replace(/(?:\r\n|\r|\n)/g, '<br>');
+                                        var id = parseInt($stateParams.id, 10);
+                                        partner.this = partnerData[id];
+                                        partner.previous = partnerData[id - 1];
+                                        partner.next = partnerData[id + 1];
 
                                         return partner;
                                     });
