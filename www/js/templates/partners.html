@@ -10,7 +10,7 @@
         <ion-list>
             <ion-item ng-repeat="item in vm.partners" ng-class="{'ink': app.effects}"
                       class="partner item-text-wrap item-avatar-left item-icon-right"
-                      ui-sref="tabs.partnerDetail({id: item.id})">
+                      ui-sref="tabs.partnerDetail({id: $index})">
                 <img class="partner-logo" ng-src="img/partners/{{item.image}}" alt="{{item.name}} Logo"/>
                 <i class="icon ion-arrow-right-b"></i>
 

@@ -59,20 +59,17 @@ angular.module('cultureTech', ['ionic', 'ngCordova', 'ionic-material'])
                 views: {
                     'partners-tab': {
                         resolve: {
-                            partner: function ($http, find, $stateParams) {
+                            partner: function ($http, $stateParams) {
                                 return $http.get('js/data/2014/partners.json')
                                     .then(function (response) {
                                         var partnerData = response.data;
 
-                                        // Find which partner we are looking for
-                                        var index = find.inArray(partnerData, 'id', $stateParams.id);
-
-                                        // Populate the returnData object with 3 sub- objects - current partner,
+                                        // Populate the partner object with 3 sub- objects - this partner,
                                         // previous partner, and next partner
                                         var partner = {};
-                                        partner.this = partnerData[index];
-                                        partner.previous = partnerData[index - 1];
-                                        partner.next = partnerData[index + 1];
+                                        partner.this = partnerData[parseInt($stateParams.id, 10)];
+                                        partner.previous = partnerData[parseInt($stateParams.id, 10) - 1];
+                                        partner.next = partnerData[parseInt($stateParams.id, 10) + 1];
 
                                         // Replace line breaks in the JSON with <br> tags
                                         partner.this.description = partner.this.description.replace(/(?:\r\n|\r|\n)/g, '<br>');

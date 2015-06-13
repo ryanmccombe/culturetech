@@ -14,12 +14,12 @@
 
         <div class="row partner-navigation">
             <div class="col ink partner-back"
-                 ng-click="vm.previous ? vm.previousPartner(vm.previous.id) : ''">
+                 ng-click="vm.previous ? vm.previousPartner() : ''">
                 <div ng-if="vm.previous" class="partner-title">Previous</div>
                 <div class="partner-name">{{vm.previous.nameShort || vm.previous.name}}</div>
             </div>
             <div class="col ink partner-forward"
-                 ng-click="vm.next ? vm.nextPartner(vm.next.id) : ''">
+                 ng-click="vm.next ? vm.nextPartner() : ''">
                 <div ng-if="vm.next" class="partner-title" style="text-align: right;">Next</div>
                 <div class="partner-name" style="text-align: right;">{{vm.next.nameShort || vm.next.name}}</div>
             </div>
