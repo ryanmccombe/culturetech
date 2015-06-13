@@ -7736,6 +7736,35 @@ ion-header-bar, .tabs {
 label.item-input-wrapper {
   background: #E1E6E8 !important; }
 
+/* Event List */
+.date-box {
+  overflow: hidden;
+  height: 44px;
+  -webkit-transition: .6s height cubic-bezier(.55, 0, .1, 1);
+  -moz-transition: .6s height cubic-bezier(.55, 0, .1, 1);
+  -o-transition: .6s height cubic-bezier(.55, 0, .1, 1);
+  transition: .6s height cubic-bezier(.55, 0, .1, 1); }
+
+.inner-date-box {
+  background-color: #E1E6E8 !important;
+  -webkit-transition: .6s margin-top cubic-bezier(.55, 0, .1, 1);
+  -moz-transition: .6s margin-top cubic-bezier(.55, 0, .1, 1);
+  -o-transition: .6s margin-top cubic-bezier(.55, 0, .1, 1);
+  transition: .6s margin-top cubic-bezier(.55, 0, .1, 1); }
+
+.date-box-collapsed {
+  display: none !important; }
+
+.date-box-expanded {
+  height: 188px !important; }
+
+.date-select {
+  font-size: 16px !important;
+  padding-left: 44px !important;
+  background-color: #E1E6E8 !important;
+  margin: 0 !important;
+  text-align: left !important; }
+
 /* Partner List */
 .partner {
   padding-top: 20px;

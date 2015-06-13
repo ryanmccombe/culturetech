@@ -1,0 +1,42 @@
+<ion-view title="Events">
+    <ion-nav-buttons side="right">
+        <button class="button button-icon button-clear ink"
+                ng-class="{'ion-search': !app.searching, 'ion-close': app.searching}"
+                ng-click="app.toggleSearch()"></button>
+    </ion-nav-buttons>
+    <ng-include ng-show="app.searching" src="'js/templates/search.html'"></ng-include>
+
+    <ion-content has-bouncing="true" ng-class="{'has-subheader': app.searching}">
+        <div class="date-box" ng-class="({'date-box-expanded': vm.selectingDate, 'date-box-collapsed': app.searching})">
+            <div id="innerDate" class="inner-date-box" ng-click="vm.toggleSelection()">
+                <button id="date0" ng-click="vm.setDate(0)" class="date-select button button-full icon-right flat ink"
+                        ng-class="({'ion-chevron-up': vm.date == 0 && vm.selectingDate, 'ion-chevron-down': vm.date == 0 && !vm.selectingDate})">
+                    Monday 15th
+                </button>
+                <button id="date1" ng-click="vm.setDate(1)" class="date-select button button-full icon-right flat ink"
+                        ng-class="({'ion-chevron-up': vm.date == 1 && vm.selectingDate, 'ion-chevron-down': vm.date == 1 && !vm.selectingDate})">
+                    Tuesday 16th
+                </button>
+                <button id="date2" ng-click="vm.setDate(2)" class="date-select button button-full icon-right flat ink"
+                        ng-class="({'ion-chevron-up': vm.date == 2 && vm.selectingDate, 'ion-chevron-down': vm.date == 2 && !vm.selectingDate})">
+                    Wednesday 17th
+                </button>
+                <button id="date3" ng-click="vm.setDate(3)" class="date-select button button-full icon-right flat ink"
+                        ng-class="({'ion-chevron-up': vm.date == 3 && vm.selectingDate, 'ion-chevron-down': vm.date == 3 && !vm.selectingDate})">
+                    Thursday 18th
+                </button>
+            </div>
+        </div>
+
+        <ion-list>
+            <ion-item ng-repeat="item in vm.schedule" ng-class="{'ink': app.effects}"
+                      class="event item-text-wrap item-thumbnail-left">
+                <img class="event-thumbnail" ng-src="http://placehold.it/150x150" alt="{{item.name}}"/>
+
+                <div class="partner-title">{{item.start | date:'EEE, h:mm a'}} - {{item.end | date:'h:mm a'}}</div>
+                <div class="partner-name">{{vm.events[item.event].name}}</div>
+                <div>{{vm.events[item.event].desc_short}}</div>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

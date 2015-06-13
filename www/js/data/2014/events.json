@@ -1,0 +1,32 @@
+{
+  "schedule": [
+    {
+      "event": 0,
+      "location": 0,
+      "start": 1410768000000,
+      "end": 1410789600000
+    },
+    {
+      "event": 0,
+      "location": 0,
+      "start": 1410854400000,
+      "end": 1410876000000
+    },
+    {
+      "event": 0,
+      "location": 0,
+      "start": 1410940800000,
+      "end": 1410962400000
+    }
+  ],
+  "events": [
+    {
+      "name": "Ministry of Science Live!",
+      "img": "ministry_of_science_live.png",
+      "desc_short": "Ministry of Science Live is not your ordinary science show – it comes with a bang. It comes with a whoosh. But most of all it comes with a Hovercraft built on stage.",
+      "desc_full": "WARNING. WARNING. This is a public safety announcement… Please keep your head firmly on your shoulders and your arms, legs and feet firmly inside the ride at all times – Ministry of Science Live is about to explode onto a stage near you soon! Ministry of Science Live is not your ordinary science show – it comes with a bang. It comes with a whoosh. But most of all it comes with a Hovercraft built on stage.\n\nFrom liquid nitrogen frozen flowers to hydrogen bottle rockets fired right at you the show will take you on a journey using demonstrations and a few loud bangs to lead the way. From the creative team behind Brainiac Live, Guinness World Records Officially Amazing Science Live and a whole load of other educational shows with an anarchic twist – Ministry of Science Live is not to be missed….\n\nMinistry of Science is supported by Seagate and ILEX",
+      "tags": ["Schools Only"],
+      "partners": [0, 1]
+    }
+  ]
+}

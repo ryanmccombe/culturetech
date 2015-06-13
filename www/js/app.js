@@ -40,6 +40,20 @@ angular.module('cultureTech', ['ionic', 'ngCordova', 'ionic-material'])
                     }
                 }
             })
+            .state('tabs.events', {
+                url: '/events',
+                views: {
+                    'events-tab': {
+                        resolve: {
+                            events: function ($http) {
+                                return $http.get('js/data/2014/events.json');
+                            }
+                        },
+                        templateUrl: 'js/templates/events.html',
+                        controller: 'EventsCtrl as vm'
+                    }
+                }
+            })
             .state('tabs.partners', {
                 url: '/partners',
                 views: {

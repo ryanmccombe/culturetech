@@ -115,6 +115,41 @@ label.item-input-wrapper {
   background: $white !important;
 }
 
+/* Event List */
+
+.date-box{
+  overflow: hidden;
+  height: 44px;
+   -webkit-transition: .6s height cubic-bezier(.55,0,.1,1);
+      -moz-transition: .6s height cubic-bezier(.55,0,.1,1);
+        -o-transition: .6s height cubic-bezier(.55,0,.1,1);
+           transition: .6s height cubic-bezier(.55,0,.1,1);
+}
+
+.inner-date-box{
+  background-color: $white !important;
+   -webkit-transition: .6s margin-top cubic-bezier(.55,0,.1,1);
+      -moz-transition: .6s margin-top cubic-bezier(.55,0,.1,1);
+        -o-transition: .6s margin-top cubic-bezier(.55,0,.1,1);
+           transition: .6s margin-top cubic-bezier(.55,0,.1,1);
+}
+
+.date-box-collapsed{
+  display: none !important;
+}
+
+.date-box-expanded{
+  height: 188px !important;
+}
+
+.date-select{
+  font-size: 16px !important;
+  padding-left: 44px !important;
+  background-color: $white !important;
+  margin: 0 !important;
+  text-align: left !important;
+}
+
 /* Partner List */
 
 .partner {
