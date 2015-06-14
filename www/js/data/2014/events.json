@@ -17,6 +17,78 @@
       "location": 0,
       "start": 1410940800000,
       "end": 1410962400000
+    },
+    {
+      "event": 1,
+      "location": 1,
+      "start": 1410768000000,
+      "end": 1410789600000
+    },
+    {
+      "event": 1,
+      "location": 1,
+      "start": 1410854400000,
+      "end": 1410876000000
+    },
+    {
+      "event": 1,
+      "location": 1,
+      "start": 1410940800000,
+      "end": 1410962400000
+    },
+    {
+      "event": 1,
+      "location": 1,
+      "start": 1411027200000,
+      "end": 1411048800000
+    },
+    {
+      "event": 1,
+      "location": 1,
+      "start": 1411113600000,
+      "end": 1411135200000
+    },
+    {
+      "event": 2,
+      "location": 2,
+      "start": 1410771600000,
+      "end": 1410796800000
+    },
+    {
+      "event": 2,
+      "location": 2,
+      "start": 1410858000000,
+      "end": 1410883200000
+    },
+    {
+      "event": 2,
+      "location": 2,
+      "start": 1410944400000,
+      "end": 1410969600000
+    },
+    {
+      "event": 2,
+      "location": 2,
+      "start": 1411030800000,
+      "end": 1411056000000
+    },
+    {
+      "event": 2,
+      "location": 2,
+      "start": 1411117200000,
+      "end": 1411142400000
+    },
+    {
+      "event": 2,
+      "location": 2,
+      "start": 1411203600000,
+      "end": 1411228800000
+    },
+    {
+      "event": 3,
+      "location": 3,
+      "start": 1410771600000,
+      "end": 1410789600000
     }
   ],
   "events": [
@@ -24,9 +96,91 @@
       "name": "Ministry of Science Live!",
       "img": "ministry_of_science_live.png",
       "desc_short": "Ministry of Science Live is not your ordinary science show – it comes with a bang. It comes with a whoosh. But most of all it comes with a Hovercraft built on stage.",
-      "desc_full": "WARNING. WARNING. This is a public safety announcement… Please keep your head firmly on your shoulders and your arms, legs and feet firmly inside the ride at all times – Ministry of Science Live is about to explode onto a stage near you soon! Ministry of Science Live is not your ordinary science show – it comes with a bang. It comes with a whoosh. But most of all it comes with a Hovercraft built on stage.\n\nFrom liquid nitrogen frozen flowers to hydrogen bottle rockets fired right at you the show will take you on a journey using demonstrations and a few loud bangs to lead the way. From the creative team behind Brainiac Live, Guinness World Records Officially Amazing Science Live and a whole load of other educational shows with an anarchic twist – Ministry of Science Live is not to be missed….\n\nMinistry of Science is supported by Seagate and ILEX",
+      "desc_full": "WARNING. WARNING. This is a public safety announcement… Please keep your head firmly on your shoulders and your arms, legs and feet firmly inside the ride at all times – Ministry of Science Live is about to explode onto a stage near you soon! Ministry of Science Live is not your ordinary science show – it comes with a bang. It comes with a whoosh. But most of all it comes with a Hovercraft built on stage.<br><br>From liquid nitrogen frozen flowers to hydrogen bottle rockets fired right at you the show will take you on a journey using demonstrations and a few loud bangs to lead the way. From the creative team behind Brainiac Live, Guinness World Records Officially Amazing Science Live and a whole load of other educational shows with an anarchic twist – Ministry of Science Live is not to be missed….<br><br>Ministry of Science is supported by Seagate and ILEX",
       "tags": ["Schools Only"],
-      "partners": [0, 1]
+      "partners": [
+        0,
+        12
+      ]
+    },
+    {
+      "name": "1,000 Digital Champions - Schools Edition",
+      "img": "1000digitalchampions.jpg",
+      "desc_short": "Across the week of CultureTECH we'll be working with around 1,500 young people to help them get involved in our 1,000 Digital Champions campaign. ",
+      "desc_full": "Across the week of CultureTECH we'll be working with around 1,500 young people to help them get involved in our 1,000 Digital Champions campaign.<br><br>The campaign has been developed in support of the Go ON NI initiative which seeks to address the lack of digital skills across Northern Ireland. Digital champions volunteer their time to share their online skills with friends, family, colleagues and neighbours - helping thousands more people get online in the process.<br><br>These sessions are made possible through the generous support of Seagate and Arts & Business NI ",
+      "tags": ["Schools Only"],
+      "partners": [
+        12,
+        0
+      ]
+    },
+    {
+      "name": "The Starry Messenger: Seven Artist Filmmakers",
+      "img": "starrymessenger.png",
+      "desc_short": "Void brings together work by seven contemporary artist filmmakers that signal the value of what is held within film as a medium",
+      "desc_full": "Should we describe today the art and technology of celluloid filmmaking as a redundant technology or an extinct artform ?<br><br>Across the spectrum, from high end commercial film to emerging filmmakers and film schools, moving image media are ever more exclusively digital both in production and screening. Film labs, seemingly no-longer commercially viable, are closing and the survival of analogue film-making has come to resemble a campaign for a critically endangered species, as filmmakers, artists, and critics across the world have had to come together to campaign for institutional support to safeguard the ability to manufacture, shoot, process, print, make and project film. The campaign savefilm.org is approaching national and international organisations to take active steps to protect the medium of film, and is requesting that UNESCO recognise film, the practice of filmmaking and film projection as world cultural heritage.<br><br>As part of this discussion, in summer 2014 Void brings together work by seven contemporary artist filmmakers that signal the value of what is held within film as a medium, what is visible and invisible in celluloid, its physics and chemistry, its emulsion and grain and lights and darks, and its place as a language and medium in our collective memories.",
+      "tags": ["Free"]
+    },
+    {
+      "name": "Crows on the Wire App Launch",
+      "img": "crowsonthewire.jpg",
+      "desc_short": "An innovative interactive graphic novel from the original drama by Jonathan Burgess adapted for comics by Black North",
+      "desc_full": "AN INNOVATIVE INTERACTIVE GRAPHIC NOVEL FROM THE ORIGINAL DRAMA BY JONATHAN BURGESS<br><br>ADAPTED FOR COMICS BY BLACK NORTH<br><br>With additional educational material by Dr Alan McMurray.<br><br>Verbal Arts Centre will be joined by vibrant digital media company Black North to present the most innovative and stimulating educational resource created to date for iPads and tablets.  This beautifully illustrated comic is a ground breaking educational tool for teachers of Citizenship and History.<br><br>The story explores the subject of policing, and is set on the night of the transition from the RUC to PSNI.  The story is set in the police locker room, which you can visit in 3D using the amazing Oculus Rift.<br><br>Immerse yourself in the Crows on the Wire experience using the Oculus Rift in the company of Black North at the Verbal Arts Centre on Monday 15th September from 10am-3pm.<br><br>This project is funded under the EU’s PEACE III Programme, managed for the SEUPB by Pobal. ",
+      "tags": ["Free"],
+      "rsvp": {
+        "instructions": "Registration advised - telephone (028) 71266946",
+        "tel": "(028) 71266946"
+      }
+    },
+    {
+      "name": "",
+      "img": "",
+      "desc_short": "",
+      "desc_full": "",
+      "tags": [],
+      "partners": []
+    },
+    {
+      "name": "",
+      "img": "",
+      "desc_short": "",
+      "desc_full": "",
+      "tags": [],
+      "partners": []
+    },
+    {
+      "name": "",
+      "img": "",
+      "desc_short": "",
+      "desc_full": "",
+      "tags": [],
+      "partners": []
     }
+  ],
+  "locations": [
+    {
+      "name": "Millennium Forum",
+      "img": "millenniumforum.jpg",
+      "address": "Millennium Forum,<br>Orchard Street,<br>Derry-Londonderry",
+      "lat": 54.995462,
+      "long": -7.319436
+    },
+    {
+      "name": "In Schools"
+    },
+    {
+      "name": "Void Gallery",
+      "img": "voidgallery.jpg",
+      "address": "Void Gallery,<br>Patrick Street,<br>Derry-Londonderry",
+      "lat": 55.000241,
+      "long": -7.323588
+    },
+    {
+      "name": "Verbal Arts Centre",
+      "img": "verbalarts.jpg",
+      "address": "Verbal Arts Centre,<br>Stable Lane,<br>Derry-Londonderry",
+      "lat": 54.994203,
+      "long": -7.324469
+    },
   ]
 }
