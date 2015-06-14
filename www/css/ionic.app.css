@@ -7809,6 +7809,10 @@ label.item-input-wrapper {
   margin: 0 !important;
   text-align: left !important; }
 
+.event-thumbnail {
+  border-radius: 3px !important;
+  height: auto !important; }
+
 /* Partner List */
 .partner {
   padding-top: 20px;

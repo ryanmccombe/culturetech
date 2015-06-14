@@ -11,6 +11,8 @@ angular.module('cultureTech')
         var vm = this;
         vm.schedule = events.data.schedule;
         vm.events = events.data.events;
+        vm.cache = events.data.dayCache;
+
         vm.date = 0;
 
         vm.selectingDate = false;
