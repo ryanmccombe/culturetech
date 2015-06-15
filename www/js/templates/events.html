@@ -6,7 +6,7 @@
                 ng-click="app.toggleSearch()"></button>
     </ion-nav-buttons>
 
-    <ion-content has-bouncing="true" ng-class="{'has-subheader': app.searching}">
+    <ion-content on-scroll="vm.scrollEvent()" has-bouncing="true" ng-class="{'has-subheader': app.searching}">
         <div ng-hide="app.searching" class="featured-events">
             <div class="featured-event-poster">
                 <div class="featured-event-poster-content">
@@ -26,38 +26,7 @@
             </div>
         </div>
 
-        <div class="date-box" ng-class="({'date-box-expanded': vm.selectingDate, 'date-box-collapsed': app.searching})">
-            <div id="innerDate" class="inner-date-box" ng-click="vm.toggleSelection()">
-                <button id="date0" ng-click="vm.setDate(0)" class="date-select button button-full icon-right flat ink"
-                        ng-class="({'ion-chevron-up': vm.date == 0 && vm.selectingDate, 'ion-chevron-down': vm.date == 0 && !vm.selectingDate})">
-                    Monday 15th
-                </button>
-                <button id="date1" ng-click="vm.setDate(1)" class="date-select button button-full icon-right flat ink"
-                        ng-class="({'ion-chevron-up': vm.date == 1 && vm.selectingDate, 'ion-chevron-down': vm.date == 1 && !vm.selectingDate})">
-                    Tuesday 16th
-                </button>
-                <button id="date2" ng-click="vm.setDate(2)" class="date-select button button-full icon-right flat ink"
-                        ng-class="({'ion-chevron-up': vm.date == 2 && vm.selectingDate, 'ion-chevron-down': vm.date == 2 && !vm.selectingDate})">
-                    Wednesday 17th
-                </button>
-                <button id="date3" ng-click="vm.setDate(3)" class="date-select button button-full icon-right flat ink"
-                        ng-class="({'ion-chevron-up': vm.date == 3 && vm.selectingDate, 'ion-chevron-down': vm.date == 3 && !vm.selectingDate})">
-                    Thursday 18th
-                </button>
-                <button id="date3" ng-click="vm.setDate(4)" class="date-select button button-full icon-right flat ink"
-                        ng-class="({'ion-chevron-up': vm.date == 4 && vm.selectingDate, 'ion-chevron-down': vm.date == 4 && !vm.selectingDate})">
-                    Friday 19th
-                </button>
-                <button id="date3" ng-click="vm.setDate(5)" class="date-select button button-full icon-right flat ink"
-                        ng-class="({'ion-chevron-up': vm.date == 5 && vm.selectingDate, 'ion-chevron-down': vm.date == 5 && !vm.selectingDate})">
-                    Saturday 20th
-                </button>
-                <button id="date3" ng-click="vm.setDate(6)" class="date-select button button-full icon-right flat ink"
-                        ng-class="({'ion-chevron-up': vm.date == 6 && vm.selectingDate, 'ion-chevron-down': vm.date == 6 && !vm.selectingDate})">
-                    Sunday 21st
-                </button>
-            </div>
-        </div>
+        <div ng-show="!vm.stickyHeader" ng-include="'js/templates/dateFilter.html'"></div>
 
         <ion-list>
             <ion-item ng-repeat="item in vm.schedule" ng-class="{'ink': app.effects}"
@@ -70,4 +39,9 @@
             </ion-item>
         </ion-list>
     </ion-content>
+
+    <div ng-show="vm.stickyHeader" style="margin-top: 44px;" ng-include="'js/templates/dateFilter.html'"></div>
+
+
+
 </ion-view>

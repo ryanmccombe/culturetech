@@ -3,7 +3,7 @@
  */
 
 angular.module('cultureTech')
-    .controller('EventsCtrl', ['events', '$timeout', 'ionicMaterialInk', function (events, $timeout, ionicMaterialInk) {
+    .controller('EventsCtrl', ['events', '$timeout', 'ionicMaterialInk', '$ionicScrollDelegate', function (events, $timeout, ionicMaterialInk, $ionicScrollDelegate) {
         $timeout(function () {
             ionicMaterialInk.displayEffect();
         }, 0);
@@ -31,5 +31,20 @@ angular.module('cultureTech')
 
         vm.setMargin = function (value) {
             document.getElementById('innerDate').style.marginTop = value ? value : '-' + vm.date * 47 + 'px';
-        }
+        };
+
+        vm.stickyHeader = false;
+
+        vm.scrollEvent = function(){
+            if ($ionicScrollDelegate.getScrollPosition().top > 199) {
+                $timeout(function () {
+                    vm.stickyHeader = true;
+                }, 0);
+            } else {
+                $timeout(function () {
+                    vm.stickyHeader = false;
+                }, 0);
+            }
+            console.log(vm.stickyHeader);
+        };
     }]);
