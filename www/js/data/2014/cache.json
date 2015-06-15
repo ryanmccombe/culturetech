@@ -1,0 +1,35 @@
+{
+  "logos": [
+    "img/partners/artsandbusiness.png",
+    "img/partners/bbcni.png",
+    "img/partners/dcal.png",
+    "img/partners/derrycitycouncil.png",
+    "img/partners/derryjournal.png",
+    "img/partners/downtownradio.png",
+    "img/partners/honeycomb.png",
+    "img/partners/ilex.png",
+    "img/partners/investni.png",
+    "img/partners/learningpool.png",
+    "img/partners/londonderrychamber.png",
+    "img/partners/niscreen.png",
+    "img/partners/seagate.png",
+    "img/partners/syncni.png",
+    "img/partners/touristboard.png",
+    "img/partners/uu.png"
+  ],
+  "events": [
+    "img/events/1000digitalchampions.jpg",
+    "img/events/becomingmartian.jpg",
+    "img/events/craftvillage.jpg",
+    "img/events/crowsonthewire.jpg",
+    "img/events/digitaldna.jpg",
+    "img/events/filmhub.jpg",
+    "img/events/honeycombbootcamp.jpg",
+    "img/events/magictouch.jpg",
+    "img/events/ministryofscience.png",
+    "img/events/seetech.jpg",
+    "img/events/starrymessenger.png",
+    "img/events/watify.jpeg",
+    "img/events/womenwhocode.jpeg"
+  ]
+}

@@ -118,6 +118,7 @@ label.item-input-wrapper {
 /* Event List */
 
 .featured-events{
+
 }
 
 .featured-event-poster{
@@ -164,17 +165,18 @@ label.item-input-wrapper {
   margin-top: 12px;
 }
 
+.bar .button{
+  max-width: none !important;
+}
 .date-box{
+  box-shadow: rgba(0, 0, 0, 0.26) 0px 2px 5px 0px;
   overflow: hidden;
   height: 44px;
-   -webkit-transition: .6s height cubic-bezier(.55,0,.1,1);
-      -moz-transition: .6s height cubic-bezier(.55,0,.1,1);
-        -o-transition: .6s height cubic-bezier(.55,0,.1,1);
-           transition: .6s height cubic-bezier(.55,0,.1,1);
 }
 
 .inner-date-box{
-  background-color: $white !important;
+  width: 100%;
+  background-color: $dark !important;
    -webkit-transition: .6s margin-top cubic-bezier(.55,0,.1,1);
       -moz-transition: .6s margin-top cubic-bezier(.55,0,.1,1);
         -o-transition: .6s margin-top cubic-bezier(.55,0,.1,1);
@@ -186,15 +188,23 @@ label.item-input-wrapper {
 }
 
 .date-box-expanded{
-  height: 329px !important;
+  height: 308px !important;
 }
 
 .date-select{
-  font-size: 16px !important;
+  font-size: 19px !important;
+  text-transform: none !important;
+  font-weight: 500 !important;
   padding-left: 44px !important;
-  background-color: $white !important;
+  background-color: $dark !important;
+  color: $white !important;
   margin: 0 !important;
   text-align: left !important;
+  width: 100% !important;
+  border-radius: 0 !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  font-variant: normal !important;
 }
 
 .event-thumbnail{

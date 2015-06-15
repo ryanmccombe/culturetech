@@ -4,9 +4,9 @@
 
 angular.module('cultureTech')
     .controller('HomeCtrl', ['$http', 'imagePreloader', function ($http, imagePreloader) {
-        $http.get('js/data/2014/logos.json')
+        $http.get('js/data/2014/cache.json')
             .success(function (data) {
-                imagePreloader.preload(data)
+                imagePreloader.preload(data.logos.concat(data.events))
                     .then(function () {
                         // success
                     },
