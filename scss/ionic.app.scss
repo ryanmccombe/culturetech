@@ -118,6 +118,7 @@ label.item-input-wrapper {
 /* Event List */
 
 .featured-events{
+  margin-bottom: 10px;
 
 }
 
@@ -205,6 +206,11 @@ label.item-input-wrapper {
   font-stretch: normal !important;
   font-style: normal !important;
   font-variant: normal !important;
+  letter-spacing: normal !important;
+}
+
+.button.icon-right:before{
+  font-size: 26px !important;
 }
 
 .event-thumbnail{
