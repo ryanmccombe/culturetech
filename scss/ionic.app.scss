@@ -26,12 +26,6 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   background: rgba($color, $opacity);
 }
 
-$grey100: #F5F5F5;
-$grey200: #EEEEEE;
-$grey400: #BDBDBD;
-$grey600: #757575;
-$grey900: #212121;
-
 $black: #121A21;
 $dark: #2C3338;
 $primary: #363F45;
@@ -39,6 +33,10 @@ $mid: #4B5F6D;
 $light: #94A0A8;
 $white: #E1E6E8;
 $accent: #FE6C0B;
+
+#reflow-spacer{
+  height: 10px;
+}
 
 /* Headers + Tabs */
 
@@ -66,17 +64,13 @@ ion-header-bar, .tabs {
 /* Home Page */
 
 .splash {
-  background: url('../img/partners/syncni_p.jpg') no-repeat center center;
-  background-size: cover
+  background: url('../img/bg.jpg') no-repeat center center;
+  background-size: cover;
 }
 
 .splash-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  @include background-opacity($dark, 0.92);
+  position: relative;
+  height: 1000px;
 }
 
 .splash-logo {
@@ -84,12 +78,12 @@ ion-header-bar, .tabs {
   margin: 0 auto;
   width: 60%;
   left: 50%;
-  top: 50%;
-  -webkit-transform: translateY(-50%) translateX(-50%);
-  -moz-transform: translateY(-50%) translateX(-50%);
-  -ms-transform: translateY(-50%) translateX(-50%);
-  -o-transform: translateY(-50%) translateX(-50%);
-  transform: translateY(-50%) translateX(-50%);
+  top: 20%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 /* Search */
@@ -117,17 +111,17 @@ label.item-input-wrapper {
 
 /* Event List */
 
-.featured-events{
-  margin-bottom: 10px;
+.featured-events {
 
 }
 
-.featured-event-poster{
-    height: 200px;
+.featured-event-poster {
+  height: 200px;
   position: relative;
+  margin-bottom: 18px;
 }
 
-.featured-event-poster-content{
+.featured-event-poster-content {
   text-align: left;
   color: white;
   position: absolute;
@@ -137,60 +131,61 @@ label.item-input-wrapper {
   width: 100%;
   height: 100%;
   @include background-opacity($dark, 0.8);
-  background:  -webkit-linear-gradient(to top, $dark 6%, rgba($dark, .6) 40%, rgba(0, 0, 0, 0) 80%); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
-  background:     -moz-linear-gradient(to top, $dark 6%, rgba($dark, .6) 40%, rgba(0, 0, 0, 0) 80%); /* For Firefox (3.6 to 15) */
-  background:       -o-linear-gradient(to top, $dark 6%, rgba($dark, .6) 40%, rgba(0, 0, 0, 0) 80%); /* For old Opera (11.1 to 12.0) */
-  background:          linear-gradient(to top, $dark 6%, rgba($dark, .6) 40%, rgba(0, 0, 0, 0) 80%); /* Standard syntax; must be last */
+  background: -webkit-linear-gradient(to top, $dark 6%, rgba($dark, .6) 40%, rgba(0, 0, 0, 0) 80%); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+  background: -moz-linear-gradient(to top, $dark 6%, rgba($dark, .6) 40%, rgba(0, 0, 0, 0) 80%); /* For Firefox (3.6 to 15) */
+  background: -o-linear-gradient(to top, $dark 6%, rgba($dark, .6) 40%, rgba(0, 0, 0, 0) 80%); /* For old Opera (11.1 to 12.0) */
+  background: linear-gradient(to top, $dark 6%, rgba($dark, .6) 40%, rgba(0, 0, 0, 0) 80%); /* Standard syntax; must be last */
 }
 
-.bottom{
+.bottom {
   position: absolute;
   bottom: 20px;
 }
 
-.featured-event-time{
+.featured-event-time {
   font-size: 12px;
   font-weight: normal;
   text-transform: uppercase;
 }
 
-.featured-event-title{
+.featured-event-title {
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
 }
 
-.featured-event-description{
-  margin-top: 12px;
+.event-description {
+
 }
 
-.bar .button{
+.bar .button {
   max-width: none !important;
 }
-.date-box{
-  box-shadow: rgba(0, 0, 0, 0.26) 0px 2px 5px 0px;
+
+.date-box {
+  box-shadow: rgba(0, 0, 0, 0.26) 0 2px 5px 0;
   overflow: hidden;
   height: 44px;
 }
 
-.inner-date-box{
+.inner-date-box {
   width: 100%;
   background-color: $dark !important;
-   -webkit-transition: .6s margin-top cubic-bezier(.55,0,.1,1);
-      -moz-transition: .6s margin-top cubic-bezier(.55,0,.1,1);
-        -o-transition: .6s margin-top cubic-bezier(.55,0,.1,1);
-           transition: .6s margin-top cubic-bezier(.55,0,.1,1);
+  -webkit-transition: .6s margin-top cubic-bezier(.55, 0, .1, 1);
+  -moz-transition: .6s margin-top cubic-bezier(.55, 0, .1, 1);
+  -o-transition: .6s margin-top cubic-bezier(.55, 0, .1, 1);
+  transition: .6s margin-top cubic-bezier(.55, 0, .1, 1);
 }
 
-.date-box-collapsed{
+.date-box-collapsed {
   display: none !important;
 }
 
-.date-box-expanded{
+.date-box-expanded {
   height: 308px !important;
 }
 
-.date-select{
+.date-select {
   font-size: 19px !important;
   text-transform: none !important;
   font-weight: 500 !important;
@@ -207,13 +202,30 @@ label.item-input-wrapper {
   letter-spacing: normal !important;
 }
 
-.button.icon-right:before{
+.button.icon-right:before {
   font-size: 26px !important;
 }
 
-.event-thumbnail{
+.event-meta {
+  float: left;
+  width: 95%
+}
+
+.event > .icon{
+  font-size: 20px !important;
+  color: $primary;
+  float: right;
+  width: 5%;
+  margin-top: 10px;
+}
+
+.event-thumbnail {
   border-radius: 3px !important;
   height: auto !important;
+}
+
+.event-description {
+  clear: both;
 }
 
 /* Partner List */
@@ -273,10 +285,10 @@ label.item-input-wrapper {
   width: 100%;
   height: 100%;
   @include background-opacity($dark, 0.4);
-  background:  -webkit-linear-gradient(to top, $dark 2%, rgba(0, 0, 0, 0) 40%); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
-  background:     -moz-linear-gradient(to top, $dark 2%, rgba(0, 0, 0, 0) 40%); /* For Firefox (3.6 to 15) */
-  background:       -o-linear-gradient(to top, $dark 2%, rgba(0, 0, 0, 0) 40%); /* For old Opera (11.1 to 12.0) */
-  background:          linear-gradient(to top, $dark 2%, rgba(0, 0, 0, 0) 40%); /* Standard syntax; must be last */
+  background: -webkit-linear-gradient(to top, $dark 2%, rgba(0, 0, 0, 0) 40%); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+  background: -moz-linear-gradient(to top, $dark 2%, rgba(0, 0, 0, 0) 40%); /* For Firefox (3.6 to 15) */
+  background: -o-linear-gradient(to top, $dark 2%, rgba(0, 0, 0, 0) 40%); /* For old Opera (11.1 to 12.0) */
+  background: linear-gradient(to top, $dark 2%, rgba(0, 0, 0, 0) 40%); /* Standard syntax; must be last */
 }
 
 .partner-splash-logo {

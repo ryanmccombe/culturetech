@@ -20,7 +20,7 @@ angular.module('cultureTech', ['ionic', 'ngCordova', 'ionic-material', 'sticky']
         $ionicConfigProvider.tabs.style('default');
         $ionicConfigProvider.navBar.alignTitle('left');
         $ionicConfigProvider.backButton.text('');
-        $ionicConfigProvider.scrolling.jsScrolling(false);
+        $ionicConfigProvider.scrolling.jsScrolling(true);
     }])
 
     .config(function ($stateProvider, $urlRouterProvider) {
