@@ -7741,8 +7741,6 @@ label.item-input-wrapper {
   margin-bottom: 10px; }
 
 .featured-event-poster {
-  background: url('../img/events/digitaldna.jpg') no-repeat center center;
-  background-size: cover;
   height: 200px;
   position: relative; }
 

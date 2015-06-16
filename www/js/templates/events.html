@@ -42,11 +42,12 @@
 
     <ion-content style="margin-top: 43px;" has-bouncing="true" ng-class="{'has-subheader': app.searching}">
         <div ng-hide="app.searching" class="featured-events">
-            <div class="featured-event-poster">
+            <div class="featured-event-poster" ng-style="({background: 'url(img/events/' + vm.random.img +') no-repeat center center', 'background-size': 'cover'})">
                 <div class="featured-event-poster-content">
                     <div class="bottom">
-                        <div class="featured-event-time">Wed, 10:00 AM - 3:00 PM</div>
-                        <div class="featured-event-title">Digital DNA Symposium</div>
+                        <div class="featured-event-time">{{vm.random.start | date:'EEE, h:mm a'}} - {{vm.random.end
+                            | date:'h:mm a'}}</div>
+                        <div class="featured-event-title">{{vm.random.title}}</div>
 
                         <!--
                         <div class="featured-event-description">

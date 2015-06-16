@@ -12,8 +12,27 @@ angular.module('cultureTech')
         vm.schedule = events.data.schedule;
         vm.events = events.data.events;
         vm.cache = events.data.dayCache;
-
         vm.date = 0;
+        vm.random = {};
+
+        var today, randomNumber, randomEvent;
+        function getRandom(){
+            today = vm.cache[vm.date];
+            randomNumber = today[Math.floor(Math.random()*today.length)];
+            randomEvent = vm.schedule[randomNumber];
+            if (vm.random.title === vm.events[randomEvent.event].name){
+                return getRandom();
+            } else {
+                return {
+                    img: vm.events[randomEvent.event].img,
+                    title: vm.events[randomEvent.event].nameShort || vm.events[randomEvent.event].name,
+                    start: randomEvent.start,
+                    end: randomEvent.end
+                }
+            }
+        }
+
+        vm.random = getRandom();
 
         vm.selectingDate = false;
         vm.toggleSelection = function () {
@@ -25,8 +44,11 @@ angular.module('cultureTech')
             }
         };
         vm.setDate = function (index) {
-            vm.date = index;
-            vm.setMargin();
+            if (vm.date != index){
+                vm.date = index;
+                vm.random = getRandom();
+                vm.setMargin();
+            }
         };
 
         vm.setMargin = function (value) {

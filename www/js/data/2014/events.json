@@ -197,6 +197,7 @@
       ]
     },
     {
+      "nameShort": "1,000 Digital Champions",
       "name": "1,000 Digital Champions - Schools Edition",
       "img": "1000digitalchampions.jpg",
       "desc_short": "Across the week of CultureTECH we'll be working with around 1,500 young people to help them get involved in our 1,000 Digital Champions campaign. ",
@@ -208,6 +209,7 @@
       ]
     },
     {
+      "nameShort": "The Starry Messenger",
       "name": "The Starry Messenger: Seven Artist Filmmakers",
       "img": "starrymessenger.png",
       "desc_short": "Void brings together work by seven contemporary artist filmmakers that signal the value of what is held within film as a medium",
@@ -215,6 +217,7 @@
       "tags": ["Free"]
     },
     {
+      "nameShort": "Crows on the Wire Launch",
       "name": "Crows on the Wire App Launch",
       "img": "crowsonthewire.jpg",
       "desc_short": "An innovative interactive graphic novel from the original drama by Jonathan Burgess adapted for comics by Black North",
@@ -226,6 +229,7 @@
       }
     },
     {
+      "nameShort": "Honeycomb Bootcamp",
       "name": "Honeycomb - Creative Works Bootcamp",
       "img": "honeycombbootcamp.jpg",
       "desc_short": "Twenty winners of the Honeycomb Creative Buzz Award take part in a four-day intensive mentoring and networking experience to kickstart their digital careers.",
@@ -252,6 +256,7 @@
       }
     },
     {
+      "nameShort": "Women Who Code",
       "name": "Women Who Code: Tech Teamwork",
       "img": "womenwhocode.jpeg",
       "desc_short": "WWC UK's \"Tech Teamwork\" event aims to showcase the fantastic careers the IT industry has to offer, whilst giving them an insight into some of the ways they can get into coding.",
@@ -259,6 +264,7 @@
       "tags": ["Schools Only"]
     },
     {
+      "nameShort": "Film Hub NI Launch: SciFi",
       "name": "Film Hub NI Launch: SciFi: Days of Fear and Wonder",
       "img": "filmhub.jpg",
       "desc_short": "Film Hub NI are hosting a free lunchtime screening of  Invasion of the Body Snatchers. Refreshments will be provided.",
