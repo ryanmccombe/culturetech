@@ -13,14 +13,17 @@ angular.module('cultureTech')
         vm.events = events.data.events;
         vm.cache = events.data.dayCache;
         vm.date = 0;
-        vm.random = {};
 
+        // Generate a random event for this day
+        vm.random = {};
         var today, randomNumber, randomEvent;
         function getRandom(){
             today = vm.cache[vm.date];
             randomNumber = today[Math.floor(Math.random()*today.length)];
             randomEvent = vm.schedule[randomNumber];
+
             if (vm.random.title === vm.events[randomEvent.event].name){
+                // If its the same event but on a different day - pick a new one - not immediately clear user changed day otherwise
                 return getRandom();
             } else {
                 return {
@@ -44,11 +47,12 @@ angular.module('cultureTech')
             }
         };
         vm.setDate = function (index) {
+            // Don't change random image if user didn't change date - confusing UX otherwise
             if (vm.date != index){
                 vm.date = index;
                 vm.random = getRandom();
-                vm.setMargin();
             }
+            vm.setMargin();
         };
 
         vm.setMargin = function (value) {
