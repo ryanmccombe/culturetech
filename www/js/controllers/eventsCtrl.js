@@ -30,6 +30,8 @@ angular.module('cultureTech')
                     return getRandom();
                 } else {
                     return {
+                        schedule: randomNumber,
+                        id: randomEvent.event,
                         img: vm.events[randomEvent.event].img,
                         title: vm.events[randomEvent.event].nameShort || vm.events[randomEvent.event].name,
                         start: randomEvent.start,

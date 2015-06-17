@@ -7736,8 +7736,7 @@ label.item-input-wrapper {
 /* Event List */
 .featured-event-poster {
   height: 200px;
-  position: relative;
-  margin-bottom: 18px; }
+  position: relative; }
 
 .featured-event-poster-content {
   text-align: left;
@@ -7773,6 +7772,9 @@ label.item-input-wrapper {
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase; }
+
+ion-list#event-list > div > div:nth-child(1) {
+  padding-top: 12px; }
 
 .bar .button {
   max-width: none !important; }

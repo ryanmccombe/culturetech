@@ -1,0 +1,10 @@
+<ion-view>
+    <ion-nav-title>{{vm.event.nameShort || vm.event.name}}</ion-nav-title>
+    <ion-content>
+        detail for event: {{vm.event.name}} | clicked listing: {{vm.event.clickedSchedule}}
+        <hr>
+        {{vm.event}}
+        <hr>
+        also on {{vm.schedule}}
+    </ion-content>
+</ion-view>

@@ -51,7 +51,8 @@
         <div ng-hide="app.searching" class="featured-events">
             <div class="featured-event-poster" ng-style="({
             background: 'url(img/events/' + vm.random.img +') no-repeat center center',
-            'background-size': 'cover'})">
+            'background-size': 'cover'})"
+                 ui-sref="tabs.eventDetail({id: vm.random.id, clickedSchedule: vm.random.schedule})">
                 <div class="featured-event-poster-content">
                     <div class="bottom">
                         <div class="featured-event-time">
@@ -63,10 +64,10 @@
             </div>
         </div>
 
-        <ion-list>
-            <div ng-repeat="item in vm.schedule" ng-show="vm.cache[vm.date].indexOf($index) != -1">
-                <ion-item ng-class="{'ink': app.effects}"
-                          class="event item-text-wrap item-thumbnail-left">
+        <ion-list id="event-list">
+            <div ng-repeat="item in vm.schedule" ng-show="vm.cache[vm.date].indexOf($index) != -1"
+                 ui-sref="tabs.eventDetail({id: item.event, clickedSchedule: $index})" ng-class="{'ink': app.effects}">
+                <ion-item class="event item-text-wrap item-thumbnail-left">
                     <img class="event-thumbnail" ng-src="img/events/{{vm.events[item.event].img}}" alt="{{item.name}}"/>
 
                     <div class="event-meta">
