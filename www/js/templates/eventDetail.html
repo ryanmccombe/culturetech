@@ -1,6 +1,11 @@
-<ion-view>
+<ion-view hide-nav-bar="true">
     <ion-nav-title>{{vm.event.nameShort || vm.event.name}}</ion-nav-title>
     <ion-content>
+        <button class="button" ng-click="vm.addNotification()">Add notification</button>
+        <button class="button" ng-click="vm.isScheduled()">Is Scheduled?</button>
+        <button class="button" ng-click="vm.cancelNotification()">Cancel</button>
+        <button class="button" ng-click="vm.cancelAllNotifications()">Cancel All</button>
+        <button class="button" ng-click="vm.getAllNotifications()">Get All</button><br>
         detail for event: {{vm.event.name}} | clicked listing: {{vm.event.clickedSchedule}}
         <hr>
         {{vm.event}}

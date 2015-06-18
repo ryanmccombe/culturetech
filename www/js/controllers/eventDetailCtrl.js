@@ -3,18 +3,56 @@
  */
 
 angular.module('cultureTech')
-    .controller('EventDetailCtrl', ['events', 'ionicMaterialInk', '$stateParams', '$timeout',
-        function (events, ionicMaterialInk, $stateParams, $timeout) {
-        $timeout(function () {
-            ionicMaterialInk.displayEffect();
-        }, 0);
+    .controller('EventDetailCtrl', ['events', 'ionicMaterialInk', '$stateParams', '$timeout', '$cordovaLocalNotification', '$window',
+        function (events, ionicMaterialInk, $stateParams, $timeout, $cordovaLocalNotification, $window) {
+            $timeout(function () {
+                ionicMaterialInk.displayEffect();
+            }, 0);
 
-        var vm = this;
-        vm.event = events.data.events[$stateParams.id];
-        vm.event.clickedSchedule = $stateParams.clickedSchedule;
+            var vm = this;
+            vm.event = events.data.events[$stateParams.id];
+            vm.event.clickedSchedule = $stateParams.clickedSchedule;
 
-        // Get all listings for this event TODO: Cache this
-        vm.schedule = events.data.schedule.filter(function(listing){
-            return listing.event == $stateParams.id;
-        });
-    }]);
+            // Get all listings for this event TODO: Cache this
+            vm.schedule = events.data.schedule.filter(function (listing) {
+                return listing.event == $stateParams.id;
+            });
+
+
+            vm.addNotification = function() {
+                var alarmTime = new Date();
+                alarmTime.setSeconds(alarmTime.getSeconds() + 10);
+                $cordovaLocalNotification.schedule({
+                    id         : 1,
+                    title      : 'Test Title',
+                    text       : 'Hello World',
+                    autoClear  : true,
+                    at         : alarmTime
+                });
+            };
+
+            vm.isScheduled = function() {
+                $cordovaLocalNotification.isScheduled(1).then(function(isScheduled) {
+                    console.log("Notification 1 Scheduled: " + isScheduled);
+                });
+            };
+
+            vm.getAllNotifications = function(){
+                $cordovaLocalNotification.getAllIds().then(function(ids){
+                    console.log(JSON.stringify(ids))
+                });
+            };
+
+            vm.cancelNotification = function() {
+                $cordovaLocalNotification.cancel(1).then(function() {
+                    console.log("Notification 1 Cancelled");
+                });
+            };
+
+            vm.cancelAllNotifications = function() {
+                $cordovaLocalNotification.cancelAll().then(function() {
+                    console.log("All Cancelled");
+                });
+            }
+
+        }]);

@@ -1,4 +1,4 @@
-angular.module('cultureTech', ['ionic', 'ngCordova', 'ionic-material', 'sticky'])
+angular.module('cultureTech', ['ionic', 'ngCordova', 'ionic-material'])
 
     .run(function ($ionicPlatform, $cordovaStatusbar) {
         $ionicPlatform.ready(function () {
