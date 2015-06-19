@@ -1,15 +1,93 @@
-<ion-view hide-nav-bar="true">
-    <ion-nav-title>{{vm.event.nameShort || vm.event.name}}</ion-nav-title>
+<ion-view hide-nav-bar="true" >
+    <ion-nav-title>{{vm.partner.name}}</ion-nav-title>
+    <div class="bar bar-header event-detail-header">
+        <button style="margin-left: -44px" ng-click="$ionicGoBack()" class="button back-button buttons button-clear header-item">
+            <i class="icon ion-ios-arrow-back"></i>
+        </button>
+        <div class="title title-left header-item">
+            {{vm.event.nameShort || vm.event.name}}
+        </div>
+
+    </div>
+
+    <ion-nav-title></ion-nav-title>
+
     <ion-content>
+        <div class="partner-splash" ng-style="{
+            'background': 'url(img/events/'+vm.event.img+') no-repeat center center',
+            'background-size': 'cover'
+            }">
+            <div class="event-splash-content">
+                <div class="event-tags">
+                    <span class="event-tag">Free</span>
+                    <span class="event-tag">Schools Only</span>
+                    <span class="event-tag">RSVP Required</span>
+                </div>
+            </div>
+        </div>
+        <div class="list event-time-list">
+            <div class="item border-bottom">
+                <div class="time">
+                    <div class="location">The Verbal Arts Centre</div>
+                    Wednesday, 19th September<br>9:00 AM - 3:00 PM
+                </div>
+                <a class="button button-icon icon ion-ios-bell flat ink"></a>
+                <a class="button button-icon icon ion-ios-location flat ink"></a>
+            </div>
+        </div>
+
+        <div class="double-padding partner-description" ng-bind-html="vm.event.desc_full">
+        </div>
+
+        <div class="list event-time-list">
+            <div class="item-header">
+                RSVP Required
+            </div>
+            <div class="row rsvp">
+                <div class="col rsvp-instructions">RSVP Online. This event is cordova pfree but a charitable donation of £5 to Children in Crossfire would be most welcome.</div>
+                <a class="button button-icon icon rsvp-icon ion-arrow-right-b flat ink"></a>
+            </div>
+
+
+        </div>
+
+        <div class="list event-time-list">
+            <div class="item-header">
+                Other Times
+            </div>
+            <div class="item">
+                <div class="time">
+                    <div class="location">The Verbal Arts Centre</div>
+                    Wednesday, 19th September<br>9:00 AM - 3:00 PM
+                </div>
+                <a class="button button-icon icon ion-ios-bell flat ink"></a>
+                <a class="button button-icon icon ion-ios-location flat ink"></a>
+            </div>
+            <div class="item">
+                <div class="time">
+                    <div class="location">The Verbal Arts Centre</div>
+                    Wednesday, 19th September<br>9:00 AM - 3:00 PM
+                </div>
+                <a class="button button-icon icon ion-ios-bell flat ink"></a>
+                <a class="button button-icon icon ion-ios-location flat ink"></a>
+            </div>
+        </div>
+
+        <!--
         <button class="button" ng-click="vm.addNotification()">Add notification</button>
         <button class="button" ng-click="vm.isScheduled()">Is Scheduled?</button>
         <button class="button" ng-click="vm.cancelNotification()">Cancel</button>
         <button class="button" ng-click="vm.cancelAllNotifications()">Cancel All</button>
         <button class="button" ng-click="vm.getAllNotifications()">Get All</button><br>
-        detail for event: {{vm.event.name}} | clicked listing: {{vm.event.clickedSchedule}}
+        -->
+
+
+
+        <!-- detail for event: {{vm.event.name}} | clicked listing: {{vm.event.clickedSchedule}}
         <hr>
         {{vm.event}}
         <hr>
         also on {{vm.schedule}}
+        -->
     </ion-content>
 </ion-view>

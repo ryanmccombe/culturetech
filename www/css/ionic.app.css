@@ -7835,6 +7835,111 @@ ion-list#event-list > div > div:nth-child(1) {
 .event-description {
   clear: both; }
 
+/* Event Detail */
+.event-detail-header {
+  background-color: #2C3338;
+  font-size: 19px !important;
+  text-transform: none !important;
+  font-weight: 500 !important;
+  padding-left: 44px !important;
+  line-height: 44px !important;
+  color: #E1E6E8 !important;
+  margin: 0 !important;
+  text-align: left !important;
+  width: 100% !important;
+  border-radius: 0 !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  font-variant: normal !important;
+  letter-spacing: normal !important; }
+
+.event-splash-content {
+  text-align: center;
+  padding-top: 216px;
+  width: 100%;
+  height: 100%;
+  background: #2C3338;
+  /* The Fallback */
+  background: rgba(44, 51, 56, 0.1);
+  background: -webkit-linear-gradient(to top, #2C3338 2%, transparent 40%);
+  /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+  background: -moz-linear-gradient(to top, #2C3338 2%, transparent 40%);
+  /* For Firefox (3.6 to 15) */
+  background: -o-linear-gradient(to top, #2C3338 2%, transparent 40%);
+  /* For old Opera (11.1 to 12.0) */
+  background: linear-gradient(to top, #2C3338 2%, transparent 40%);
+  /* Standard syntax; must be last */ }
+
+.event-tags {
+  margin-right: 10px;
+  text-align: right; }
+
+.event-tag {
+  background-color: #2C3338;
+  border-radius: 10px;
+  margin: 4px;
+  padding: 4px 14px;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+  text-transform: uppercase; }
+
+.event-time-list {
+  margin-bottom: 0 !important;
+  padding: 0 !important; }
+
+.event-time-list .item {
+  border-top: 1px #94A0A8 solid !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  background-color: #E1E6E8 !important; }
+
+.event-time-list .border-bottom {
+  border-top: 2px #94A0A8 solid !important;
+  border-bottom: 1px #94A0A8 solid !important; }
+
+.event-time-list .time {
+  float: left;
+  font-size: 14px;
+  font-weight: 400;
+  padding: 13px !important; }
+
+.event-time-list .location {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 900; }
+
+.event-time-list .icon {
+  float: right;
+  background-color: #E1E6E8;
+  color: #2C3338 !important;
+  border-radius: 0 !important;
+  height: 86px;
+  width: 70px;
+  padding: 20px 0; }
+
+.item-header {
+  margin: 0 !important;
+  padding: 6px 13px 4px 13px !important;
+  background-color: #363F45;
+  font-weight: 700;
+  font-size: 14px;
+  color: white;
+  border-bottom: 2px #94A0A8 solid; }
+
+.rsvp {
+  background-color: #E1E6E8 !important;
+  padding: 0 !important; }
+
+.rsvp-instructions {
+  padding: 12px;
+  flex: 0 0 82%; }
+
+.rsvp-icon {
+  float: right;
+  flex: 0 0 18%;
+  height: 100% !important; }
+
 /* Partner List */
 .partner {
   padding-top: 20px;

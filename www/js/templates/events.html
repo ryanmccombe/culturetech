@@ -1,4 +1,5 @@
 <ion-view hide-nav-bar="true" title="Events">
+    <ion-nav-title>{{vm.partner.name}}</ion-nav-title>
     <div class="bar title date-box" ng-class="({'date-box-expanded': vm.selectingDate,
                                                 'date-box-collapsed': app.searching})">
         <div id="innerDate" class="inner-date-box" ng-click="vm.toggleSelection()">
@@ -47,7 +48,7 @@
                 ng-click="app.toggleSearch()"></button>
     </ion-nav-buttons>
 
-    <ion-content style="margin-top: 43px;" has-bouncing="false" ng-class="{'has-subheader': app.searching}">
+    <ion-content style="margin-top: 43px" has-bouncing="false" ng-class="{'has-subheader': app.searching}">
         <div ng-hide="app.searching" class="featured-events">
             <div class="featured-event-poster" ng-style="({
             background: 'url(img/events/' + vm.random.img +') no-repeat center center',
