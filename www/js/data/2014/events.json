@@ -213,7 +213,7 @@
       "name": "The Starry Messenger: Seven Artist Filmmakers",
       "img": "starrymessenger.png",
       "desc_short": "Void brings together work by seven contemporary artist filmmakers that signal the value of what is held within film as a medium",
-      "desc_full": "Should we describe today the art and technology of celluloid filmmaking as a redundant technology or an extinct artform ?<br><br>Across the spectrum, from high end commercial film to emerging filmmakers and film schools, moving image media are ever more exclusively digital both in production and screening. Film labs, seemingly no-longer commercially viable, are closing and the survival of analogue film-making has come to resemble a campaign for a critically endangered species, as filmmakers, artists, and critics across the world have had to come together to campaign for institutional support to safeguard the ability to manufacture, shoot, process, print, make and project film. The campaign savefilm.org is approaching national and international organisations to take active steps to protect the medium of film, and is requesting that UNESCO recognise film, the practice of filmmaking and film projection as world cultural heritage.<br><br>As part of this discussion, in summer 2014 Void brings together work by seven contemporary artist filmmakers that signal the value of what is held within film as a medium, what is visible and invisible in celluloid, its physics and chemistry, its emulsion and grain and lights and darks, and its place as a language and medium in our collective memories.",
+      "desc_full": "Should we describe today the art and technology of celluloid filmmaking as a redundant technology or an extinct artform?<br><br>Across the spectrum, from high end commercial film to emerging filmmakers and film schools, moving image media are ever more exclusively digital both in production and screening. Film labs, seemingly no-longer commercially viable, are closing and the survival of analogue film-making has come to resemble a campaign for a critically endangered species, as filmmakers, artists, and critics across the world have had to come together to campaign for institutional support to safeguard the ability to manufacture, shoot, process, print, make and project film. The campaign savefilm.org is approaching national and international organisations to take active steps to protect the medium of film, and is requesting that UNESCO recognise film, the practice of filmmaking and film projection as world cultural heritage.<br><br>As part of this discussion, in summer 2014 Void brings together work by seven contemporary artist filmmakers that signal the value of what is held within film as a medium, what is visible and invisible in celluloid, its physics and chemistry, its emulsion and grain and lights and darks, and its place as a language and medium in our collective memories.",
       "tags": ["Free"]
     },
     {
@@ -224,7 +224,8 @@
       "desc_full": "An innovative interactive graphic novel from the original drama by Jonathan Burgess<br><br>Adapted for comics by Black North<br><br>With additional educational material by Dr Alan McMurray.<br><br>Verbal Arts Centre will be joined by vibrant digital media company Black North to present the most innovative and stimulating educational resource created to date for iPads and tablets.  This beautifully illustrated comic is a ground breaking educational tool for teachers of Citizenship and History.<br><br>The story explores the subject of policing, and is set on the night of the transition from the RUC to PSNI.  The story is set in the police locker room, which you can visit in 3D using the amazing Oculus Rift.<br><br>Immerse yourself in the Crows on the Wire experience using the Oculus Rift in the company of Black North at the Verbal Arts Centre on Monday 15th September from 10am-3pm.<br><br>This project is funded under the EU’s PEACE III Programme, managed for the SEUPB by Pobal. ",
       "tags": ["Free"],
       "rsvp": {
-        "instructions": "Registration advised - telephone (028) 71266946",
+        "heading": "Registration Advised",
+        "instructions": "Register by Telephone<br>(028) 71266946",
         "tel": "(028) 71266946"
       }
     },
@@ -308,7 +309,7 @@
     {
       "name": "Millennium Forum",
       "img": "millenniumforum.jpg",
-      "address": "Millennium Forum,<br>Orchard Street,<br>Derry-Londonderry",
+      "address": "Orchard Street,<br>Derry-Londonderry",
       "lat": 54.995462,
       "long": -7.319436
     },
@@ -318,49 +319,49 @@
     {
       "name": "Void Gallery",
       "img": "voidgallery.jpg",
-      "address": "Void Gallery,<br>Patrick Street,<br>Derry-Londonderry",
+      "address": "Patrick Street,<br>Derry-Londonderry",
       "lat": 55.000241,
       "long": -7.323588
     },
     {
       "name": "Verbal Arts Centre",
       "img": "verbalarts.jpg",
-      "address": "Verbal Arts Centre,<br>Stable Lane,<br>Derry-Londonderry",
+      "address": "Stable Lane,<br>Derry-Londonderry",
       "lat": 54.994203,
       "long": -7.324469
     },
     {
       "name": "The Playhouse",
       "img": "playhouse.png",
-      "address": "The Playhouse,<br>Artillery Street,<br>Derry-Londonderry",
+      "address": "Artillery Street,<br>Derry-Londonderry",
       "lat": 54.994368,
       "long": -7.320935
     },
     {
       "name": "CCA",
       "img": "cca.jpg",
-      "address": "CCA,<br>10-12 Artillery Street,<br>Derry-Londonderry",
+      "address": "10-12 Artillery Street,<br>Derry-Londonderry",
       "lat": 54.994138,
       "long": -7.321403
     },
     {
       "name": "Holywell Trust",
       "img": "holywell.jpg",
-      "address": "Holywell Trust,<br>Bishop Street,<br>Derry-Londonderry",
+      "address": "Bishop Street,<br>Derry-Londonderry",
       "lat": 54.995445,
       "long": -7.322066
     },
     {
       "name": "Nerve Centre",
       "img": "nervecentre.jpg",
-      "address": "Nerve Centre,<br>Magazine Street,<br>Derry-Londonderry",
+      "address": "Magazine Street,<br>Derry-Londonderry",
       "lat": 54.996414,
       "long": -7.322335
     },
     {
       "name": "Learning Pool Cottage",
       "img": "craftvillage.jpg",
-      "address": "Learning Pool Cottage,<br>The Craft Village,<br>Shipquay Street,<br>Derry-Londonderry",
+      "address": "The Craft Village,<br>Shipquay Street,<br>Derry-Londonderry",
       "lat": 54.996246,
       "long": -7.321099
     }

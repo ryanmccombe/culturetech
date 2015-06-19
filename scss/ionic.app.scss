@@ -28,6 +28,7 @@ $mid: #4B5F6D;
 $light: #94A0A8;
 $white: #E1E6E8;
 $accent: #FE6C0B;
+$home-buttons: rgb(178, 178, 178);
 
 @mixin background-opacity($color, $opacity: 1) {
   background: $color; /* The Fallback */
@@ -35,7 +36,7 @@ $accent: #FE6C0B;
 }
 
 @mixin body-text() {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
   color: $black;
 }
@@ -91,20 +92,39 @@ ion-header-bar, .tabs {
 
 .splash-content {
   position: relative;
-  height: 1000px;
+  height: 100%;
+  width: 100%;
+  padding-top: 50px;
+  text-align: right;
 }
 
 .splash-logo {
+  width: 70%;
+  margin: 0 30px 80px 0;
+  opacity: 0.8;
+}
+
+.splash-buttons{
   position: absolute;
-  margin: 0 auto;
-  width: 60%;
-  left: 50%;
-  top: 20%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
+  bottom: 0;
+  right: 0;
+  margin: 0 auto 30px auto;
+  text-align: right;
+}
+
+.splash-buttons > div{
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 200;
+  letter-spacing: 4px;
+  text-align: right;
+  color: $white !important;
+}
+
+.splash-buttons i:before{
+  font-size: 26px !important;
+  margin-left: 10px;
 }
 
 /* Search */
@@ -291,12 +311,12 @@ ion-list#event-list > div > div:nth-child(1)
 }
 
 .event-tag{
-  background-color: $dark;
+  background-color: $primary;
   border-radius: 10px;
   margin: 4px;
   padding: 4px 14px;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 14px;
   color: white;
   text-transform: uppercase;
 }
@@ -313,7 +333,7 @@ ion-list#event-list > div > div:nth-child(1)
   background-color: $white !important;
 }
 
-.event-time-list .border-bottom{
+.border-bottom{
   border-top: 2px $light solid !important;
   border-bottom: 1px $light solid !important;
 }
@@ -361,10 +381,43 @@ ion-list#event-list > div > div:nth-child(1)
 
 .rsvp-icon{
   float:right;
+  padding-top: 8px !important;
   flex: 0 0 18%;
-  height: 100% !important;
+  height: 60px !important;
 }
 
+/* Location */
+.location-address{
+  margin-bottom: 10px;
+}
+
+.map-outer{
+  height: 260px;
+}
+
+.map{
+  flex: 1;
+  width: 100%;
+  font-size: 100px;
+  text-align: center;
+  color: $white;
+}
+.load-map{
+  font-size: 30px;
+  line-height: 44px;
+  color: $white;
+}
+.requires-data{
+  font-size: 16px;
+  position: relative;
+  top: 30px;
+  text-transform: uppercase;
+  color: $white;
+}
+.load-map-text{
+  color: $light;
+  font-weight: 600;
+}
 
 
 /* Partner List */

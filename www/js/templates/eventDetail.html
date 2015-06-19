@@ -32,7 +32,7 @@
                     {{vm.event.clickedSchedule.end | date:'H:mm a'}}
                 </div>
                 <a class="button button-icon icon ion-ios-bell flat ink"></a>
-                <a class="button button-icon icon ion-ios-location flat ink"></a>
+                <a ui-sref="tabs.location({id: vm.event.clickedSchedule.location})" class="button button-icon icon ion-ios-location flat ink"></a>
             </div>
         </div>
 
@@ -41,10 +41,10 @@
 
         <div class="list event-time-list" ng-show="vm.event.rsvp">
             <div class="item-header">
-                RSVP Required
+                {{vm.event.rsvp.heading}}
             </div>
             <div class="row rsvp">
-                <div class="col rsvp-instructions">{{vm.event.rsvp.instructions}}</div>
+                <div class="col rsvp-instructions" ng-bind-html="vm.event.rsvp.instructions"></div>
                 <a class="button button-icon icon rsvp-icon ion-arrow-right-b flat ink"></a>
             </div>
 

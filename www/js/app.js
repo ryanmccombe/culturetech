@@ -36,7 +36,7 @@ angular.module('cultureTech', ['ionic', 'ngCordova', 'ionic-material'])
                 views: {
                     'home-tab': {
                         templateUrl: 'js/templates/home.html',
-                        controller: 'HomeCtrl'
+                        controller: 'HomeCtrl as vm'
                     }
                 }
             })
@@ -65,6 +65,20 @@ angular.module('cultureTech', ['ionic', 'ngCordova', 'ionic-material'])
                         },
                         templateUrl: 'js/templates/eventDetail.html',
                         controller: 'EventDetailCtrl as vm'
+                    }
+                }
+            })
+            .state('tabs.location', {
+                url: '/events/location/:id',
+                views: {
+                    'events-tab': {
+                        resolve: {
+                            locations: function ($http) {
+                                return $http.get('js/data/2014/events.json');
+                            }
+                        },
+                        templateUrl: 'js/templates/location.html',
+                        controller: 'LocationCtrl as vm'
                     }
                 }
             })

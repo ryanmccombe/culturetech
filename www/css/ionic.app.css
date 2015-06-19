@@ -7702,19 +7702,35 @@ ion-header-bar, .tabs {
 
 .splash-content {
   position: relative;
-  height: 1000px; }
+  height: 100%;
+  width: 100%;
+  padding-top: 50px;
+  text-align: right; }
 
 .splash-logo {
+  width: 70%;
+  margin: 0 30px 80px 0;
+  opacity: 0.8; }
+
+.splash-buttons {
   position: absolute;
-  margin: 0 auto;
-  width: 60%;
-  left: 50%;
-  top: 20%;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%); }
+  bottom: 0;
+  right: 0;
+  margin: 0 auto 30px auto;
+  text-align: right; }
+
+.splash-buttons > div {
+  width: 100%;
+  margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 200;
+  letter-spacing: 4px;
+  text-align: right;
+  color: #E1E6E8 !important; }
+
+.splash-buttons i:before {
+  font-size: 26px !important;
+  margin-left: 10px; }
 
 /* Search */
 .bar-search {
@@ -7881,12 +7897,12 @@ ion-list#event-list > div > div:nth-child(1) {
   text-align: right; }
 
 .event-tag {
-  background-color: #2C3338;
+  background-color: #363F45;
   border-radius: 10px;
   margin: 4px;
   padding: 4px 14px;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 14px;
   color: white;
   text-transform: uppercase; }
 
@@ -7900,7 +7916,7 @@ ion-list#event-list > div > div:nth-child(1) {
   padding: 0 0 0 2px !important;
   background-color: #E1E6E8 !important; }
 
-.event-time-list .border-bottom {
+.border-bottom {
   border-top: 2px #94A0A8 solid !important;
   border-bottom: 1px #94A0A8 solid !important; }
 
@@ -7951,8 +7967,39 @@ ion-list#event-list > div > div:nth-child(1) {
 
 .rsvp-icon {
   float: right;
+  padding-top: 8px !important;
   flex: 0 0 18%;
-  height: 100% !important; }
+  height: 60px !important; }
+
+/* Location */
+.location-address {
+  margin-bottom: 10px; }
+
+.map-outer {
+  height: 260px; }
+
+.map {
+  flex: 1;
+  width: 100%;
+  font-size: 100px;
+  text-align: center;
+  color: #E1E6E8; }
+
+.load-map {
+  font-size: 30px;
+  line-height: 44px;
+  color: #E1E6E8; }
+
+.requires-data {
+  font-size: 16px;
+  position: relative;
+  top: 30px;
+  text-transform: uppercase;
+  color: #E1E6E8; }
+
+.load-map-text {
+  color: #94A0A8;
+  font-weight: 600; }
 
 /* Partner List */
 .partner {
@@ -8033,7 +8080,7 @@ ion-list#event-list > div > div:nth-child(1) {
 .partner-description {
   padding: 15px 15px 20px 15px !important;
   background-color: white !important;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 26px;
   color: #121A21; }
 
