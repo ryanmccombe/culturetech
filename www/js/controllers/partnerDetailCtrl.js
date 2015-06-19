@@ -17,7 +17,6 @@ angular.module('cultureTech')
 
             // Force the transition direction such that going to next partner animates
             // forward and going to previous animates back, regardless of history
-
             vm.nextPartner = function () {
                 $ionicViewSwitcher.nextDirection("forward");
                 $state.go("tabs.partnerDetail", {'id': parseInt($stateParams.id, 10) + 1});

@@ -1,6 +1,7 @@
-<ion-view hide-nav-bar="true" >
+<ion-view hide-nav-bar="true">
     <div class="bar bar-header event-detail-header">
-        <button style="margin-left: -44px" ng-click="$ionicGoBack()" class="button back-button buttons button-clear header-item">
+        <button style="margin-left: -44px" ng-click="$ionicGoBack()"
+                class="button back-button buttons button-clear header-item">
             <i class="icon ion-ios-arrow-back"></i>
         </button>
         <div class="title title-left header-item">
@@ -10,7 +11,6 @@
     </div>
 
     <ion-content>
-
         <div class="partner-splash" ng-style="{
             'background': 'url(img/locations/'+vm.location.img+') no-repeat center center',
             'background-size': 'cover'
@@ -31,12 +31,12 @@
         <div class="row map-outer">
             <div class="col col-center map">
                 <div class="icon ion-map"></div>
-                <div class="load-map">Map Not Available</div>
+                <div class="load-map">Map {{vm.data ? '' : 'Not '}}Available</div>
                 <div class="requires-data">
-                    <div class="load-map-text">
-                        Tap to Retry
+                    {{vm.data || 'No'}} Data Connection
+                    <div ng-show="vm.data" class="load-map-text">
+                        Tap to Load
                     </div>
-                    No Data Connection
                 </div>
             </div>
         </div>

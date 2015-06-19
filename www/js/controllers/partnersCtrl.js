@@ -11,6 +11,7 @@ angular.module('cultureTech')
                 ionicMaterialInk.displayEffect();
             }, 0);
 
+            // If user visits partner list, preload partner photos in case they visit their detail page
             $http.get('js/data/2014/partnerPosters.json')
                 .success(function (data) {
                     imagePreloader.preload(data)

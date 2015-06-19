@@ -1,9 +1,7 @@
 angular.module('cultureTech', ['ionic', 'ngCordova', 'ionic-material'])
 
-    .run(function ($ionicPlatform, $cordovaStatusbar) {
+    .run(function ($ionicPlatform) {
         $ionicPlatform.ready(function () {
-
-            // $cordovaStatusbar.styleHex('#121A21');  // Uncaught ReferenceError: StatusBar is not defined
 
             if (window.cordova && window.cordova.plugins.Keyboard) {
                 cordova.plugins.Keyboard.hideKeyboardAccessoryBar(true);

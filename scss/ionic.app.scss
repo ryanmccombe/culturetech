@@ -249,6 +249,7 @@ ion-list#event-list > div > div:nth-child(1)
 
 .button.icon-right:before {
   font-size: 26px !important;
+  color: $light;
 }
 
 .event-meta {
@@ -392,7 +393,7 @@ ion-list#event-list > div > div:nth-child(1)
 }
 
 .map-outer{
-  height: 260px;
+  height: 240px;
 }
 
 .map{
@@ -400,23 +401,23 @@ ion-list#event-list > div > div:nth-child(1)
   width: 100%;
   font-size: 100px;
   text-align: center;
-  color: $white;
+  color: $light;
 }
 .load-map{
   font-size: 30px;
   line-height: 44px;
-  color: $white;
+  color: $light;
 }
 .requires-data{
   font-size: 16px;
-  position: relative;
-  top: 30px;
   text-transform: uppercase;
-  color: $white;
+  color: $light;
 }
 .load-map-text{
-  color: $light;
-  font-weight: 600;
+  position: relative;
+  top: 20px;
+  color: $mid;
+  font-weight: 800;
 }
 
 

@@ -5,14 +5,13 @@
 angular.module('cultureTech')
     .controller('LocationCtrl', ['locations', '$stateParams', '$timeout', 'ionicMaterialInk',
         function (locations, $stateParams, $timeout, ionicMaterialInk) {
-
             $timeout(function () {
                 ionicMaterialInk.displayEffect();
             }, 0);
 
-            var locationData = locations.data.locations;
             var vm = this;
+            vm.location = locations.data.locations[$stateParams.id];
 
-            vm.location = locationData[$stateParams.id]
-
+            // TODO: Check data connection (cordova plugin)
+            vm.data = "3G";
         }]);

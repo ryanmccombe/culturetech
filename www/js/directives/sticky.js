@@ -2,6 +2,8 @@
  * Created by Ryan on 15/06/2015.
  */
 
+// Unused
+// Stick an element once scroll position passes a breakpoint
 
 angular.module('cultureTech')
     .directive('sticky', ['$ionicScrollDelegate', '$ionicPosition', function ($ionicScrollDelegate, $ionicPosition) {

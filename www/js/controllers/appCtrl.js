@@ -7,11 +7,13 @@ angular.module('cultureTech')
         function (ionicMaterialInk, $timeout, $ionicScrollDelegate, $state) {
             var app = this;
 
+            // Apply ink listener to .ink elements
             $timeout(function () {
                 ionicMaterialInk.displayEffect();
             }, 0);
 
-            app.isState = function(state){
+            // Check what state we're in
+            app.isState = function (state) {
                 return $state.current.name === state;
             };
 
@@ -39,8 +41,8 @@ angular.module('cultureTech')
                 }, 200);
             };
 
+            // TODO: Load external URLs (partner websites, online RSVPs)
             app.loadExternalUrl = function (url, options) {
-                // TODO
                 console.log(url, options);
             }
         }]);
