@@ -3,20 +3,25 @@
  */
 
 angular.module('cultureTech')
-    .controller('EventDetailCtrl', ['events', 'ionicMaterialInk', '$stateParams', '$timeout', '$cordovaLocalNotification', '$window',
-        function (events, ionicMaterialInk, $stateParams, $timeout, $cordovaLocalNotification, $window) {
+    .controller('EventDetailCtrl', ['events', 'ionicMaterialInk', '$stateParams', '$timeout', '$cordovaLocalNotification',
+        function (events, ionicMaterialInk, $stateParams, $timeout, $cordovaLocalNotification) {
             $timeout(function () {
                 ionicMaterialInk.displayEffect();
             }, 0);
 
             var vm = this;
             vm.event = events.data.events[$stateParams.id];
-            vm.event.clickedSchedule = $stateParams.clickedSchedule;
+            vm.event.clickedSchedule = events.data.schedule[$stateParams.clickedSchedule];
+            console.log(vm.event.clickedSchedule);
+            vm.locations = events.data.locations;
+            console.log(vm.event.location);
 
             // Get all listings for this event TODO: Cache this
             vm.schedule = events.data.schedule.filter(function (listing) {
                 return listing.event == $stateParams.id;
             });
+
+            console.log(vm.schedule);
 
 
             vm.addNotification = function() {

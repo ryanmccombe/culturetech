@@ -7776,6 +7776,12 @@ label.item-input-wrapper {
 ion-list#event-list > div > div:nth-child(1) {
   padding-top: 12px; }
 
+.event-description {
+  font-size: 15px;
+  line-height: 20px;
+  color: #121A21;
+  font-weight: 400; }
+
 .bar .button {
   max-width: none !important; }
 
@@ -7891,7 +7897,7 @@ ion-list#event-list > div > div:nth-child(1) {
 .event-time-list .item {
   border-top: 1px #94A0A8 solid !important;
   margin: 0 !important;
-  padding: 0 !important;
+  padding: 0 0 0 2px !important;
   background-color: #E1E6E8 !important; }
 
 .event-time-list .border-bottom {
@@ -7900,9 +7906,11 @@ ion-list#event-list > div > div:nth-child(1) {
 
 .event-time-list .time {
   float: left;
-  font-size: 14px;
-  font-weight: 400;
-  padding: 13px !important; }
+  padding: 13px 0 0 13px !important;
+  font-size: 15px;
+  line-height: 20px;
+  color: #121A21;
+  font-weight: 400; }
 
 .event-time-list .location {
   font-size: 14px;
@@ -7920,20 +7928,26 @@ ion-list#event-list > div > div:nth-child(1) {
 
 .item-header {
   margin: 0 !important;
-  padding: 6px 13px 4px 13px !important;
+  padding: 6px 0 4px 15px !important;
   background-color: #363F45;
+  border-bottom: 2px #94A0A8 solid;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 15px;
+  line-height: 20px;
   color: white;
-  border-bottom: 2px #94A0A8 solid; }
+  text-transform: uppercase; }
 
 .rsvp {
   background-color: #E1E6E8 !important;
   padding: 0 !important; }
 
 .rsvp-instructions {
-  padding: 12px;
-  flex: 0 0 82%; }
+  padding: 10px 14px;
+  flex: 0 0 82%;
+  font-size: 15px;
+  line-height: 20px;
+  color: #121A21;
+  font-weight: 400; }
 
 .rsvp-icon {
   float: right;
@@ -8019,6 +8033,8 @@ ion-list#event-list > div > div:nth-child(1) {
 .partner-description {
   padding: 15px 15px 20px 15px !important;
   background-color: white !important;
+  font-size: 18px;
+  line-height: 26px;
   color: #121A21; }
 
 .partner-navigation {

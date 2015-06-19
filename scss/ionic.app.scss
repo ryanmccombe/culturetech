@@ -21,11 +21,6 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
-@mixin background-opacity($color, $opacity: 1) {
-  background: $color; /* The Fallback */
-  background: rgba($color, $opacity);
-}
-
 $black: #121A21;
 $dark: #2C3338;
 $primary: #363F45;
@@ -33,6 +28,32 @@ $mid: #4B5F6D;
 $light: #94A0A8;
 $white: #E1E6E8;
 $accent: #FE6C0B;
+
+@mixin background-opacity($color, $opacity: 1) {
+  background: $color; /* The Fallback */
+  background: rgba($color, $opacity);
+}
+
+@mixin body-text() {
+  font-size: 18px;
+  line-height: 26px;
+  color: $black;
+}
+
+@mixin info-text() {
+  font-size: 15px;
+  line-height: 20px;
+  color: $black;
+  font-weight: 400;
+}
+
+@mixin text-header {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  color: white;
+  text-transform: uppercase;
+}
 
 #reflow-spacer{
   height: 10px;
@@ -159,7 +180,7 @@ ion-list#event-list > div > div:nth-child(1)
 }
 
 .event-description {
-
+  @include info-text;
 }
 
 .bar .button {
@@ -288,7 +309,7 @@ ion-list#event-list > div > div:nth-child(1)
 .event-time-list .item{
   border-top: 1px $light solid !important;
   margin: 0 !important;
-  padding: 0 !important;
+  padding: 0 0 0 2px !important;
   background-color: $white !important;
 }
 
@@ -299,9 +320,8 @@ ion-list#event-list > div > div:nth-child(1)
 
 .event-time-list .time{
   float: left;
-  font-size: 14px;
-  font-weight: 400;
-  padding: 13px !important;
+  padding: 13px 0 0 13px !important;
+  @include info-text;
 }
 
 .event-time-list .location{
@@ -322,12 +342,10 @@ ion-list#event-list > div > div:nth-child(1)
 
 .item-header{
   margin: 0 !important;
-  padding: 6px 13px 4px 13px !important;
+  padding: 6px 0 4px 15px !important;
   background-color: $primary;
-  font-weight: 700;
-  font-size: 14px;
-  color: white;
   border-bottom: 2px $light solid;
+  @include text-header;
 }
 
 .rsvp {
@@ -336,8 +354,9 @@ ion-list#event-list > div > div:nth-child(1)
 }
 
 .rsvp-instructions{
-  padding: 12px;
+  padding: 10px 14px;
   flex: 0 0 82%;
+  @include info-text();
 }
 
 .rsvp-icon{
@@ -433,7 +452,7 @@ ion-list#event-list > div > div:nth-child(1)
 .partner-description {
   padding: 15px 15px 20px 15px !important;
   background-color: white !important;
-  color: $black;
+  @include body-text;
 }
 
 .partner-navigation {

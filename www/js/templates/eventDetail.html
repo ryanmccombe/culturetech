@@ -18,18 +18,18 @@
             'background-size': 'cover'
             }">
             <div class="event-splash-content">
-                <div class="event-tags">
-                    <span class="event-tag">Free</span>
-                    <span class="event-tag">Schools Only</span>
-                    <span class="event-tag">RSVP Required</span>
+                <div class="event-tags" ng-show="vm.event.tags">
+                    <span class="event-tag" ng-repeat="tag in vm.event.tags">{{tag}}</span>
                 </div>
             </div>
         </div>
         <div class="list event-time-list">
             <div class="item border-bottom">
                 <div class="time">
-                    <div class="location">The Verbal Arts Centre</div>
-                    Wednesday, 19th September<br>9:00 AM - 3:00 PM
+                    <div class="location">{{vm.locations[vm.event.clickedSchedule.location].name}}</div>
+                    {{vm.event.clickedSchedule.start | date:'EEEE, d MMMM'}}<br>
+                    {{vm.event.clickedSchedule.start | date:'H:mm a'}} -
+                    {{vm.event.clickedSchedule.end | date:'H:mm a'}}
                 </div>
                 <a class="button button-icon icon ion-ios-bell flat ink"></a>
                 <a class="button button-icon icon ion-ios-location flat ink"></a>
@@ -39,34 +39,28 @@
         <div class="double-padding partner-description" ng-bind-html="vm.event.desc_full">
         </div>
 
-        <div class="list event-time-list">
+        <div class="list event-time-list" ng-show="vm.event.rsvp">
             <div class="item-header">
                 RSVP Required
             </div>
             <div class="row rsvp">
-                <div class="col rsvp-instructions">RSVP Online. This event is cordova pfree but a charitable donation of £5 to Children in Crossfire would be most welcome.</div>
+                <div class="col rsvp-instructions">{{vm.event.rsvp.instructions}}</div>
                 <a class="button button-icon icon rsvp-icon ion-arrow-right-b flat ink"></a>
             </div>
 
 
         </div>
 
-        <div class="list event-time-list">
+        <div class="list event-time-list" ng-show="vm.schedule.length > 1">
             <div class="item-header">
-                Other Times
+                All Times
             </div>
-            <div class="item">
+            <div class="item" ng-repeat="listing in vm.schedule">
                 <div class="time">
-                    <div class="location">The Verbal Arts Centre</div>
-                    Wednesday, 19th September<br>9:00 AM - 3:00 PM
-                </div>
-                <a class="button button-icon icon ion-ios-bell flat ink"></a>
-                <a class="button button-icon icon ion-ios-location flat ink"></a>
-            </div>
-            <div class="item">
-                <div class="time">
-                    <div class="location">The Verbal Arts Centre</div>
-                    Wednesday, 19th September<br>9:00 AM - 3:00 PM
+                    <div class="location">{{vm.locations[listing.location].name}}</div>
+                    {{listing.start | date:'EEEE, d MMMM'}}<br>
+                    {{listing.start | date:'H:mm a'}} -
+                    {{listing.end | date:'H:mm a'}}
                 </div>
                 <a class="button button-icon icon ion-ios-bell flat ink"></a>
                 <a class="button button-icon icon ion-ios-location flat ink"></a>
