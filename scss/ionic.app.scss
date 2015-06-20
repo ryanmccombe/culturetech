@@ -31,8 +31,8 @@ $accent: #FE6C0B;
 $home-buttons: rgb(178, 178, 178);
 
 @mixin background-opacity($color, $opacity: 1) {
-  background: $color; /* The Fallback */
-  background: rgba($color, $opacity);
+  background: $color !important; /* The Fallback */
+  background: rgba($color, $opacity) !important;
 }
 
 @mixin body-text() {
@@ -394,10 +394,6 @@ ion-list#event-list > div > div:nth-child(1)
   position: relative;
   background-size: cover;
   overflow: hidden;
-   -webkit-transition: .6s height cubic-bezier(.55, 0, .1, 1);
-      -moz-transition: .6s height cubic-bezier(.55, 0, .1, 1);
-        -o-transition: .6s height cubic-bezier(.55, 0, .1, 1);
-           transition: .6s height cubic-bezier(.55, 0, .1, 1);
 }
 
 .hide-photo{
@@ -412,10 +408,6 @@ ion-list#event-list > div > div:nth-child(1)
   height: 240px;
 }
 
-.map-outer-expanded{
-
-}
-
 .scroll {
   height: 100%;
 }
@@ -426,7 +418,7 @@ ion-list#event-list > div > div:nth-child(1)
 }
 
 .map-labels{
-  padding-top: 30px;
+  padding-top: 10px;
   width: 100%;
   font-size: 100px;
   text-align: center;
@@ -503,13 +495,35 @@ ion-list#event-list > div > div:nth-child(1)
 }
 .load-map-text{
   position: relative;
-  top: 20px;
+  top: 10px;
   color: $mid;
   font-weight: 800;
 }
 
+ui-gmap-google-map, .angular-google-map, .angular-google-map-container{
+  height: 100%;
+}
+
 .angular-google-map-container{
-  height: 600px !important;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.map-address-bar{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  @include background-opacity($white, 0.2)
+
+}
+.map-address-bar .border-bottom{
+  border-left: 1px $light solid !important;
+}
+
+.recenter-map{
+  margin-left: 20px !important;
 }
 
 

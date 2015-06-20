@@ -41,24 +41,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2227">
-              <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="location.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="location.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/www/js/templates/location.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.23077" vertical-offset="357" max-vertical-offset="1088">
-              <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.8042763" vertical-offset="157" max-vertical-offset="1173">
+              <caret line="38" column="72" selection-start-line="38" selection-start-column="72" selection-end-line="38" selection-end-column="72" />
               <folding>
                 <element signature="n#style#0;n#button#0;n#div#0;n#ion-view#0;n#!!top" expanded="true" />
-                <marker date="1434819764821" expanded="true" signature="501:647" placeholder="{&quot;background-size&quot;: 'cover'...}" />
+                <marker date="1434827592331" expanded="true" signature="501:647" placeholder="{&quot;background-size&quot;: 'cover'...}" />
               </folding>
             </state>
           </provider>
@@ -67,7 +57,7 @@
       <file leaf-file-name="events.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/data/2014/events.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-22.115385" vertical-offset="1805" max-vertical-offset="3434">
+            <state vertical-scroll-proportion="-4.576923" vertical-offset="2261" max-vertical-offset="3434">
               <caret line="315" column="14" selection-start-line="315" selection-start-column="14" selection-end-line="315" selection-end-column="23" />
               <folding>
                 <element signature="e#138#3304#0" expanded="false" />
@@ -76,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ionic.app.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ionic.app.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/ionic.app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.41282895" vertical-offset="7059" max-vertical-offset="10472">
-              <caret line="430" column="19" selection-start-line="430" selection-start-column="19" selection-end-line="430" selection-end-column="19" />
+            <state vertical-scroll-proportion="-5.8" vertical-offset="8385" max-vertical-offset="10710">
+              <caret line="512" column="0" selection-start-line="512" selection-start-column="0" selection-end-line="512" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -89,8 +79,8 @@
       <file leaf-file-name="locationCtrl.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/www/js/controllers/locationCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1105">
-              <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1190">
+              <caret line="50" column="47" selection-start-line="50" selection-start-column="47" selection-end-line="50" selection-end-column="47" />
               <folding>
                 <element signature="e#0#41#0" expanded="false" />
               </folding>
@@ -135,7 +125,6 @@
         <option value="$PROJECT_DIR$/www/js/templates/home.html" />
         <option value="$PROJECT_DIR$/www/js/templates/tabs.html" />
         <option value="$PROJECT_DIR$/www/js/data/2014/events.json" />
-        <option value="$PROJECT_DIR$/www/js/templates/eventDetail.html" />
         <option value="$PROJECT_DIR$/www/js/controllers/appCtrl.js" />
         <option value="$PROJECT_DIR$/www/js/controllers/eventDetailCtrl.js" />
         <option value="$PROJECT_DIR$/www/js/controllers/homeCtrl.js" />
@@ -146,9 +135,10 @@
         <option value="$PROJECT_DIR$/www/js/filters/newLineToBr.js" />
         <option value="$PROJECT_DIR$/www/js/app.js" />
         <option value="$PROJECT_DIR$/www/index.html" />
-        <option value="$PROJECT_DIR$/www/js/templates/location.html" />
+        <option value="$PROJECT_DIR$/www/js/templates/eventDetail.html" />
         <option value="$PROJECT_DIR$/www/js/controllers/locationCtrl.js" />
         <option value="$PROJECT_DIR$/scss/ionic.app.scss" />
+        <option value="$PROJECT_DIR$/www/js/templates/location.html" />
       </list>
     </option>
   </component>
@@ -232,6 +222,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cultureTech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cultureTech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -580,16 +592,16 @@
       <workItem from="1434595363993" duration="11133000" />
       <workItem from="1434676990846" duration="19944000" />
       <workItem from="1434702784776" duration="10185000" />
-      <workItem from="1434807184271" duration="11010000" />
+      <workItem from="1434807184271" duration="18715000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="198435000" />
+    <option name="totallyTimeSpent" value="206140000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="0" width="1539" height="1160" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -602,7 +614,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32782102" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32782102" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20081136" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -795,6 +807,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="459">
           <caret line="12" column="63" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="63" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -830,6 +843,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="357" max-vertical-offset="612">
           <caret line="21" column="53" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="53" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -837,6 +851,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.37362638" vertical-offset="0" max-vertical-offset="637">
           <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -844,6 +859,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.26687598" vertical-offset="0" max-vertical-offset="637">
           <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -851,13 +867,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.692307" vertical-offset="1012" max-vertical-offset="1700">
           <caret line="82" column="0" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/templates/eventDetail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-36.26923" vertical-offset="213" max-vertical-offset="1632">
-          <caret line="68" column="76" selection-start-line="68" selection-start-column="76" selection-end-line="68" selection-end-column="76" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -963,6 +973,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/templates/eventDetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8131868" vertical-offset="111" max-vertical-offset="1632">
+          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#div#0;n#ion-view#0;n#!!top" expanded="true" />
+            <marker date="1434719365933" expanded="true" signature="-1:-1" placeholder="{&quot;background-size&quot;: 'cover'...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.102564104" vertical-offset="0" max-vertical-offset="2227">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/www/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-11.769231" vertical-offset="34" max-vertical-offset="1054">
@@ -971,17 +1000,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/app.js">
+    <entry file="file://$PROJECT_DIR$/www/js/controllers/locationCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2227">
-          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="1190">
+          <caret line="50" column="47" selection-start-line="50" selection-start-column="47" selection-end-line="50" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/data/2014/events.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.115385" vertical-offset="1805" max-vertical-offset="3434">
+        <state vertical-scroll-proportion="-4.576923" vertical-offset="2261" max-vertical-offset="3434">
           <caret line="315" column="14" selection-start-line="315" selection-start-column="14" selection-end-line="315" selection-end-column="23" />
           <folding>
             <element signature="e#138#3304#0" expanded="false" />
@@ -989,32 +1020,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/templates/location.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.23077" vertical-offset="357" max-vertical-offset="1088">
-          <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
-          <folding>
-            <element signature="n#style#0;n#button#0;n#div#0;n#ion-view#0;n#!!top" expanded="true" />
-            <marker date="1434819764821" expanded="true" signature="501:647" placeholder="{&quot;background-size&quot;: 'cover'...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/locationCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="1105">
-          <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scss/ionic.app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.41282895" vertical-offset="7059" max-vertical-offset="10472">
-          <caret line="430" column="19" selection-start-line="430" selection-start-column="19" selection-end-line="430" selection-end-column="19" />
+        <state vertical-scroll-proportion="-5.8" vertical-offset="8385" max-vertical-offset="10710">
+          <caret line="512" column="0" selection-start-line="512" selection-start-column="0" selection-end-line="512" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/templates/location.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8042763" vertical-offset="157" max-vertical-offset="1173">
+          <caret line="38" column="72" selection-start-line="38" selection-start-column="72" selection-end-line="38" selection-end-column="72" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#div#0;n#ion-view#0;n#!!top" expanded="true" />
+            <marker date="1434827592331" expanded="true" signature="501:647" placeholder="{&quot;background-size&quot;: 'cover'...}" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -12,20 +12,20 @@ angular.module('cultureTech')
             var vm = this;
             vm.location = locations.data.locations[$stateParams.id];
 
-            // Network
 
+            // Network
             vm.getNetwork = function(automatic){
                 vm.data = false;
                 vm.loading = false;
 
-                // $cordovaNetwork will be undefined in test environment
+                // $cordovaNetwork will not work on web preview
                 try {
                     if ($cordovaNetwork.isOnline()) {
                         vm.data = $cordovaNetwork.getNetwork();
                     }
                 }
                 catch(err) {
-                    vm.data = true;
+                    vm.data = "Fixed";
                 }
 
                 // Provide some feedback if user triggered it (fake loading screen for now)
@@ -44,19 +44,24 @@ angular.module('cultureTech')
 
             // Map UI
             vm.expandMap = false;
-
             vm.getMap = function(){
                 vm.expandMap = true;
             };
 
-            // Google Maps - Map Creator
-            vm.map = { center: { latitude: vm.location.lat, longitude: vm.location.long }, zoom: 15 };
+            // Google Maps - Map Control Object
+            vm.mapControl = {};
 
-            // Don't set marker coords until API loads (doesn't "stick" to map otherwise)
+            vm.coords = { latitude: vm.location.lat, longitude: vm.location.long };
+
+            // Don't set marker coords until API loads
+            // Marker and map center must be different objects - center object is updated as user scrolls
             uiGmapGoogleMapApi.then(function(maps) {
-                vm.coords = { latitude: vm.location.lat, longitude: vm.location.long };
+                vm.locationCoords = { latitude: vm.location.lat, longitude: vm.location.long };
             });
 
-            // TODO: Check data connection (cordova plugin)
+            // Recenter map on the location coords
+            vm.recenterMap = function(){
+                vm.mapControl.refresh(vm.locationCoords);
+            };
 
         }]);
