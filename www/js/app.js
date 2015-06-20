@@ -1,4 +1,4 @@
-angular.module('cultureTech', ['ionic', 'ngCordova', 'ionic-material'])
+angular.module('cultureTech', ['ionic', 'ngCordova', 'ionic-material', 'uiGmapgoogle-maps'])
 
     .run(function ($ionicPlatform) {
         $ionicPlatform.ready(function () {

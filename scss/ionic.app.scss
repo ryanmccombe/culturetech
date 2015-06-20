@@ -388,6 +388,22 @@ ion-list#event-list > div > div:nth-child(1)
 }
 
 /* Location */
+
+.location-photo {
+  height: 250px;
+  position: relative;
+  background-size: cover;
+  overflow: hidden;
+   -webkit-transition: .6s height cubic-bezier(.55, 0, .1, 1);
+      -moz-transition: .6s height cubic-bezier(.55, 0, .1, 1);
+        -o-transition: .6s height cubic-bezier(.55, 0, .1, 1);
+           transition: .6s height cubic-bezier(.55, 0, .1, 1);
+}
+
+.hide-photo{
+  height: 44px !important;
+}
+
 .location-address{
   margin-bottom: 10px;
 }
@@ -396,13 +412,29 @@ ion-list#event-list > div > div:nth-child(1)
   height: 240px;
 }
 
-.map{
-  flex: 1;
+.map-outer-expanded{
+
+}
+
+.scroll {
+  height: 100%;
+}
+
+.fill {
+  height: 100% !important;
+  background-color: rgba(255, 0, 0, 0.3);
+  margin: auto;
+}
+
+.map-labels{
+  padding-top: 30px;
   width: 100%;
   font-size: 100px;
   text-align: center;
   color: $light;
+  position: absolute;
 }
+
 .load-map{
   font-size: 30px;
   line-height: 44px;
@@ -418,6 +450,10 @@ ion-list#event-list > div > div:nth-child(1)
   top: 20px;
   color: $mid;
   font-weight: 800;
+}
+
+.angular-google-map-container{
+  height: 600px !important;
 }
 
 
