@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    var url = "https://api.import.io/store/data/103c2bbc-b424-4695-8423-aa4ebe2b17b9/_query?input/webpage/url=http%3A%2F%2Fwww.xe.com%2Fcurrencyconverter%2Fconvert%2F%3FAmount%3D1%26From%3DGBP%26To%3DEUR&_user=09b9d6fe-5848-46aa-b048-2fc839f2c227&_apikey=09b9d6fe-5848-46aa-b048-2fc839f2c227%3AJ2pO4i8eI4J%2BqhuEuJu6AAbG%2BbUp89lxa2V7WTbi7Q3wPLEcJ%2BDCsFhouB0y7hk7HW6ECHl9OgiwFVBdt1t8dg%3D%3D";
+    var http = new XMLHttpRequest();
+    var data;
+
+    http.open("GET", url, false);
+    http.onreadystatechange = function()
+    {
+        if(http.readyState == 4 && http.status == 200) {
+            data = JSON.parse(http.responseText);
+            console.log(data)
+        }
+    }
+    http.send(null);
+
+    document.getElementById("rate").innerHTML = "Exchange rate:<span id='showme'></span> &#163;1 - &#8364;" + data.results[0].rate; + "</h2>"
+</script>
+
+<div id="rate">
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<ion-view hide-nav-bar="true" title="Events">
+    <div class="bar title date-box" ng-class="({'date-box-expanded': vm.menuExpanded})">
+        <div id="innerDate" class="inner-date-box" ng-click="vm.expandMenu()">
+            <button ng-click="vm.setPage(0)" class="date-select button button-full icon-right flat ink"
+                    ng-class="({'ion-chevron-up': vm.page == 0 && vm.menuExpanded,
+                                'ion-chevron-down': vm.page == 0 && !vm.menuExpanded})">
+                Page 0
+            </button>
+            <button ng-click="vm.setPage(1)" class="date-select button button-full icon-right flat ink"
+                    ng-class="({'ion-chevron-up': vm.page == 1 && vm.menuExpanded,
+                                'ion-chevron-down': vm.page == 1 && !vm.menuExpanded})">
+                Page 1
+            </button>
+            <button ng-click="vm.setPage(2)" class="date-select button button-full icon-right flat ink"
+                    ng-class="({'ion-chevron-up': vm.page == 2 && vm.menuExpanded,
+                                'ion-chevron-down': vm.page == 2 && !vm.menuExpanded})">
+                Page 2
+            </button>
+        </div>
+    </div>
+
+    <ion-content style="margin-top: 43px" has-bouncing="false">
+        <ng-include ng-show="vm.page == 0" src="'js/templates/infoPage0.html'"></ng-include>
+        <ng-include ng-show="vm.page == 1" src="'js/templates/infoPage1.html'"></ng-include>
+        <ng-include ng-show="vm.page == 2" src="'js/templates/infoPage2.html'"></ng-include>
+    </ion-content>
+
+</ion-view>
