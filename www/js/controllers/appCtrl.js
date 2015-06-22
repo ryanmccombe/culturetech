@@ -3,8 +3,8 @@
  */
 
 angular.module('cultureTech')
-    .controller('AppCtrl', ['ionicMaterialInk', '$timeout', '$ionicScrollDelegate', '$state',
-        function (ionicMaterialInk, $timeout, $ionicScrollDelegate, $state) {
+    .controller('AppCtrl', ['ionicMaterialInk', '$timeout', '$ionicScrollDelegate', '$state', '$cordovaInAppBrowser',
+        function (ionicMaterialInk, $timeout, $ionicScrollDelegate, $state, $cordovaInAppBrowser) {
             var app = this;
 
             // Apply ink listener to .ink elements
@@ -41,8 +41,22 @@ angular.module('cultureTech')
                 }, 200);
             };
 
-            // TODO: Load external URLs (partner websites, online RSVPs)
-            app.loadExternalUrl = function (url, options) {
-                console.log(url, options);
+            // Load external URLs (partner websites, online RSVPs)
+            // Browsers: _blank = Inapp Browser
+            //           _self = Cordova Webview (requires whitelist, otherwise opens in _system)
+            //           _system = System default browser
+
+            var defaultOptions = {
+                location: 'no',
+                clearcache: 'no',
+                toolbar: 'no'
+            };
+            app.loadExternalUrl = function (url, browser, options) {
+                $cordovaInAppBrowser.open(url, browser || '_system', options | defaultOptions);
+            };
+
+            // Call (todo: globalisation)
+            app.call = function(country, number){
+                window.open('tel:00' + country + number);
             }
         }]);
