@@ -7678,6 +7678,58 @@ a.button {
 #reflow-spacer {
   height: 10px; }
 
+/* Info */
+.info-photo {
+  height: 150px;
+  position: relative;
+  background-size: cover;
+  overflow: hidden; }
+
+.page0 {
+  background: url('../img/locations/craftvillage.jpg') no-repeat center center; }
+
+.page1 {
+  background: url('../img/locations/cca.jpg') no-repeat center center; }
+
+.page2 {
+  background: url('../img/locations/millenniumforum.jpg') no-repeat center center; }
+
+.info-photo-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2C3338 !important;
+  /* The Fallback */
+  background: rgba(44, 51, 56, 0.2) !important; }
+
+.no-padding-top {
+  padding-top: 0; }
+
+.info-summary {
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #E1E6E8;
+  border-top: 1px #94A0A8 solid;
+  border-bottom: 1px #94A0A8 solid;
+  text-align: left; }
+
+.info-header {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  color: white;
+  text-transform: uppercase;
+  color: #121A21;
+  text-transform: uppercase;
+  margin: 12px 0 4px 0; }
+
+.info-body {
+  font-size: 16px;
+  line-height: 26px;
+  color: #121A21; }
+
 /* Headers + Tabs */
 .keyboard-open .tabs {
   display: none; }

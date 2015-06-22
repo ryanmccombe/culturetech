@@ -48,6 +48,14 @@ $home-buttons: rgb(178, 178, 178);
   font-weight: 400;
 }
 
+@mixin text-large() {
+  font-size: 16px;
+  line-height: 20px;
+  color: $black;
+  font-weight: 600;
+}
+
+
 @mixin text-header {
   font-weight: 700;
   font-size: 15px;
@@ -58,6 +66,57 @@ $home-buttons: rgb(178, 178, 178);
 
 #reflow-spacer{
   height: 10px;
+}
+
+/* Info */
+.info-photo {
+  height: 150px;
+  position: relative;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.page0{
+  background: url('../img/locations/craftvillage.jpg') no-repeat center center;
+}
+.page1{
+  background: url('../img/locations/cca.jpg') no-repeat center center;
+}
+.page2{
+  background: url('../img/locations/millenniumforum.jpg') no-repeat center center;
+}
+
+.info-photo-overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  @include background-opacity($dark, 0.2);
+}
+
+.no-padding-top{
+  padding-top: 0;
+}
+
+.info-summary{
+  font-size: 16px;
+  font-weight: 400;
+  background-color: $white;
+  border-top: 1px $light solid;
+  border-bottom: 1px $light solid;
+  text-align: left;
+}
+
+.info-header{
+  @include text-header;
+  color: $black;
+  text-transform: uppercase;
+  margin: 12px 0 4px 0;
+}
+
+.info-body{
+  @include body-text;
 }
 
 /* Headers + Tabs */
