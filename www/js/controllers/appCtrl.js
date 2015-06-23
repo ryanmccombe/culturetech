@@ -3,8 +3,19 @@
  */
 
 angular.module('cultureTech')
-    .controller('AppCtrl', ['ionicMaterialInk', '$timeout', '$ionicScrollDelegate', '$state', '$cordovaInAppBrowser',
-        function (ionicMaterialInk, $timeout, $ionicScrollDelegate, $state, $cordovaInAppBrowser) {
+    .controller('AppCtrl', [
+        'ionicMaterialInk',
+        '$timeout',
+        '$ionicScrollDelegate',
+        '$state',
+        '$cordovaInAppBrowser',
+        '$cordovaEmailComposer',
+        function (ionicMaterialInk,
+                  $timeout,
+                  $ionicScrollDelegate,
+                  $state,
+                  $cordovaInAppBrowser,
+                  $cordovaEmailComposer) {
             var app = this;
 
             // Apply ink listener to .ink elements
@@ -56,7 +67,31 @@ angular.module('cultureTech')
             };
 
             // Call (todo: globalisation)
-            app.call = function(country, number){
+            app.call = function (country, number) {
                 window.open('tel:00' + country + number);
+            };
+
+            var emailSettings = {
+                // to: '',
+                // cc: '',
+                // bcc: ['', ''],
+                // attachments: ['', ''],
+                // subject: '',
+                // body: '',
+                // isHtml: true
+            };
+
+            app.sendEmail = function(address, subject, body){
+                $cordovaEmailComposer.isAvailable().then(function() {
+                    emailSettings.to = address;
+                    emailSettings.subject = subject | '';
+                    emailSettings.body = body | '';
+                    $cordovaEmailComposer.open(emailSettings).then(null, function () {
+                        // user cancelled email
+                    });
+                }, function () {
+                    alert('Could not access e-mail feature on this device');
+                });
+
             }
         }]);

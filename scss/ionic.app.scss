@@ -31,8 +31,8 @@ $accent: #FE6C0B;
 $home-buttons: rgb(178, 178, 178);
 
 @mixin background-opacity($color, $opacity: 1) {
-  background: $color !important; /* The Fallback */
-  background: rgba($color, $opacity) !important;
+  background: $color; /* The Fallback */
+  background: rgba($color, $opacity);
 }
 
 @mixin body-text() {
@@ -72,18 +72,18 @@ $home-buttons: rgb(178, 178, 178);
 .info-photo {
   height: 150px;
   position: relative;
-  background-size: cover;
+  background-size: cover !important;
   overflow: hidden;
 }
 
 .page0{
-  background: url('../img/locations/craftvillage.jpg') no-repeat center center;
+  background: url('../img/info/page2.jpg') no-repeat center center;
 }
 .page1{
-  background: url('../img/locations/cca.jpg') no-repeat center center;
+  background: url('../img/info/page1.jpg') no-repeat center center;
 }
 .page2{
-  background: url('../img/locations/millenniumforum.jpg') no-repeat center center;
+  background: url('../img/info/page0.jpg') no-repeat center center;
 }
 
 .info-photo-overlay{
@@ -92,7 +92,12 @@ $home-buttons: rgb(178, 178, 178);
   bottom: 0;
   left: 0;
   right: 0;
-  @include background-opacity($dark, 0.2);
+  @include background-opacity($dark, 0.1);
+  background: -webkit-linear-gradient(to top, $dark 6%, rgba(0, 0, 0, 0) 80%); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+  background: -moz-linear-gradient(to top, $dark 6%, rgba(0, 0, 0, 0) 80%); /* For Firefox (3.6 to 15) */
+  background: -o-linear-gradient(to top, $dark 6%, rgba(0, 0, 0, 0) 80%); /* For old Opera (11.1 to 12.0) */
+  background: linear-gradient(to top, $dark 6%, rgba(0, 0, 0, 0) 80%); /* Standard syntax; must be last */
+
 }
 
 .no-padding-top{
