@@ -451,6 +451,18 @@ ion-list#event-list > div > div:nth-child(1)
   height: 60px !important;
 }
 
+.alarm-set{
+  background-color: $accent !important;
+}
+
+.alarm-set:before{
+  color: white !important;
+}
+
+.event-time-list .no-border-top{
+  border-top-width: 0 !important;
+}
+
 /* Location */
 
 .location-photo {

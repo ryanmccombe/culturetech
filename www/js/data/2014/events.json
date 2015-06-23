@@ -10,174 +10,203 @@
   ],
   "schedule": [
     {
+      "id": 0,
       "event": 0,
       "location": 0,
       "start": 1410768000000,
       "end": 1410789600000
     },
     {
+      "id": 1,
       "event": 0,
       "location": 0,
       "start": 1410854400000,
       "end": 1410876000000
     },
     {
+      "id": 2,
       "event": 0,
       "location": 0,
       "start": 1410940800000,
       "end": 1410962400000
     },
     {
+      "id": 3,
       "event": 1,
       "location": 1,
       "start": 1410768000000,
       "end": 1410789600000
     },
     {
+      "id": 4,
       "event": 1,
       "location": 1,
       "start": 1410854400000,
       "end": 1410876000000
     },
     {
+      "id": 5,
       "event": 1,
       "location": 1,
       "start": 1410940800000,
       "end": 1410962400000
     },
     {
+      "id": 6,
       "event": 1,
       "location": 1,
       "start": 1411027200000,
       "end": 1411048800000
     },
     {
+      "id": 7,
       "event": 1,
       "location": 1,
       "start": 1411113600000,
       "end": 1411135200000
     },
     {
+      "id": 8,
       "event": 2,
       "location": 2,
       "start": 1410771600000,
       "end": 1410796800000
     },
     {
+      "id": 9,
       "event": 2,
       "location": 2,
       "start": 1410858000000,
       "end": 1410883200000
     },
     {
+      "id": 10,
       "event": 2,
       "location": 2,
       "start": 1410944400000,
       "end": 1410969600000
     },
     {
+      "id": 11,
       "event": 2,
       "location": 2,
       "start": 1411030800000,
       "end": 1411056000000
     },
     {
+      "id": 12,
       "event": 2,
       "location": 2,
       "start": 1411117200000,
       "end": 1411142400000
     },
     {
+      "id": 13,
       "event": 2,
       "location": 2,
       "start": 1411203600000,
       "end": 1411228800000
     },
     {
+      "id": 14,
       "event": 3,
       "location": 3,
       "start": 1410771600000,
       "end": 1410789600000
     },
     {
+      "id": 15,
       "event": 4,
       "location": 4,
       "start": 1410854400000,
       "end": 1410879600000
     },
     {
+      "id": 16,
       "event": 4,
       "location": 4,
       "start": 1410940800000,
       "end": 1410966000000
     },
     {
+      "id": 17,
       "event": 4,
       "location": 4,
       "start": 1411027200000,
       "end": 1411052400000
     },
     {
+      "id": 18,
       "event": 4,
       "location": 4,
       "start": 1411113600000,
       "end": 1411138800000
     },
     {
+      "id": 19,
       "event": 5,
       "location": 5,
       "start": 1410854400000,
       "end": 1410886800000
     },
     {
+      "id": 20,
       "event": 5,
       "location": 5,
       "start": 1410940800000,
       "end": 1410973200000
     },
     {
+      "id": 21,
       "event": 5,
       "location": 5,
       "start": 1411027200000,
       "end": 1411059600000
     },
     {
+      "id": 22,
       "event": 5,
       "location": 5,
       "start": 1411113600000,
       "end": 1411146000000
     },
     {
+      "id": 23,
       "event": 5,
       "location": 5,
       "start": 1411200000000,
       "end": 1411232400000
     },
     {
+      "id": 24,
       "event": 6,
       "location": 6,
       "start": 1410858000000,
       "end": 1410872400000
     },
     {
+      "id": 25,
       "event": 7,
       "location": 1,
       "start": 1410858000000,
       "end": 1410865200000
     },
     {
+      "id": 26,
       "event": 8,
       "location": 7,
       "start": 1410868800000,
       "end": 1410879600000
     },
     {
+      "id": 27,
       "event": 9,
       "location": 8,
       "start": 1410883200000,
       "end": 1410890400000
     },
     {
+      "id": 28,
       "event": 10,
       "location": 8,
       "start": 1410892200000,

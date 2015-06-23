@@ -9,7 +9,8 @@ angular.module('cultureTech')
         '$stateParams',
         '$timeout',
         '$cordovaLocalNotification',
-        function (events, ionicMaterialInk, $stateParams, $timeout, $cordovaLocalNotification) {
+        'ctAlarms',
+        function (events, ionicMaterialInk, $stateParams, $timeout, $cordovaLocalNotification, ctAlarms) {
             $timeout(function () {
                 ionicMaterialInk.displayEffect();
             }, 0);
@@ -25,24 +26,45 @@ angular.module('cultureTech')
                 return listing.event == $stateParams.id;
             });
 
-            vm.addNotification = function () {
+
+            // Notifications TODO: Move this to service
+            vm.toggleNotification = function(event){
+                if (vm.isScheduled(event.id)){
+                    vm.cancelNotification(event.id)
+                } else {
+                    vm.addNotification(event)
+                }
+            };
+
+            vm.addNotification = function (event) {
+                // TODO: Epoch time to human time
+                var eventTime = event.start;
+                var eventLocation = vm.locations[event.location].name;
+
+                // Set alarm in 10 seconds (testing)
                 var alarmTime = new Date();
                 alarmTime.setSeconds(alarmTime.getSeconds() + 10);
-                $cordovaLocalNotification.schedule({
-                    id: 1,
-                    title: 'Test Title',
-                    text: 'Hello World',
+
+                ctAlarms.add({
+                    id: event.id,
+                    title: vm.event.name,
+                    text: 'Your reminder for ' + vm.event.name + ' (' + eventTime + ' at ' + eventLocation +')',
                     autoClear: true,
-                    at: alarmTime
+                    at: alarmTime,
+                    sound: null
                 });
             };
 
-            // Notifications TODO: Move this to service
-            vm.isScheduled = function () {
-                $cordovaLocalNotification.isScheduled(1).then(function (isScheduled) {
-                    console.log("Notification 1 Scheduled: " + isScheduled);
-                });
+            vm.cancelNotification = function (id) {
+                ctAlarms.remove(id);
             };
+
+            vm.isScheduled = function (index) {
+                return ctAlarms.exists(index);
+            };
+
+
+
 
             vm.getAllNotifications = function () {
                 $cordovaLocalNotification.getAllIds().then(function (ids) {
@@ -50,11 +72,7 @@ angular.module('cultureTech')
                 });
             };
 
-            vm.cancelNotification = function () {
-                $cordovaLocalNotification.cancel(1).then(function () {
-                    console.log("Notification 1 Cancelled");
-                });
-            };
+
 
             vm.cancelAllNotifications = function () {
                 $cordovaLocalNotification.cancelAll().then(function () {

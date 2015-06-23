@@ -24,14 +24,18 @@
             </div>
         </div>
         <div class="list event-time-list">
-            <div class="item border-bottom">
+            <div class="item border-bottom no-border-top">
                 <div class="time">
                     <div class="location">{{vm.locations[vm.event.clickedSchedule.location].name}}</div>
                     {{vm.event.clickedSchedule.start | date:'EEEE, d MMMM'}}<br>
                     {{vm.event.clickedSchedule.start | date:'H:mm a'}} -
                     {{vm.event.clickedSchedule.end | date:'H:mm a'}}
                 </div>
-                <a class="button button-icon icon ion-ios-bell flat ink"></a>
+                <a class="button button-icon icon ion-ios-bell flat ink"
+                   ng-class="{'alarm-set': vm.isScheduled(vm.event.clickedSchedule.id)}"
+                   ng-click="vm.toggleNotification(vm.event.clickedSchedule)">
+
+                </a>
                 <a ng-show="!vm.locations[vm.event.clickedSchedule.location].abstract"
                    ui-sref="tabs.location({id: vm.event.clickedSchedule.location})"
                    class="button button-icon icon ion-ios-location flat ink"></a>
@@ -64,7 +68,9 @@
                     {{listing.start | date:'H:mm a'}} -
                     {{listing.end | date:'H:mm a'}}
                 </div>
-                <a class="button button-icon icon ion-ios-bell flat ink"></a>
+                <a class="button button-icon icon ion-ios-bell flat ink"
+                   ng-class="{'alarm-set': vm.isScheduled(listing.id)}"
+                   ng-click="vm.toggleNotification(listing)"></a>
                 <a ng-show="listing.location != 1"
                    class="button button-icon icon ion-ios-location flat ink"
                    ui-sref="tabs.location({id: listing.location})"></a>

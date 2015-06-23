@@ -94,4 +94,7 @@ angular.module('cultureTech')
                 });
 
             }
+
+
+
         }]);

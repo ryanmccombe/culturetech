@@ -8032,6 +8032,15 @@ ion-list#event-list > div > div:nth-child(1) {
   flex: 0 0 18%;
   height: 60px !important; }
 
+.alarm-set {
+  background-color: #FE6C0B !important; }
+
+.alarm-set:before {
+  color: white !important; }
+
+.event-time-list .no-border-top {
+  border-top-width: 0 !important; }
+
 /* Location */
 .location-photo {
   height: 250px;
