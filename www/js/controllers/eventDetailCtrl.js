@@ -48,20 +48,26 @@ angular.module('cultureTech')
                     vm.cancelNotification(event.id)
                 } else {
                     dateOptions.date = new Date(event.start);
-                    $cordovaDatePicker.show(dateOptions).then(function (date) {
-                        vm.addNotification(event, date)
-                    });
+                    try {
+                        $cordovaDatePicker.show(dateOptions).then(function (date) {
+                            vm.addNotification(event, date)
+                        });
+                    }
+                    catch(err) {
+                        alert('Cannot set notifications on emulator');
+                    }
                 }
             };
 
             vm.addNotification = function (event, date) {
                 var eventTime = new Date(event.start);
-                var humanTime = $filter('date')(eventTime, "EEEE, d MMMM - H:mm a");
-                var eventLocation = vm.locations[event.location].name;
 
                 // Set alarm in 10 seconds (testing)
-                // var date = new Date();
-                // alarmTime.setSeconds(alarmTime.getSeconds() + 10);
+                // var eventTime = new Date();
+                // eventTime.setSeconds(alarmTime.getSeconds() + 10);
+
+                var humanTime = $filter('date')(eventTime, "EEEE, d MMMM - H:mm a");
+                var eventLocation = vm.locations[event.location].name;
 
                 ctAlarms.add({
                     id: event.id,
