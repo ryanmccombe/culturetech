@@ -10,7 +10,17 @@ angular.module('cultureTech')
         '$timeout',
         '$cordovaLocalNotification',
         'ctAlarms',
-        function (events, ionicMaterialInk, $stateParams, $timeout, $cordovaLocalNotification, ctAlarms) {
+        '$cordovaDatePicker',
+        '$filter',
+        function (events,
+                  ionicMaterialInk,
+                  $stateParams,
+                  $timeout,
+                  $cordovaLocalNotification,
+                  ctAlarms,
+                  $cordovaDatePicker,
+                  $filter) {
+
             $timeout(function () {
                 ionicMaterialInk.displayEffect();
             }, 0);
@@ -26,31 +36,39 @@ angular.module('cultureTech')
                 return listing.event == $stateParams.id;
             });
 
+            var dateOptions = {
+                mode: 'datetime',
+                doneButtonLabel: 'Confirm',
+                cancelButtonLabel: 'Cancel'
+            };
 
             // Notifications TODO: Move this to service
-            vm.toggleNotification = function(event){
-                if (vm.isScheduled(event.id)){
+            vm.toggleNotification = function (event) {
+                if (vm.isScheduled(event.id)) {
                     vm.cancelNotification(event.id)
                 } else {
-                    vm.addNotification(event)
+                    dateOptions.date = new Date(event.start);
+                    $cordovaDatePicker.show(dateOptions).then(function (date) {
+                        vm.addNotification(event, date)
+                    });
                 }
             };
 
-            vm.addNotification = function (event) {
-                // TODO: Epoch time to human time
-                var eventTime = event.start;
+            vm.addNotification = function (event, date) {
+                var eventTime = new Date(event.start);
+                var humanTime = $filter('date')(eventTime, "EEEE, d MMMM - H:mm a");
                 var eventLocation = vm.locations[event.location].name;
 
                 // Set alarm in 10 seconds (testing)
-                var alarmTime = new Date();
-                alarmTime.setSeconds(alarmTime.getSeconds() + 10);
+                // var date = new Date();
+                // alarmTime.setSeconds(alarmTime.getSeconds() + 10);
 
                 ctAlarms.add({
                     id: event.id,
                     title: vm.event.name,
-                    text: 'Your reminder for ' + vm.event.name + ' (' + eventTime + ' at ' + eventLocation +')',
+                    text: 'Your reminder for ' + vm.event.name + ' (' + humanTime + ' at ' + eventLocation + ')',
                     autoClear: true,
-                    at: alarmTime,
+                    at: date,
                     sound: null
                 });
             };
@@ -64,14 +82,12 @@ angular.module('cultureTech')
             };
 
 
-
-
+            // Todo: move to options screen
             vm.getAllNotifications = function () {
                 $cordovaLocalNotification.getAllIds().then(function (ids) {
                     console.log(JSON.stringify(ids))
                 });
             };
-
 
 
             vm.cancelAllNotifications = function () {
