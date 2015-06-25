@@ -129,6 +129,16 @@ angular.module('cultureTech', ['ionic', 'ngCordova', 'ionic-material', 'uiGmapgo
                         controller: 'InfoCtrl as vm'
                     }
                 }
+            })
+
+            .state('tabs.settings', {
+                url: '/settings',
+                views: {
+                    'settings-tab': {
+                        templateUrl: 'js/templates/settings.html',
+                        controller: 'SettingsCtrl as vm'
+                    }
+                }
             });
 
         $urlRouterProvider.otherwise('/tab/home')

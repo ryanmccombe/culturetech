@@ -295,7 +295,7 @@ ion-list#event-list > div > div:nth-child(1)
 }
 
 .date-select {
-  font-size: 19px !important;
+  font-size: 17px !important;
   text-transform: none !important;
   font-weight: 500 !important;
   padding-left: 44px !important;
@@ -699,4 +699,19 @@ ui-gmap-google-map, .angular-google-map, .angular-google-map-container{
 
 .partner-back, .partner-forward {
   padding: 10px 15px
+}
+
+/* Settings */
+
+.settings{
+  font-size: 17px !important;
+  line-height: 20px;
+  color: $black;
+  font-weight: 500;
+  border-bottom: 1px $white solid !important;
+}
+
+.badge{
+  background-color: $mid;
+  color: white;
 }

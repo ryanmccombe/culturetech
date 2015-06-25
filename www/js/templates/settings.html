@@ -1,0 +1,20 @@
+<ion-view hide-nav-bar="true">
+    <div class="bar bar-header event-detail-header">
+        <div class="title title-left header-item">
+            Settings
+        </div>
+
+    </div>
+
+    <ion-content style="margin-top: 44px;">
+        <div class="list">
+            <a class="item item-icon-right settings ink" ng-click="vm.clearAlarms()">
+                <i class="icon ion-ios-bell"></i>
+                Clear All Alarms
+                <span class="badge">{{vm.alarmCount}}</span>
+            </a>
+        </div>
+
+    </ion-content>
+
+</ion-view>

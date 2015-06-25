@@ -63,8 +63,8 @@ angular.module('cultureTech')
                 var eventTime = new Date(event.start);
 
                 // Set alarm in 10 seconds (testing)
-                // var eventTime = new Date();
-                // eventTime.setSeconds(alarmTime.getSeconds() + 10);
+                date = new Date();
+                date.setSeconds(date.getSeconds() + 10);
 
                 var humanTime = $filter('date')(eventTime, "EEEE, d MMMM - H:mm a");
                 var eventLocation = vm.locations[event.location].name;
@@ -86,20 +86,5 @@ angular.module('cultureTech')
             vm.isScheduled = function (index) {
                 return ctAlarms.exists(index);
             };
-
-
-            // Todo: move to options screen
-            vm.getAllNotifications = function () {
-                $cordovaLocalNotification.getAllIds().then(function (ids) {
-                    console.log(JSON.stringify(ids))
-                });
-            };
-
-
-            vm.cancelAllNotifications = function () {
-                $cordovaLocalNotification.cancelAll().then(function () {
-                    console.log("All Cancelled");
-                });
-            }
 
         }]);

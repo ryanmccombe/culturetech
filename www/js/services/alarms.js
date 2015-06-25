@@ -14,19 +14,16 @@ angular.module('cultureTech')
 
         function saveAll(alarms){
             $window.localStorage.alarms = JSON.stringify(alarms);
-            console.log($window.localStorage.alarms);
+        }
+
+        function clearAll(){
+            $cordovaLocalNotification.cancelAll().then(function () {
+                console.log("All Cancelled");
+            });
+            $window.localStorage.alarms = '[]';
         }
 
         function exists(id){
-            // try {
-            //     $cordovaLocalNotification.isScheduled(id).then(function (isScheduled) {
-            //         return isScheduled;
-            //     });
-            // }
-            // catch(err) {
-            //     return false;
-            // }
-
             return getAll().indexOf(id) >= 0
         }
 
@@ -61,7 +58,8 @@ angular.module('cultureTech')
         }
 
         return {
-            get: getAll,
+            getAll: getAll,
+            clearAll: clearAll,
             exists: exists,
             add: add,
             remove: remove
