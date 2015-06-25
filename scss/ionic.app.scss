@@ -38,11 +38,27 @@ $home-buttons: rgb(178, 178, 178);
 }
 
 .no-margin {
-  margin: 0;
+  margin: 0 !important;
+}
+
+.no-padding-bottom{
+  padding-bottom: 0 !important;
+}
+
+.no-border-bottom{
+  border-bottom: 0 !important;
 }
 
 .clear {
   clear: both;
+}
+
+.float-left{
+  float: left;
+}
+
+.float-right{
+  float: right;
 }
 
 /* Typography */
@@ -55,6 +71,18 @@ $home-buttons: rgb(178, 178, 178);
   font-weight: 400;
   font-size: 0.8rem;
   color: $light;
+}
+
+@mixin header-bar{
+  background-color: $dark;
+  font-size: 17px !important;
+  font-weight: 500;
+  color: $white;
+  text-transform: none;
+  text-align: left;
+  width: 100%;
+  letter-spacing: normal;
+  max-width: none;
 }
 
 @mixin text-body() {
@@ -116,7 +144,9 @@ $home-buttons: rgb(178, 178, 178);
 
 .header-photo-content {
   position: absolute;
+  left: 20px;
   bottom: 20px;
+  right: 20px;
 }
 
 .dark-background {
@@ -145,6 +175,10 @@ $home-buttons: rgb(178, 178, 178);
 
 .tab-item-active {
   color: $accent;
+}
+
+.bar .title{
+  @include header-bar;
 }
 
 /* Info Pages */
@@ -192,15 +226,7 @@ $home-buttons: rgb(178, 178, 178);
 }
 
 .dropdown-menu > .dropdown-menu-inner > .dropdown-menu-option {
-  background-color: $dark;
-  font-size: 17px;
-  font-weight: 500;
-  color: $white;
-  text-transform: none;
-  text-align: left;
-  width: 100%;
-  letter-spacing: normal;
-  max-width: none;
+  @include header-bar;
 }
 
 /* Home Page */
@@ -272,45 +298,12 @@ ion-list#event-list > div > div:nth-child(1) {
 
 /* Event Detail */
 
-.event-detail-header {
-  background-color: $dark;
-  font-size: 19px !important;
-  text-transform: none !important;
-  font-weight: 500 !important;
-  padding-left: 44px !important;
-  line-height: 44px !important;
-  color: $white !important;
-  margin: 0 !important;
-  text-align: left !important;
-  width: 100% !important;
-  border-radius: 0 !important;
-  font-stretch: normal !important;
-  font-style: normal !important;
-  font-variant: normal !important;
-  letter-spacing: normal !important;
-}
-
-.event-splash-content {
-  text-align: center;
-  padding-top: 216px;
-  width: 100%;
-  height: 100%;
-  @include background-opacity($dark, 0.1);
-  background: -webkit-linear-gradient(to top, $dark 2%, rgba(0, 0, 0, 0) 40%); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
-  background: -moz-linear-gradient(to top, $dark 2%, rgba(0, 0, 0, 0) 40%); /* For Firefox (3.6 to 15) */
-  background: -o-linear-gradient(to top, $dark 2%, rgba(0, 0, 0, 0) 40%); /* For old Opera (11.1 to 12.0) */
-  background: linear-gradient(to top, $dark 2%, rgba(0, 0, 0, 0) 40%); /* Standard syntax; must be last */
-}
-
-.event-tags {
-  margin-right: 10px;
-  text-align: right;
-}
 
 .event-tag {
+  float: right;
   background-color: $primary;
   border-radius: 10px;
-  margin: 4px;
+  margin: 0 0 -12px 20px;
   padding: 4px 14px;
   font-weight: bold;
   font-size: 14px;
@@ -318,36 +311,7 @@ ion-list#event-list > div > div:nth-child(1) {
   text-transform: uppercase;
 }
 
-.event-time-list {
-  margin-bottom: 0 !important;
-  padding: 0 !important;
-}
-
-.event-time-list .item {
-  border-top: 1px $light solid !important;
-  margin: 0 !important;
-  padding: 0 0 0 2px !important;
-  background-color: $white !important;
-}
-
-.border-bottom {
-  border-top: 2px $light solid !important;
-  border-bottom: 1px $light solid !important;
-}
-
-.event-time-list .time {
-  float: left;
-  padding: 13px 0 0 13px !important;
-  @include text-info;
-}
-
-.event-time-list .location {
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: 900;
-}
-
-.event-time-list .icon {
+.info-box .icon {
   float: right;
   background-color: $white;
   color: $dark !important;
@@ -365,21 +329,14 @@ ion-list#event-list > div > div:nth-child(1) {
   @include text-header($white);
 }
 
-.rsvp {
-  background-color: $white !important;
-  padding: 0 !important;
-}
-
-.rsvp-instructions {
-  padding: 10px 14px;
-  flex: 0 0 82%;
-  @include text-info();
+.rsvp-info{
+  padding: 10px 0 0 15px;
 }
 
 .rsvp-icon {
   float: right;
   padding-top: 8px !important;
-  flex: 0 0 18%;
+  width: 70px;
   height: 60px !important;
 }
 
@@ -389,10 +346,6 @@ ion-list#event-list > div > div:nth-child(1) {
 
 .alarm-set:before {
   color: white !important;
-}
-
-.event-time-list .no-border-top {
-  border-top-width: 0 !important;
 }
 
 /* Location */

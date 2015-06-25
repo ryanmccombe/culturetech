@@ -1,7 +1,7 @@
-<ion-view hide-nav-bar="true" >
+<ion-view hide-nav-bar="true">
     <ion-nav-title>{{vm.partner.name}}</ion-nav-title>
-    <div class="bar bar-header event-detail-header">
-        <button style="margin-left: -44px" ng-click="$ionicGoBack()" class="button back-button buttons button-clear header-item">
+    <div class="bar bar-header">
+        <button ng-click="$ionicGoBack()" class="button back-button buttons button-clear header-item">
             <i class="icon ion-ios-arrow-back"></i>
         </button>
         <div class="title title-left header-item">
@@ -12,26 +12,27 @@
 
     <ion-nav-title></ion-nav-title>
 
-    <ion-content>
-        <div class="partner-splash" ng-style="{
+    <ion-content style="margin-top: 43px">
+        <div class="header-photo" ng-style="{
             'background': 'url(img/events/'+vm.event.img+') no-repeat center center',
             'background-size': 'cover'
             }">
-            <div class="event-splash-content">
-                <div class="event-tags" ng-show="vm.event.tags">
+            <div class="header-photo-overlay">
+                <div class="header-photo-content" ng-show="vm.event.tags">
                     <span class="event-tag" ng-repeat="tag in vm.event.tags">{{tag}}</span>
                 </div>
+
             </div>
         </div>
-        <div class="list event-time-list">
-            <div class="item border-bottom no-border-top">
-                <div class="time">
-                    <div class="location">{{vm.locations[vm.event.clickedSchedule.location].name}}</div>
-                    {{vm.event.clickedSchedule.start | date:'EEEE, d MMMM'}}<br>
-                    {{vm.event.clickedSchedule.start | date:'H:mm a'}} -
-                    {{vm.event.clickedSchedule.end | date:'H:mm a'}}
-                </div>
-                <a class="button button-icon icon ion-ios-bell flat ink"
+        <div class="info-box" style="height: 88px;">
+            <div class="padding float-left">
+                <div class="text-header no-margin text-info">{{vm.locations[vm.event.clickedSchedule.location].name}}</div>
+                {{vm.event.clickedSchedule.start | date:'EEEE, d MMMM'}}<br>
+                {{vm.event.clickedSchedule.start | date:'H:mm a'}} -
+                {{vm.event.clickedSchedule.end | date:'H:mm a'}}
+            </div>
+            <div class="float-right" style="width: 140px;">
+                <a class="button button-icon icon ion-ios-bell flat ink" style="float: right;"
                    ng-class="{'alarm-set': vm.isScheduled(vm.event.clickedSchedule.id)}"
                    ng-click="vm.toggleNotification(vm.event.clickedSchedule)">
 
@@ -40,23 +41,25 @@
                    ui-sref="tabs.location({id: vm.event.clickedSchedule.location})"
                    class="button button-icon icon ion-ios-location flat ink"></a>
             </div>
+
         </div>
 
-        <div class="double-padding partner-description" ng-bind-html="vm.event.desc_full">
+        <div class="clear double-padding partner-description" ng-bind-html="vm.event.desc_full">
         </div>
 
-        <div class="list event-time-list" ng-show="vm.event.rsvp">
+        <div class="" ng-show="vm.event.rsvp">
             <div class="item-header">
                 {{vm.event.rsvp.heading || 'RSVP Required'}}
             </div>
-            <div class="row rsvp">
-                <div class="col rsvp-instructions" ng-bind-html="vm.event.rsvp.instructions"></div>
+            <div class="info-box" style="height: 63px;">
+                <div class="rsvp-info float-left text-info" ng-bind-html="vm.event.rsvp.instructions"></div>
                 <a ng-show="vm.event.rsvp.tel" class="button button-icon icon rsvp-icon ion-ios-telephone flat ink"
-                        ng-click="app.call('44', vm.event.rsvp.tel)"></a>
+                   ng-click="app.call('44', vm.event.rsvp.tel)"></a>
                 <a ng-show="vm.event.rsvp.url" class="button button-icon icon rsvp-icon ion-ios-world flat ink"
                    ng-click="app.loadExternalUrl(vm.event.rsvp.url)"></a>
                 <a ng-show="vm.event.rsvp.email" class="button button-icon icon rsvp-icon ion-ios-email flat ink"
                    ng-click="app.sendEmail(vm.event.rsvp.email, 'RSVP for ' + vm.event.name)"></a>
+
             </div>
 
 
@@ -66,6 +69,8 @@
             <div class="item-header">
                 All Times
             </div>
+
+            <!--
             <div class="item" ng-repeat="listing in vm.schedule">
                 <div class="time">
                     <div class="location">{{vm.locations[listing.location].name}}</div>
@@ -80,6 +85,29 @@
                    class="button button-icon icon ion-ios-location flat ink"
                    ui-sref="tabs.location({id: listing.location})"></a>
             </div>
+            -->
+
+
+            <div class="info-box clear no-border-bottom" style="height: 88px;" ng-repeat="listing in vm.schedule">
+                <div class="padding float-left no-padding-bottom">
+                    <div class="text-header no-margin text-info">{{vm.locations[listing.location].name}}</div>
+                    {{listing.start | date:'EEEE, d MMMM'}}<br>
+                    {{listing.start | date:'H:mm a'}} -
+                    {{listing.end | date:'H:mm a'}}
+                </div>
+                <div class="float-right" style="width: 140px;">
+                    <a class="button button-icon icon ion-ios-bell flat ink" style="float: right;"
+                       ng-class="{'alarm-set': vm.isScheduled(listing.id)}"
+                       ng-click="vm.toggleNotification(listing)">
+
+                    </a>
+                    <a ng-show="!vm.locations[listing.location].abstract"
+                       ui-sref="tabs.location({id: vm.event.clickedSchedule.location})"
+                       class="button button-icon icon ion-ios-location flat ink"></a>
+                </div>
+
+            </div>
+
         </div>
 
         <!--
@@ -89,7 +117,6 @@
         <button class="button" ng-click="vm.cancelAllNotifications()">Cancel All</button>
         <button class="button" ng-click="vm.getAllNotifications()">Get All</button><br>
         -->
-
 
 
         <!-- detail for event: {{vm.event.name}} | clicked listing: {{vm.event.clickedSchedule}}
