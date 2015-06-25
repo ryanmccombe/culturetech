@@ -63,8 +63,8 @@ angular.module('cultureTech')
                 var eventTime = new Date(event.start);
 
                 // Set alarm in 10 seconds (testing)
-                date = new Date();
-                date.setSeconds(date.getSeconds() + 10);
+                // testDate = new Date();
+                // testDate.setSeconds(date.getSeconds() + 10);
 
                 var humanTime = $filter('date')(eventTime, "EEEE, d MMMM - H:mm a");
                 var eventLocation = vm.locations[event.location].name;
@@ -74,7 +74,7 @@ angular.module('cultureTech')
                     title: vm.event.name,
                     text: 'Your reminder for ' + vm.event.name + ' (' + humanTime + ' at ' + eventLocation + ')',
                     autoClear: true,
-                    at: date,
+                    at: eventTime,
                     sound: null
                 });
             };
