@@ -51,7 +51,12 @@
             </div>
             <div class="row rsvp">
                 <div class="col rsvp-instructions" ng-bind-html="vm.event.rsvp.instructions"></div>
-                <a class="button button-icon icon rsvp-icon ion-arrow-right-b flat ink"></a>
+                <a ng-show="vm.event.rsvp.tel" class="button button-icon icon rsvp-icon ion-ios-telephone flat ink"
+                        ng-click="app.call('44', vm.event.rsvp.tel)"></a>
+                <a ng-show="vm.event.rsvp.url" class="button button-icon icon rsvp-icon ion-ios-world flat ink"
+                   ng-click="app.loadExternalUrl(vm.event.rsvp.url)"></a>
+                <a ng-show="vm.event.rsvp.email" class="button button-icon icon rsvp-icon ion-ios-email flat ink"
+                   ng-click="app.sendEmail(vm.event.rsvp.email, 'RSVP for ' + vm.event.name)"></a>
             </div>
 
 
