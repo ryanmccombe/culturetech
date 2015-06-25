@@ -200,6 +200,10 @@ $home-buttons: rgb(178, 178, 178);
   margin-bottom: 6px;
 }
 
+.dropdown-menu-option:before{
+  color: white !important;
+}
+
 /* Headers + Tabs */
 
 .bar, .tabs {
@@ -291,11 +295,12 @@ $home-buttons: rgb(178, 178, 178);
 .splash-content {
   position: absolute;
   bottom: 20px;
-  text-align: right;
 }
 
 .splash-content > .button {
   margin-bottom: 6px;
+  width: 100%;
+  text-align: right;
   font-size: 22px;
   font-weight: 200;
   letter-spacing: 3px;

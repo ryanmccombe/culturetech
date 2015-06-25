@@ -53,8 +53,8 @@ angular.module('cultureTech')
                             vm.addNotification(event, date)
                         });
                     }
-                    catch(err) {
-                        alert('Cannot set notifications on emulator');
+                    catch (err) {
+                        vm.addNotification(event, dateOptions.date);
                     }
                 }
             };

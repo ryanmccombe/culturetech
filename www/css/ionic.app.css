@@ -7792,6 +7792,9 @@ a.button {
   max-width: none;
   margin-bottom: 6px; }
 
+.dropdown-menu-option:before {
+  color: white !important; }
+
 /* Headers + Tabs */
 .bar, .tabs {
   background-color: #2C3338;
@@ -7885,11 +7888,12 @@ a.button {
 
 .splash-content {
   position: absolute;
-  bottom: 20px;
-  text-align: right; }
+  bottom: 20px; }
 
 .splash-content > .button {
   margin-bottom: 6px;
+  width: 100%;
+  text-align: right;
   font-size: 22px;
   font-weight: 200;
   letter-spacing: 3px;
