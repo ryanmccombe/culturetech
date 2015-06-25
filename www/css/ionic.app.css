@@ -7878,7 +7878,7 @@ ion-list#event-list > div > div:nth-child(1) {
   display: none !important; }
 
 .date-box-expanded {
-  height: 308px !important; }
+  height: auto !important; }
 
 .date-select {
   font-size: 17px !important;
