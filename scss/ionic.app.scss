@@ -56,26 +56,51 @@ $home-buttons: rgb(178, 178, 178);
 }
 
 
-@mixin text-header {
+@mixin text-header($color) {
   font-weight: 700;
   font-size: 15px;
   line-height: 20px;
-  color: white;
+  color: $color;
   text-transform: uppercase;
+  margin: 12px 0 4px 0;
 }
 
-#reflow-spacer{
-  height: 10px;
-}
-
-/* Info */
-.info-photo {
+.header-photo {
   height: 150px;
   position: relative;
   background-size: cover !important;
   overflow: hidden;
 }
 
+.header-photo-overlay{
+  text-align: left;
+  color: white;
+  padding-left: 40px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.dark-background{
+  @include background-opacity($dark, 0.8);
+}
+
+.gradient-background{
+  background: -webkit-linear-gradient(to top, $dark 6%, rgba(0, 0, 0, 0) 80%); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
+  background: -moz-linear-gradient(to top, $dark 6%, rgba(0, 0, 0, 0) 80%); /* For Firefox (3.6 to 15) */
+  background: -o-linear-gradient(to top, $dark 6%, rgba(0, 0, 0, 0) 80%); /* For old Opera (11.1 to 12.0) */
+  background: linear-gradient(to top, $dark 6%, rgba(0, 0, 0, 0) 80%); /* Standard syntax; must be last */
+}
+
+.info-box{
+  background-color: $white;
+  border-top: 1px $light solid;
+  border-bottom: 1px $light solid;
+}
+
+/* Info Pages */
 .page0{
   background: url('../img/info/page2.jpg') no-repeat center center;
 }
@@ -86,38 +111,12 @@ $home-buttons: rgb(178, 178, 178);
   background: url('../img/info/page0.jpg') no-repeat center center;
 }
 
-.info-photo-overlay{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  @include background-opacity($dark, 0.1);
-  background: -webkit-linear-gradient(to top, $dark 6%, rgba(0, 0, 0, 0) 80%); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
-  background: -moz-linear-gradient(to top, $dark 6%, rgba(0, 0, 0, 0) 80%); /* For Firefox (3.6 to 15) */
-  background: -o-linear-gradient(to top, $dark 6%, rgba(0, 0, 0, 0) 80%); /* For old Opera (11.1 to 12.0) */
-  background: linear-gradient(to top, $dark 6%, rgba(0, 0, 0, 0) 80%); /* Standard syntax; must be last */
-
-}
-
-.no-padding-top{
-  padding-top: 0;
-}
-
 .info-summary{
-  font-size: 16px;
-  font-weight: 400;
-  background-color: $white;
-  border-top: 1px $light solid;
-  border-bottom: 1px $light solid;
-  text-align: left;
+  @include info-text;
 }
 
 .info-header{
-  @include text-header;
-  color: $black;
-  text-transform: uppercase;
-  margin: 12px 0 4px 0;
+  @include text-header($black);
 }
 
 .info-body{
@@ -223,22 +222,6 @@ label.item-input-wrapper {
 .featured-event-poster {
   height: 200px;
   position: relative;
-}
-
-.featured-event-poster-content {
-  text-align: left;
-  color: white;
-  position: absolute;
-  padding-left: 40px;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  @include background-opacity($dark, 0.8);
-  background: -webkit-linear-gradient(to top, $dark 6%, rgba($dark, .6) 40%, rgba(0, 0, 0, 0) 80%); /* For Chrome 25 and Safari 6, iOS 6.1, Android 4.3 */
-  background: -moz-linear-gradient(to top, $dark 6%, rgba($dark, .6) 40%, rgba(0, 0, 0, 0) 80%); /* For Firefox (3.6 to 15) */
-  background: -o-linear-gradient(to top, $dark 6%, rgba($dark, .6) 40%, rgba(0, 0, 0, 0) 80%); /* For old Opera (11.1 to 12.0) */
-  background: linear-gradient(to top, $dark 6%, rgba($dark, .6) 40%, rgba(0, 0, 0, 0) 80%); /* Standard syntax; must be last */
 }
 
 .bottom {

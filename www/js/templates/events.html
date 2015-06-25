@@ -50,11 +50,11 @@
 
     <ion-content style="margin-top: 43px" has-bouncing="false" ng-class="{'has-subheader': app.searching}">
         <div ng-hide="app.searching" class="featured-events">
-            <div class="featured-event-poster" ng-style="({
+            <div class="header-photo" ng-style="({
             background: 'url(img/events/' + vm.random.img +') no-repeat center center',
             'background-size': 'cover'})"
                  ui-sref="tabs.eventDetail({id: vm.random.id, clickedSchedule: vm.random.schedule})">
-                <div class="featured-event-poster-content">
+                <div class="header-photo-overlay gradient-background dark-background">
                     <div class="bottom">
                         <div class="featured-event-time">
                             {{vm.random.start | date:'EEE, h:mm a'}} - {{vm.random.end | date:'h:mm a'}}
