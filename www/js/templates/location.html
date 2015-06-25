@@ -1,33 +1,32 @@
 <ion-view hide-nav-bar="true">
-    <div class="bar bar-header event-detail-header">
-        <button style="margin-left: -44px" ng-click="$ionicGoBack()"
+    <div class="bar bar-header">
+        <button ng-click="$ionicGoBack()"
                 class="button back-button buttons button-clear header-item">
             <i class="icon ion-ios-arrow-back"></i>
         </button>
-        <div class="title title-left header-item">
+        <div class="title title-left">
             {{vm.location.name}}
         </div>
 
     </div>
 
     <ion-content data-tap-disabled="true">
-        <div class="location-photo" ng-style="{
+        <div class="header-photo" ng-style="{
             'background': 'url(img/locations/'+vm.location.img+') no-repeat center center',
             'background-size': 'cover'
             }" ng-class="({'hide-photo': vm.expandMap})">
-            <div class="event-splash-content">
-            </div>
         </div>
 
-        <div class="list event-time-list" ng-class="({'map-address-bar': vm.expandMap})">
-            <div class="item border-bottom">
-                <div class="time">
-                    <div class="location">{{vm.location.name}}</div>
-                    <div class="location-address" ng-bind-html="vm.location.address"></div>
-                </div>
+        <div class="info-box" style="height: 88px;" ng-class="({'map-address-bar': vm.expandMap})">
+            <div class="padding float-left">
+                <div class="text-header no-margin text-info">{{vm.location.name}}</div>
+                <div class="text-info" ng-bind-html="vm.location.address"></div>
+            </div>
+            <div class="float-right" style="width: 70px;">
                 <a ng-show="vm.expandMap" ng-click="vm.recenterMap()"
                    class="button button-icon icon ion-ios-location recenter-map flat ink"></a>
             </div>
+
         </div>
 
         <div class="map-outer" ng-click="vm.data ? vm.getMap() : vm.getNetwork()" ng-class="({'fill': vm.expandMap})">

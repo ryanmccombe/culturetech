@@ -1,12 +1,5 @@
 <ion-view title="Partners">
-<ion-nav-buttons side="right">
-    <button class="button button-icon button-clear ink"
-            ng-class="{'ion-search': !app.searching, 'ion-close': app.searching}"
-            ng-click="app.toggleSearch()"></button>
-</ion-nav-buttons>
-<ng-include ng-show="app.searching" src="'js/templates/search.html'"></ng-include>
-
-    <ion-content has-bouncing="true" ng-class="{'has-subheader': app.searching}">
+    <ion-content>
         <ion-list>
             <ion-item ng-repeat="item in vm.partners" ng-class="{'ink': app.effects}"
                       class="partner item-text-wrap item-avatar-left item-icon-right"

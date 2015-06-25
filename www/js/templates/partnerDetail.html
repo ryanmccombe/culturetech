@@ -2,17 +2,13 @@
     <ion-nav-title>{{vm.partner.name}}</ion-nav-title>
     <ion-content>
 
-        <div class="partner-splash" ng-style="{
+        <div class="header-photo" ng-style="{
             'background': 'url(img/partners/'+vm.partner.id+'_p.jpg) no-repeat center center',
             'background-size': 'cover'
             }">
-            <div class="partner-splash-content">
-                <i class="icon-transparent button flat ion-ios-world-outline ink"
-                   ng-click="app.loadExternalUrl(partner.url || 'http://www.google.com', {})"></i>
-            </div>
         </div>
 
-        <div class="row partner-navigation">
+        <div class="row partner-navigation border-bottom">
             <div class="col ink partner-back"
                  ng-click="vm.previous ? vm.previousPartner() : ''">
                 <div ng-if="vm.previous" class="partner-title">Previous</div>

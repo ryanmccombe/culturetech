@@ -36,7 +36,7 @@ angular.module('cultureTech')
             };
 
             vm.setMargin = function (value) {
-                document.getElementById('innerPage').style.marginTop = value ? value : '-' + vm.page * 44 + 'px';
+                document.getElementById('innerPage').style.marginTop = value ? value : '-' + vm.page * 50 + 'px';
             };
 
         }]);

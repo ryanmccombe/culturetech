@@ -1,10 +1,9 @@
 <ion-view hide-nav-bar="true">
-    <ion-nav-title>{{vm.partner.name}}</ion-nav-title>
     <div class="bar bar-header">
         <button ng-click="$ionicGoBack()" class="button back-button buttons button-clear header-item">
             <i class="icon ion-ios-arrow-back"></i>
         </button>
-        <div class="title title-left header-item">
+        <div class="title title-left">
             {{vm.event.nameShort || vm.event.name}}
         </div>
 
@@ -24,6 +23,7 @@
 
             </div>
         </div>
+
         <div class="info-box" style="height: 88px;">
             <div class="padding float-left">
                 <div class="text-header no-margin text-info">{{vm.locations[vm.event.clickedSchedule.location].name}}</div>
@@ -70,23 +70,6 @@
                 All Times
             </div>
 
-            <!--
-            <div class="item" ng-repeat="listing in vm.schedule">
-                <div class="time">
-                    <div class="location">{{vm.locations[listing.location].name}}</div>
-                    {{listing.start | date:'EEEE, d MMMM'}}<br>
-                    {{listing.start | date:'H:mm a'}} -
-                    {{listing.end | date:'H:mm a'}}
-                </div>
-                <a class="button button-icon icon ion-ios-bell flat ink"
-                   ng-class="{'alarm-set': vm.isScheduled(listing.id)}"
-                   ng-click="vm.toggleNotification(listing)"></a>
-                <a ng-show="listing.location != 1"
-                   class="button button-icon icon ion-ios-location flat ink"
-                   ui-sref="tabs.location({id: listing.location})"></a>
-            </div>
-            -->
-
 
             <div class="info-box clear no-border-bottom" style="height: 88px;" ng-repeat="listing in vm.schedule">
                 <div class="padding float-left no-padding-bottom">
@@ -109,22 +92,6 @@
             </div>
 
         </div>
-
-        <!--
-        <button class="button" ng-click="vm.addNotification()">Add notification</button>
-        <button class="button" ng-click="vm.isScheduled()">Is Scheduled?</button>
-        <button class="button" ng-click="vm.cancelNotification()">Cancel</button>
-        <button class="button" ng-click="vm.cancelAllNotifications()">Cancel All</button>
-        <button class="button" ng-click="vm.getAllNotifications()">Get All</button><br>
-        -->
-
-
-        <!-- detail for event: {{vm.event.name}} | clicked listing: {{vm.event.clickedSchedule}}
-        <hr>
-        {{vm.event}}
-        <hr>
-        also on {{vm.schedule}}
-        -->
     </ion-content>
 
 </ion-view>
