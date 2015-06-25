@@ -7675,10 +7675,11 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
+/* Utilities */
 .header-photo {
   height: 150px;
   position: relative;
-  background-size: cover !important;
+  background-size: cover;
   overflow: hidden; }
 
 .header-photo-overlay {
@@ -7711,7 +7712,15 @@ a.button {
   border-top: 1px #94A0A8 solid;
   border-bottom: 1px #94A0A8 solid; }
 
-/* Info */
+/* Headers + Tabs */
+.bar, .tabs {
+  background-color: #2C3338;
+  color: #E1E6E8; }
+
+.tab-item-active {
+  color: #FE6C0B; }
+
+/* Info Pages */
 .page0 {
   background: url('../img/info/page2.jpg') no-repeat center center; }
 
@@ -7731,8 +7740,6 @@ a.button {
   font-weight: 700;
   font-size: 15px;
   line-height: 20px;
-  color: white;
-  text-transform: uppercase;
   color: #121A21;
   text-transform: uppercase;
   margin: 12px 0 4px 0; }
@@ -7742,59 +7749,36 @@ a.button {
   line-height: 26px;
   color: #121A21; }
 
-/* Headers + Tabs */
-.keyboard-open .tabs {
-  display: none; }
-
-.keyboard-open .has-tabs {
-  bottom: 0; }
-
-ion-header-bar, .tabs {
-  background-color: #2C3338 !important;
-  color: #E1E6E8 !important; }
-
-.title {
-  color: #E1E6E8 !important; }
-
-.tab-item-active {
-  color: #FE6C0B !important; }
-
 /* Home Page */
 .splash {
   background: url('../img/bg.jpg') no-repeat center center;
-  background-size: cover; }
-
-.splash-content {
-  position: relative;
-  height: 100%;
-  width: 100%;
-  padding-top: 50px;
-  text-align: right; }
+  background-size: cover;
+  height: 100%; }
 
 .splash-logo {
+  float: right;
   width: 70%;
-  margin: 0 30px 80px 0;
-  opacity: 0.8; }
+  margin: 50px 30px 0 0; }
 
-.splash-buttons {
+.splash-content {
   position: absolute;
-  bottom: 0;
-  right: 0;
-  margin: 0 auto 30px auto;
+  bottom: 20px;
   text-align: right; }
 
-.splash-buttons > div {
-  width: 100%;
-  margin-bottom: 20px;
+.splash-content > .button {
+  margin-bottom: 6px;
   font-size: 22px;
   font-weight: 200;
-  letter-spacing: 4px;
-  text-align: right;
-  color: #E1E6E8 !important; }
+  letter-spacing: 3px;
+  color: #E1E6E8; }
 
-.splash-buttons i:before {
+.splash-content i:before {
   font-size: 26px !important;
-  margin-left: 10px; }
+  margin-left: 6px; }
+
+.splash-content .ion-help:before {
+  margin-right: 5px;
+  margin-left: 11px; }
 
 /* Search */
 .bar-search {
@@ -7994,8 +7978,9 @@ ion-list#event-list > div > div:nth-child(1) {
   font-weight: 700;
   font-size: 15px;
   line-height: 20px;
-  color: white;
-  text-transform: uppercase; }
+  color: #E1E6E8;
+  text-transform: uppercase;
+  margin: 12px 0 4px 0; }
 
 .rsvp {
   background-color: #E1E6E8 !important;

@@ -1,28 +1,25 @@
 <ion-view hide-nav-bar="true">
-    <ion-content scroll="false" class="splash">
+    <ion-content scroll="false">
 
-        <div class="splash-content ink">
-
+        <div class="splash ink">
             <img class="splash-logo" src="img/logo_inverse.png" alt=""/>
 
-            <div class="splash-buttons">
-
-                <div ui-sref="tabs.events" class="button button-clear">
+            <div class="splash-content">
+                <div ui-sref="tabs.events" class="button button-clear splash-button">
                     Events
                     <i class="icon ion-calendar"></i>
                 </div>
-                <div ui-sref="tabs.partners" class="button button-clear">
+                <div ui-sref="tabs.partners" class="button button-clear splash-button">
                     Partners
                     <i class="icon ion-ios-people"></i>
                 </div>
 
-                <div ui-sref="tabs.info" class="button button-clear">
+                <div ui-sref="tabs.info" class="button button-clear splash-button">
                     Festival Info
                     <i class="icon ion-help"></i>
                 </div>
             </div>
-
-
         </div>
+
     </ion-content>
 </ion-view>
