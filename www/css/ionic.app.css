@@ -7964,7 +7964,10 @@ ion-list#event-list > div > div:nth-child(1) {
   margin: 12px 0 4px 0; }
 
 .rsvp-info {
-  padding: 10px 0 0 15px; }
+  padding: 10px 0 0 15px;
+  width: 80%;
+  overflow: none;
+  white-space: nowrap; }
 
 .rsvp-icon {
   float: right;
