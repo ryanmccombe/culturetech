@@ -55,7 +55,8 @@
         </div>
 
         <ion-list id="event-list">
-            <div ng-repeat="item in vm.schedule" ng-show="vm.cache[vm.date].indexOf($index) != -1"
+            <div ng-repeat="item in vm.schedule  | orderBy:'id':true"
+                 ng-show="vm.cache[vm.date].indexOf((vm.schedule.length-1) - $index) != -1"
                  ui-sref="tabs.eventDetail({id: item.event, clickedSchedule: $index})">
                 <ion-item class="item-text-wrap item-thumbnail-left">
                     <img class="event-thumbnail" ng-src="img/events/{{vm.events[item.event].img}}" alt="{{item.name}}"/>
