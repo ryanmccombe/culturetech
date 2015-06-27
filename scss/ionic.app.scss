@@ -53,6 +53,14 @@ $home-buttons: rgb(178, 178, 178);
   border-bottom: 0 !important;
 }
 
+.no-wrap{
+  white-space: nowrap !important;
+}
+
+.no-overflow{
+  overflow: hidden;
+}
+
 .clear {
   clear: both;
 }
@@ -382,8 +390,6 @@ ion-list#event-list > div > div:nth-child(1) {
 .rsvp-info{
   padding: 10px 0 0 15px;
   width: 80%;
-  overflow: none;
-  white-space: nowrap;
 }
 
 .rsvp-icon {

@@ -52,7 +52,7 @@
                 {{vm.event.rsvp.heading || 'RSVP Required'}}
             </div>
             <div class="info-box" style="height: 63px;">
-                <div class="rsvp-info float-left text-info" ng-bind-html="vm.event.rsvp.instructions"></div>
+                <div class="rsvp-info float-left text-info no-wrap no-overflow" ng-bind-html="vm.event.rsvp.instructions"></div>
                 <a ng-show="vm.event.rsvp.tel" class="button button-icon icon rsvp-icon ion-ios-telephone flat ink"
                    ng-click="app.call('44', vm.event.rsvp.tel)"></a>
                 <a ng-show="vm.event.rsvp.url" class="button button-icon icon rsvp-icon ion-ios-world flat ink"

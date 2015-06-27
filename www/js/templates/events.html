@@ -57,15 +57,16 @@
         <ion-list id="event-list">
             <div ng-repeat="item in vm.schedule  | orderBy:'id':true"
                  ng-show="vm.cache[vm.date].indexOf((vm.schedule.length-1) - $index) != -1"
-                 ui-sref="tabs.eventDetail({id: item.event, clickedSchedule: $index})">
+                 ui-sref="tabs.eventDetail({id: item.event, clickedSchedule: item.id})">
                 <ion-item class="item-text-wrap item-thumbnail-left">
                     <img class="event-thumbnail" ng-src="img/events/{{vm.events[item.event].img}}" alt="{{item.name}}"/>
 
                     <div class="event-meta">
                         <div class="uppercase meta-info">
-                            {{$index}} {{item.start | date:'EEE, h:mm a'}} - {{item.end | date:'h:mm a'}}
+                            {{(vm.schedule.length-1) - $index}}
+                            {{item.start | date:'EEE, h:mm a'}} - {{item.end | date:'h:mm a'}}
                         </div>
-                        <div class="text-header no-margin">{{vm.events[item.event].nameShort ||
+                        <div class="text-header no-margin no-wrap no-overflow">{{vm.events[item.event].nameShort ||
                             vm.events[item.event].name}}
                         </div>
                     </div>

@@ -301,7 +301,7 @@
       ],
       "rsvp": {
         "heading": "Registration Advised",
-        "instructions": "Register by Telephone<br>(028) 71266946",
+        "instructions": "<b>Register by Telephone</b><br>(028) 71266946",
         "tel": "2871266946"
       }
     },
@@ -331,7 +331,7 @@
         "RSVP Required"
       ],
       "rsvp": {
-        "instructions": "RSVP Online<br>getinvited.to/culturetech/see-tech",
+        "instructions": "<b>RSVP Online</b><br>getinvited.to/culturetech/see-tech",
         "url": "http://getinvited.to/culturetech/see-tech"
       }
     },
@@ -354,7 +354,7 @@
         "RSVP Required"
       ],
       "rsvp": {
-        "instructions": "E-Mail (limited tickets)<br>filmhubni@qub.ac.uk",
+        "instructions": "<b>E-Mail (limited tickets)</b><br>filmhubni@qub.ac.uk",
         "email": "filmhubni@qub.ac.uk"
       }
     },
@@ -368,7 +368,7 @@
         "RSVP Required"
       ],
       "rsvp": {
-        "instructions": "RSVP Online<br>getinvited.to/clarem",
+        "instructions": "<b>RSVP Online</b><br>getinvited.to/clarem",
         "url": "http://www.getinvited.to/clarem"
       }
     },
@@ -382,7 +382,7 @@
         "RSVP Required"
       ],
       "rsvp": {
-        "instructions": "RSVP Online<br>getinvited.to/culturetech/becoming-martian",
+        "instructions": "<b>RSVP Online</b><br>getinvited.to/culturetech/becoming-martian",
         "url": "http://getinvited.to/culturetech/becoming-martian"
       }
     },
@@ -393,7 +393,7 @@
       "desc_full": "The Coding Game Is Changing! You've got to think differently to develop for the cloud!<br><br>CultureTECH and IBM invite entrepreneurs, developers and independent developers to relax, network and listen to IBM experts as they provide an overview and live demo of : Bluemix.<br><br>Developers and business leaders alike can use this opportunity to leap frog competition, develop your applications quicker than ever and deploy applications in a matter of hours.<br><br>Developers and business owners alike will benefit from hearing how Bluemix and Softlayer offers a no cost, secure environment - using new technologies geared towards the cloud for students and start up companies to build and deploy.",
       "tags": ["RSVP Required"],
       "rsvp": {
-        "instructions": "RSVP Online<br>getinvited.to/culturetech/ibm-bluemix-demo-workshop/",
+        "instructions": "<b>RSVP Online</b><br>getinvited.to/culturetech/ibm-bluemix-demo-workshop/",
         "url": "http://getinvited.to/culturetech/ibm-bluemix-demo-workshop/"
       }
     },
@@ -404,7 +404,7 @@
       "desc_full": "Google will be bringing the Google Juice Bar to Derry, a series of free seminars and workshops as part of their drive to empower small business owners and aspiring entrepreneurs gain the necessary skills to get the most out of their digital marketing and boost online presence.<br><br>You'll have the chance to hear from the Google team and meet with them one-on-one to get advice on how to improve your organisation's online presence.<br><br><em>9am-10am: Google presentation<br>10am-11am: One-on-one sessions</em>",
       "tags": ["Free", "RSVP Required"],
       "rsvp": {
-        "instructions": "RSVP Online<br>getinvited.to/culturetech/google-juice-bar/",
+        "instructions": "<b>RSVP Online</b><br>getinvited.to/culturetech/google-juice-bar/",
         "url": "http://getinvited.to/culturetech/google-juice-bar/"
       }
     },
@@ -415,11 +415,12 @@
       "desc_full": "In today's global marketplace, it is vital for businesses to embrace current and emerging technologies to increase sales and achieve their market potential. Digital DNA will bring together thought leaders, inspirational speakers and local case studies to illustrate how technology can be leveraged to improve businesses performance and improve profitability.<br><br>The Digital DNA Symposium at CultureTECH will be relevant for owners, CEOs, Directors, Sales and Marketing Managers and IT Managers. Building from CultureTECH, Digital DNA will host a week-long series of enterprise-focused events culminating in the main conference in Titanic Belfast on November 6 involving Google, Facebook and Twitter.<br><br>For information about all Digital DNA activities log on to http://digitaldna-ni.com/",
       "tags": ["Ticket Required"],
       "rsvp": {
-        "instructions": "Get Ticket Online<br>digitaldna-ni.com",
+        "instructions": "<b>Get Ticket Online</b><br>digitaldna-ni.com",
         "url": "http://digitaldna-ni.com/"
       }
     },
     {
+      "nameShort": "OLT: Digital Cafe",
       "name": "Old Library Trust Digital Cafe",
       "img": "oldlibrary.jpg",
       "desc_short": "Explore the world of the internet with this Digital Cafe & the launch of the Old Library Trust Website",
