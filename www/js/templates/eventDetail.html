@@ -25,8 +25,8 @@
         </div>
 
         <div class="info-box" style="height: 88px;">
-            <div class="padding float-left">
-                <div class="text-header no-margin text-info">{{vm.locations[vm.event.clickedSchedule.location].name}}</div>
+            <div class="padding float-left" style="width: 60%">
+                <div class="text-header no-margin text-info no-wrap">{{vm.locations[vm.event.clickedSchedule.location].name}}</div>
                 {{vm.event.clickedSchedule.start | date:'EEEE, d MMMM'}}<br>
                 {{vm.event.clickedSchedule.start | date:'H:mm a'}} -
                 {{vm.event.clickedSchedule.end | date:'H:mm a'}}

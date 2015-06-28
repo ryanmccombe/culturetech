@@ -19,8 +19,8 @@
       28
     ],
     [2, 5, 10, 16, 20, 29, 30, 31, 32],
-    [],
-    [],
+    [33, 35, 36, 37, 38, 40, 41, 42, 44, 45, 46],
+    [34, 39, 43],
     [],
     []
   ],
@@ -255,7 +255,107 @@
       "location": 10,
       "start": 1410944400000,
       "end": 1410951600000
+    },
+    {
+      "id": 33,
+      "event": 0,
+      "location": 11,
+      "start": 1411027200000,
+      "end": 1411048800000
+    },
+    {
+      "id": 34,
+      "event": 0,
+      "location": 11,
+      "start": 1411113600000,
+      "end": 1411135200000
+    },
+    {
+      "id": 35,
+      "event": 15,
+      "location": 6,
+      "start": 1411029000000,
+      "end": 1411041600000
+    },
+    {
+      "id": 36,
+      "event": 16,
+      "location": 3,
+      "start": 1411030800000,
+      "end": 1411048800000
+    },
+    {
+      "id": 37,
+      "event": 17,
+      "location": 0,
+      "start": 1411030800000,
+      "end": 1411052400000
+    },
+    {
+      "id": 38,
+      "event": 18,
+      "location": 7,
+      "start": 1411030800000,
+      "end": 1411056000000
+    },
+    {
+      "id": 39,
+      "event": 18,
+      "location": 7,
+      "start": 1411117200000,
+      "end": 1411142400000
+    },
+    {
+      "id": 40,
+      "event": 19,
+      "location": 12,
+      "start": 1411038000000,
+      "end": 1411045200000
+    },
+    {
+      "id": 41,
+      "event": 20,
+      "location": 4,
+      "start": 1411039800000,
+      "end": 1411045200000
+    },
+    {
+      "id": 42,
+      "event": 21,
+      "location": 3,
+      "start": 1411041600000,
+      "end": 1411048800000
+    },
+    {
+      "id": 43,
+      "event": 21,
+      "location": 3,
+      "start": 1411128000000,
+      "end": 1411135200000
+    },
+    {
+      "id": 44,
+      "event": 22,
+      "location": 4,
+      "start": 1411045200000,
+      "end": 1411054200000
     }
+  ,
+    {
+      "id": 45,
+      "event": 23,
+      "location": 13,
+      "start": 1411059600000,
+      "end": 1411079400000
+    },
+    {
+      "id": 46,
+      "event": 24,
+      "location": 14,
+      "start": 1411063200000,
+      "end": 1411070400000
+    }
+
   ],
   "events": [
     {
@@ -428,11 +528,117 @@
       "tags": ["Free"]
     },
     {
+      "name": "Digital Skills Conference",
+      "img": "digitalskills.jpg",
+      "desc_short": "We’ve gathered a panel of Digital Champions from across the UK and Ireland to highlight the great work that they’re doing to alleviate the  alarming statistic that 21% of the UK population lack basic digital skills",
+      "desc_full": "We’ve gathered a panel of Digital Champions from across the UK and Ireland to highlight the great work that they’re doing to alleviate the  alarming statistic that 21% of the UK population lack basic digital skills.The conference will examine the importance of basic digital skills, with a key focus on how skills can be improved in both voluntary organisation and in commerce, as well as signposting and highlighting excellent local and Northern ireland based resources and organisations that can help.<br><br>As well as a variety of champions from the UK and Ireland, we’ll have a number of breakout sessions outlining how tech can improve voluntary organisations and we’ll be showcasing excellent examples of Tech for Social Good.<br><br>This is the culmination of CultureTECH’s week of digital engagement, which will see 1,000 Digital Champions being crowned in conjunction with Derry City Council and in support of the Go ON NI campaign.<br><br><b>Speakers include:</b><br>Deborah Matthews (Coast & Country Housing and “GO ON UK’s North East Martha”)<br>Naomh McElhatton (Digital Advertising NI and Northern Ireland's Digital Champion)",
+      "tags": ["RSVP Required"],
+      "rsvp": {
+        "instructions": "<b>RSVP Online</b><br>getinvited.to/culturetech/culturetech-digital",
+        "url": "http://getinvited.to/culturetech/culturetech-digital/"
+      }
+    },
+    {
+      "nameShort": "Crows on the Wire",
+      "name": "Crows on the Wire: Young People's Programme",
+      "img": "crowsonthewire.jpg",
+      "desc_short": "Using the amazing Oculus Rift technology and incorporating drama activities, the Verbal Arts Centre will host a workshop programme for young people, exploring the story and experience of the Crows on the Wire app for iPad and Tablet",
+      "desc_full": "Using the amazing Oculus Rift technology and incorporating drama activities, the Verbal Arts Centre will host a workshop programme for young people, exploring the story and experience of the Crows on the Wire app for iPad and Tablet.<br><br>Local schools and youth groups will have the opportunity to access free interactive digital and drama sessions from 10.00am to 3.00pm on Thursday 18 September in the Verbal Arts Centre. For ages 15+.<br><br>This project is funded under the EU’s PEACE III Programme, managed for the SEUPB by Pobal.",
+      "tags": ["Age 15+", "RSVP Required"],
+      "rsvp": {
+        "instructions": "<b>Book by Telephone</b><br>(028)71 266 946",
+        "tel": "2871266946"
+      }
+    },
+    {
+      "name": "Jobs Fair",
+      "img": "kickstart.jpg",
+      "desc_short": "The North West's biggest jobs fair returns to CultureTECH this year with 15+ technology, media and creative industries employers joining dozens more from retail, hospitality and professional services",
+      "desc_full": "The North West's biggest jobs fair returns to CultureTECH this year with 15+ technology, media and creative industries employers (upstairs) joining dozens more from retail, hospitality and professional services (downstairs).<br><br>It's free to attend, just make sure you've got your CV and portfolio with you! ",
+      "tags": ["Free"]
+    },
+    {
+      "name": "48 Hour Music Bootcamp",
+      "img": "musicbootcamp.jpg",
+      "desc_short": "Over 48 hours, experience the entire process of two artists creating a song together and bringing it into the public domain",
+      "desc_full": "Music Bootcamp - From fledgling song concept to complete release-ready track in 48 action-packed hours<br><br>Over 48 hours, experience the entire process of two artists (Rachel Sermanni and RAMS’ Pocket Radio) creating a song together and bringing it into the public domain. Get involved in masterclasses in video production, recording and mixing, digital marketing, song writing, photography, and music documentary making.<br><br><b>Rachel Sermanni</b><br>Rachel is a Scottish folk musician from Carrbridge, in Strathspey. She has toured with a number of well-known folk and indie artists in the United Kingdom and performed on BBC Introducing Stage at Reading Festival. She has headlined BBC Scotland's annual Hogmanay Live programme, appearing alongside Frightened Rabbit. Her album “Live in Dawson City” is scheduled for release in October.<br><br><b>RAMS' Pocket Radio</b><br>The alias of multi-instrumentalist, Peter McCauley, RAMS' started life as a drummer in bands and orchestras before beginning to write his own music. With wide ranging and ever changing influences – from Radiohead and Beethoven, to brutalist architecture – it's pop, but deconstructed a little.<br><br><b>Mentors include:</b> Song-writing / co-writing – Paul Steel<br>Paul's music gained international exposure when Mika's track 'Underwater' from his 2013 album The Origin of Love was featured on an high-profile Swatch advert. His writing credits include Nick Littlemore (Empire of the Sun), Mika, Nicola Roberts, Saint Raymond, and PNAU to name but a few.<br><br><b>Recording and mixing</b> – Smalltown America<br>An independent record label based in Derry, home to acts including Axis Of, Sullivan & Gold and PORTS.<br><br><b>Video production</b> – Darren Lee<br>Darren is a film maker who specialises in music videos. He has worked with Runaway Go, The Answer, INXS, LMFAO and LostAlone. His videos have been featured on NME, SCUZZ, MTV and Kerrang!<br><br><b>Video documentary</b> – Bandwidth<br>Bandwidth specialise in making behind the scenes and intimate live session videos of artists. They have worked with The National, Passenger, Ash, SOAK, The Staves and Frightened Rabbit.<br><br><b>Music photography</b> – Carrie Davenport<br>Carrie is a freelance photographer based in Belfast but travelling all across Ireland, the UK and further afield for work. Specialising in music, commercial, PR and event photography, Carrie also shoots documentary style weddings and teaches photography for several organisations.<br><br>Transport to all locations and daily meals will be provided.<br>To apply now go to www.nervecentre.org<br><br>The project is part-financed by the European Union’s European Regional Development Fund through the INTERREG IVA Cross-border Programme managed by the Special EU Programmes Body.",
+      "tags": ["Application Required"],
+      "rsvp": {
+        "instructions": "<b>Apply Online</b><br>nervecentre.org/news/48hr-music-bootc",
+        "url": "http://www.nervecentre.org/news/48hr-music-bootc"
+      }
+    },
+    {
+      "nameShort": "Startup Fundamentals",
+      "name": "Frameworks: Startup Fundamentals",
+      "img": "nisp.png",
+      "desc_short": "Experienced entrepreneur Eoin Lambkin will outline the key things that every early stage company should consider as it sets off on the road to greatness",
+      "desc_full": "Tech startup? Inventor? Scientist? In this free NISP CONNECT Frameworks Workshop for CultureTECH and to mark the opening of the new North West Regional Science Park, experienced entrepreneur Eoin Lambkin will outline the key things that every early stage company should consider as it sets off on the road to greatness.<br><br>Eoin has been based in Northern Ireland for the past 11 years, having previously worked in England, Germany and the Irish Republic within the telecommunications industry. He is an Entrepreneur-in-Residence at the Northern Ireland Science Park and is passionate about the opportunities for new startups here.<br><br><b>His workshop will cover:</b><br>Testing your product/service and market assumptions or are you wasting your time?<br>Getting the business plan understood by everyone involved<br>How to kiss frogs and pick your team<br>Financial considerations every day<br>Creating luck and find yourself a mentor<br>Eoin will also be joined by a panel and there will be plenty of opportunities to ask questions.<br><br><b>Who should attend?</b><br>Science and tech entrepreneurs/startups and ‘wantrepreneurs’ and university researchers only please.<br><br><b>Date and Time</b><br>Thursday September 18 2014<br>12:00 - 14:00<br><br><b>Venue</b><br>North West Regional Science Park, Fort George, Derry~Londonderry<br><br><b>Notes</b><br>Lunch will be provided for attendees<br><br><b>Contact</b><br>Claire Burgoyne at NISP CONNECT: 028 9073 7806 or claire.burgoyne@nispconnect.org",
+      "tags": ["RSVP Required"],
+      "rsvp": {
+        "instructions": "<b>RSVP Online</b><br>getinvited.to/nispconnect/startup-fundamentals/",
+        "url": "http://getinvited.to/nispconnect/startup-fundamentals/"
+      }
+    },
+    {
+      "name": "Meet the Board",
+      "img": "tsb.jpg",
+      "desc_short": "The heads of the digital team from the Technology Strategy Board are partnering with CultureTECH 2014, on an event that will showcase their support and funding options.",
+      "desc_full": "The heads of the digital team from the Technology Strategy Board are partnering with CultureTECH 2014, on an event that will showcase their support and funding options. You'll also get the chance to hear from three of three of the most exciting new digital companies in NI.<br><br>Attend and meet the guys from the TSB as well as great local digital and tech contacts. Light lunch provided.",
+      "tags": ["RSVP Required"],
+      "rsvp": {
+        "instructions": "<b>RSVP Online</b><br>getinvited.to/culturetech/meet-the-technology-st",
+        "url": "http://getinvited.to/culturetech/meet-the-technology-st"
+      }
+    },
+    {
+      "nameShort": "Verbal Journalism",
+      "name": "Verbal Journalism Masterclass",
+      "img": "verbaljournalism.jpg",
+      "desc_short": "Young people studying journalism at the Verbal Arts Centre will get the chance to be journalists for the day",
+      "desc_full": "Young people studying journalism at the Verbal Arts Centre will get the chance to be journalists for the day, learning interview skills, news gathering techniques, writing skills, magazine design and make-up, mobile journalism and recording in the studio environment with Verbal Journalism tutor and Irish News Journalist Leona O'Neill.<br><br>On Day Two they will also attend the Belfast Media Festival where they will share their skills with their peers and be inspired by industry experts on the field of journalism and it ever changing role in reporting the news and current affairs.",
+      "tags": ["Schools Only"]
+    },
+    {
+      "name": "Open Data Challenge",
+      "img": "opendata.jpg",
+      "desc_short": "The 'Northern Ireland Open Data Challenge' is about improving the life of people here by proposing the design of an app that will find new and innovative ways to use NI open data.",
+      "desc_full": "Come join NESTA, the Technology Strategy Board, Open Data Institute, DETI, Invest NI and NISRA as host of NI innovators pitch to win £5k with their ideas for new open data apps.<br><br>The 'Northern Ireland Open Data Challenge' is about improving the life of people here by proposing the design of an app that will find new and innovative ways to use NI open data. This will include data from the Northern Ireland Statistics and Research Agency (NISRA), NINIS, Spatial NI and/or data.gov.uk<br><br>Open data is the information and statistics that are accessible to the public, under a license which allows its reuse. The winning application will be the one that is deemed to make best use of Northern Ireland open data to benefit people in Northern Ireland.<br><br>All shortlisted proposals will be presented to a VIP industry panel in this session and the overall winner will receive a cheque for £5000. The judging panel includes:<br><br><b>Nick Appleyard</b><br>Technology Strategy Board<br><br><b>Ed Parkes</b><br>Nesta<br><br><b>Richard Stirling</b><br>Open Data Institute<br><br>You can still enter your own idea for a chance to present (and win) in this session - check out the details here: http://ignitn.com/challenge/opendata14",
+      "tags": ["RSVP Required"],
+      "rsvp": {
+        "instructions": "<b>RSVP Online</b><br>getinvited.to/culturetech/open-data-challenge-judging",
+        "url": "http://getinvited.to/culturetech/open-data-challenge-judging/"
+      }
+    },
+    {
+      "name": "Friday Night Mashup",
+      "img": "fridaynight.jpg",
+      "desc_short": "An innovative event series that brings together the best of Northern Irish tech, film and music",
+      "desc_full": "Friday Night Mashup is an innovative event series that brings together the best of Northern Irish tech, film and music. The aim of the series is to connect and empower Northern Ireland’s entrepreneurs to go out and take on the world.<br><br>The Mashup is run by entrepreneurs for entrepreneurs and it provides a great opportunity to meet with other entrepreneurs, tech, film or music enthusiasts as well as investors and media.<br><br>We’re super excited to be growing the Mashup further by putting on an event at CultureTech for over 1000 people. This event will be our biggest event yet with speakers coming from all over the world, including world famous actors, tech execs and musicians who we’ll be announcing very shortly. All we can say for now, it’s going to be BIG!!",
+      "tags": ["RSVP Required"],
+      "rsvp": {
+        "instructions": "<b>RSVP Online</b><br>fridaynightmashup.com",
+        "url": "http://www.fridaynightmashup.com"
+      }
+    },
+    {
+      "nameShort": "Borderlands Declared",
+      "name": "Borderlands Declared: Bridging Borders with Digital Technologies",
+      "img": "borderlands.jpg",
+      "desc_short": "In this talk we will investigate whether and how Digital Technologies help to bridge borders in terms of Telecommunications, Creative Technologies and Storytelling",
+      "desc_full": "Borders have been with us since time began and their associated bureaucracies and paraphernalia such as customs & immigration, passports, visas, permits and now we even have Border Agencies. There are borders between knowledge disciplines (silos), cultural, political, religious and physical borders. Many have spent their lives building up and tearing down these borders, e.g. remember Checkpoint Charlie?, just look now at the border between North America and Mexico, but Renaissance Man Leonardo Da Vinci brought the arts and the sciences together, Gorbachev brought down the Berlin Wall, and the Suffragettes tore down gender borders although we do still have those glass ceilings...<br><br>In this talk we will investigate whether and how Digital Technologies do help to bridge borders in terms of TeleCommunications, Creative Technologies and StoryTelling. By Creative Technologies we mainly mean computer games, film & animation and music technologies.<br><br>We will use as case studies Project Kelvin, ERNACT, The Imagineering Quarter, The Nerve Centre, FAB-LAB, Verbal Arts Centre, Ebrington Creative Hub, Ft. George North West Science Park, CultureTech, The Loebner Prize, Stravaganza Productions, drones, Joyce Cary Creative Centre (J3C), Resonance FM's Joyce Cary's Dartboard and the new Inishowen digital multimedia plays: `Across the water' (Paul McCarroll & Finbar Doherty, Carndonagh) based on `The last of the name' (Charles McGlinchey, Clonmany), `Farewell to the Foyle' (Martin O Lionsigh, Moville) & `Moville, The Bishop & The Big House' (Patsy Cavanagh, Greencastle).<br><br>Space, time and access do appear to be significant... There will be a particular focus on the Border Post between the USA & Mexico at El Paso (Texas) & Muff Border Post between Inishowen, Co. Donegal, Ireland & LegenDerry, Co. LegenDerry, Northern Ireland where cameo guest Michael Caine (`Not a lot of people know that') will uncover a true Muff Border Post story about Moville's Lady Maud Montgomery (mother of `The Full Monty') involving a British Prime Minister and, to conclude, this audience @ Muff Border Post will be asked the pertinent question: \"Do you have anything to declare??\"",
+      "tags": ["Free"]
+    },
+    {
       "name": "",
       "img": "",
       "desc_short": "",
       "desc_full": "",
-      "tags": []
+      "tags": [""],
+      "rsvp": {
+        "instructions": "<b></b><br>",
+        "url": ""
+      }
     }
   ],
   "locations": [
@@ -509,6 +715,35 @@
       "address": "Central Drive,<br>Derry-Londonderry,<br>BT48 9QG",
       "lat": 54.996000,
       "long": -7.345998
+    },
+    {
+      "name": "Waterside Theatre",
+      "img": "watersidetheatre.jpg",
+      "address": "Glendermott Road,<br>Derry-Londonderry,<br>BT47 6BG",
+      "lat": 54.994779,
+      "long": -7.307145
+    },
+    {
+      "name": "Northwest Science Park",
+      "img": "sciencepark.jpg",
+      "address": "Bay Road,<br>Derry-Londonderry,<br>BT48 7TG",
+      "lat": 55.013169,
+      "long": -7.312988
+    },
+    {
+      "name": "Ebrington 80/81",
+      "img": "building80.jpeg",
+      "address": "Ebrington Parade Ground,<br>Derry-Londonderry,<br>BT47 1JY",
+      "lat": 54.998182,
+      "long": -7.311228
+    }
+  ,
+    {
+      "name": "St. Mary's Hall",
+      "img": "stmarys.jpg",
+      "address": "Muff,<br>County Donegal,<br>Ireland",
+      "lat": 55.072374,
+      "long": -7.267899
     }
   ]
 }
