@@ -29,8 +29,8 @@
         </div>
 
         <div class="map-outer" ng-click="vm.data ? vm.getMap() : vm.getNetwork()" ng-class="({'fill': vm.expandMap})">
-            <ui-gmap-google-map ng-if="vm.expandMap" control='vm.mapControl' center='vm.coords' zoom='15' options="{disableDefaultUI: true}">
-                <ui-gmap-marker idKey='1' coords='vm.locationCoords'></ui-gmap-marker>
+            <ui-gmap-google-map ng-if="vm.expandMap" control='vm.mapControl' center='vm.coords' zoom='15' options="vm.mapOptions">
+                <ui-gmap-marker idKey='1' icon="vm.markerIcon" coords='vm.locationCoords'></ui-gmap-marker>
             </ui-gmap-google-map>
 
             <div ng-if="!vm.expandMap">

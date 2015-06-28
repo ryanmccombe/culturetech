@@ -34,75 +34,30 @@
       <file leaf-file-name="ionic.app.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/ionic.app.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.307692" vertical-offset="561" max-vertical-offset="10489">
-              <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
+            <state vertical-scroll-proportion="-9.153846" vertical-offset="323" max-vertical-offset="10489">
+              <caret line="33" column="16" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="events.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/www/js/data/2014/events.json">
+      <file leaf-file-name="locationCtrl.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/www/js/controllers/locationCtrl.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5889764" vertical-offset="578" max-vertical-offset="13515">
-              <caret line="56" column="6" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
+            <state vertical-scroll-proportion="-11.724138" vertical-offset="1037" max-vertical-offset="2499">
+              <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="eventsCtrl.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/controllers/eventsCtrl.js">
+      <file leaf-file-name="location.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/www/js/templates/location.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="1258">
-              <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="events.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/templates/events.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.73077" vertical-offset="304" max-vertical-offset="952">
-              <caret line="73" column="91" selection-start-line="73" selection-start-column="91" selection-end-line="73" selection-end-column="91" />
+            <state vertical-scroll-proportion="0.3935185" vertical-offset="153" max-vertical-offset="1139">
+              <caret line="24" column="68" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
               <folding>
-                <element signature="n#button#0;n#div#0;n#div#0;n#ion-view#0;n#!!top" expanded="false" />
-                <element signature="n#button#1;n#div#0;n#div#0;n#ion-view#0;n#!!top" expanded="false" />
-                <element signature="n#button#2;n#div#0;n#div#0;n#ion-view#0;n#!!top" expanded="false" />
-                <element signature="n#button#3;n#div#0;n#div#0;n#ion-view#0;n#!!top" expanded="false" />
-                <element signature="n#button#4;n#div#0;n#div#0;n#ion-view#0;n#!!top" expanded="false" />
-                <element signature="n#button#5;n#div#0;n#div#0;n#ion-view#0;n#!!top" expanded="false" />
-                <element signature="n#button#6;n#div#0;n#div#0;n#ion-view#0;n#!!top" expanded="false" />
-                <marker date="1435385359494" expanded="true" signature="384:523" placeholder="{...}" />
-                <marker date="1435385359494" expanded="true" signature="720:859" placeholder="{...}" />
-                <marker date="1435385359494" expanded="true" signature="1057:1196" placeholder="{...}" />
-                <marker date="1435385359494" expanded="true" signature="1396:1535" placeholder="{...}" />
-                <marker date="1435385359494" expanded="true" signature="1734:1873" placeholder="{...}" />
-                <marker date="1435385359494" expanded="true" signature="2070:2209" placeholder="{...}" />
-                <marker date="1435385359494" expanded="true" signature="2408:2547" placeholder="{...}" />
-                <marker date="1435385359494" expanded="true" signature="2716:2845" placeholder="{&quot;background-size&quot;: 'cover'...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="eventDetail.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/www/js/templates/eventDetail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.461538" vertical-offset="151" max-vertical-offset="1921">
-              <caret line="31" column="64" selection-start-line="31" selection-start-column="64" selection-end-line="31" selection-end-column="64" />
-              <folding>
-                <element signature="n#style#0;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#3;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#4;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#4;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#div#4;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
-                <marker date="1435460103108" expanded="true" signature="480:620" placeholder="{&quot;background-size&quot;: 'cover'...}" />
+                <marker date="1435479540775" expanded="true" signature="440:586" placeholder="{&quot;background-size&quot;: 'cover'...}" />
               </folding>
             </state>
           </provider>
@@ -135,7 +90,6 @@
         <option value="$PROJECT_DIR$/www/js/directives/sticky.js" />
         <option value="$PROJECT_DIR$/www/js/filters/isToday.js" />
         <option value="$PROJECT_DIR$/www/js/filters/newLineToBr.js" />
-        <option value="$PROJECT_DIR$/www/js/controllers/locationCtrl.js" />
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/www/js/data/2014/cache.json" />
         <option value="$PROJECT_DIR$/www/js/templates/infoPage3.html" />
@@ -159,11 +113,12 @@
         <option value="$PROJECT_DIR$/www/js/templates/infoPage1.html" />
         <option value="$PROJECT_DIR$/www/js/templates/infoPage2.html" />
         <option value="$PROJECT_DIR$/www/js/controllers/eventDetailCtrl.js" />
-        <option value="$PROJECT_DIR$/www/js/templates/location.html" />
         <option value="$PROJECT_DIR$/scss/ionic.app.scss" />
         <option value="$PROJECT_DIR$/www/js/templates/events.html" />
         <option value="$PROJECT_DIR$/www/js/templates/eventDetail.html" />
         <option value="$PROJECT_DIR$/www/js/data/2014/events.json" />
+        <option value="$PROJECT_DIR$/www/js/controllers/locationCtrl.js" />
+        <option value="$PROJECT_DIR$/www/js/templates/location.html" />
       </list>
     </option>
   </component>
@@ -293,6 +248,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cultureTech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cultureTech" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -623,12 +596,12 @@
       <workItem from="1435251144784" duration="15828000" />
       <workItem from="1435360771161" duration="5035000" />
       <workItem from="1435385794029" duration="1373000" />
-      <workItem from="1435439359372" duration="6849000" />
+      <workItem from="1435439359372" duration="9858000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="273297000" />
+    <option name="totallyTimeSpent" value="276306000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1176" extended-state="0" />
@@ -644,6 +617,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3275862" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15831557" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -653,12 +627,11 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32879376" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -846,13 +819,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/controllers/locationCtrl.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1190">
-          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="9" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/platforms/android/res/xml/config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6458967" vertical-offset="561" max-vertical-offset="1241">
@@ -1001,25 +967,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/www/js/templates/location.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8132716" vertical-offset="0" max-vertical-offset="1139">
-          <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/www/js/controllers/eventsCtrl.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1258">
           <caret line="23" column="42" selection-start-line="23" selection-start-column="42" selection-end-line="23" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scss/ionic.app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.307692" vertical-offset="561" max-vertical-offset="10489">
-          <caret line="61" column="1" selection-start-line="61" selection-start-column="1" selection-end-line="61" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -1036,14 +987,14 @@
             <element signature="n#button#4;n#div#0;n#div#0;n#ion-view#0;n#!!top" expanded="false" />
             <element signature="n#button#5;n#div#0;n#div#0;n#ion-view#0;n#!!top" expanded="false" />
             <element signature="n#button#6;n#div#0;n#div#0;n#ion-view#0;n#!!top" expanded="false" />
-            <marker date="1435385359494" expanded="true" signature="384:523" placeholder="{...}" />
-            <marker date="1435385359494" expanded="true" signature="720:859" placeholder="{...}" />
-            <marker date="1435385359494" expanded="true" signature="1057:1196" placeholder="{...}" />
-            <marker date="1435385359494" expanded="true" signature="1396:1535" placeholder="{...}" />
-            <marker date="1435385359494" expanded="true" signature="1734:1873" placeholder="{...}" />
-            <marker date="1435385359494" expanded="true" signature="2070:2209" placeholder="{...}" />
-            <marker date="1435385359494" expanded="true" signature="2408:2547" placeholder="{...}" />
-            <marker date="1435385359494" expanded="true" signature="2716:2845" placeholder="{&quot;background-size&quot;: 'cover'...}" />
+            <marker date="1435385359494" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1435385359494" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1435385359494" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1435385359494" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1435385359494" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1435385359494" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1435385359494" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1435385359494" expanded="true" signature="-1:-1" placeholder="{&quot;background-size&quot;: 'cover'...}" />
           </folding>
         </state>
       </provider>
@@ -1062,16 +1013,42 @@
             <element signature="n#style#0;n#div#1;n#div#4;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#1;n#div#4;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#a#0;n#div#1;n#div#1;n#div#4;n#ion-content#0;n#ion-view#0;n#!!top" expanded="true" />
-            <marker date="1435460103108" expanded="true" signature="480:620" placeholder="{&quot;background-size&quot;: 'cover'...}" />
+            <marker date="1435460103108" expanded="true" signature="-1:-1" placeholder="{&quot;background-size&quot;: 'cover'...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/www/js/data/2014/events.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5889764" vertical-offset="578" max-vertical-offset="13515">
+        <state vertical-scroll-proportion="-14.384615" vertical-offset="578" max-vertical-offset="13515">
           <caret line="56" column="6" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/ionic.app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.153846" vertical-offset="323" max-vertical-offset="10489">
+          <caret line="33" column="16" selection-start-line="33" selection-start-column="10" selection-end-line="33" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/controllers/locationCtrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.724138" vertical-offset="1037" max-vertical-offset="2499">
+          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/www/js/templates/location.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3935185" vertical-offset="153" max-vertical-offset="1139">
+          <caret line="24" column="68" selection-start-line="24" selection-start-column="68" selection-end-line="24" selection-end-column="68" />
+          <folding>
+            <marker date="1435479540775" expanded="true" signature="440:586" placeholder="{&quot;background-size&quot;: 'cover'...}" />
+          </folding>
         </state>
       </provider>
     </entry>
