@@ -18,10 +18,48 @@
       27,
       28
     ],
-    [2, 5, 10, 16, 20, 29, 30, 31, 32],
-    [33, 35, 36, 37, 38, 40, 41, 42, 44, 45, 46],
-    [34, 39, 43],
-    [],
+    [
+      2,
+      5,
+      10,
+      16,
+      20,
+      29,
+      30,
+      31,
+      32
+    ],
+    [
+      6,
+      11,
+      17,
+      21,
+      33,
+      35,
+      36,
+      37,
+      38,
+      40,
+      41,
+      42,
+      44,
+      45,
+      46
+    ],
+    [
+      7,
+      12,
+      18,
+      22,
+      34,
+      39,
+      43
+    ],
+    [
+      13,
+      18,
+      23
+    ],
     []
   ],
   "schedule": [
@@ -339,8 +377,7 @@
       "location": 4,
       "start": 1411045200000,
       "end": 1411054200000
-    }
-  ,
+    },
     {
       "id": 45,
       "event": 23,
@@ -355,7 +392,6 @@
       "start": 1411063200000,
       "end": 1411070400000
     }
-
   ],
   "events": [
     {
@@ -502,7 +538,10 @@
       "img": "googlejuice.png",
       "desc_short": "Google will be bringing the Google Juice Bar to Derry, a series of free seminars and workshops as part of their drive to empower small business owners and aspiring entrepreneurs",
       "desc_full": "Google will be bringing the Google Juice Bar to Derry, a series of free seminars and workshops as part of their drive to empower small business owners and aspiring entrepreneurs gain the necessary skills to get the most out of their digital marketing and boost online presence.<br><br>You'll have the chance to hear from the Google team and meet with them one-on-one to get advice on how to improve your organisation's online presence.<br><br><em>9am-10am: Google presentation<br>10am-11am: One-on-one sessions</em>",
-      "tags": ["Free", "RSVP Required"],
+      "tags": [
+        "Free",
+        "RSVP Required"
+      ],
       "rsvp": {
         "instructions": "<b>RSVP Online</b><br>getinvited.to/culturetech/google-juice-bar/",
         "url": "http://getinvited.to/culturetech/google-juice-bar/"
@@ -544,7 +583,10 @@
       "img": "crowsonthewire.jpg",
       "desc_short": "Using the amazing Oculus Rift technology and incorporating drama activities, the Verbal Arts Centre will host a workshop programme for young people, exploring the story and experience of the Crows on the Wire app for iPad and Tablet",
       "desc_full": "Using the amazing Oculus Rift technology and incorporating drama activities, the Verbal Arts Centre will host a workshop programme for young people, exploring the story and experience of the Crows on the Wire app for iPad and Tablet.<br><br>Local schools and youth groups will have the opportunity to access free interactive digital and drama sessions from 10.00am to 3.00pm on Thursday 18 September in the Verbal Arts Centre. For ages 15+.<br><br>This project is funded under the EU’s PEACE III Programme, managed for the SEUPB by Pobal.",
-      "tags": ["Age 15+", "RSVP Required"],
+      "tags": [
+        "Age 15+",
+        "RSVP Required"
+      ],
       "rsvp": {
         "instructions": "<b>Book by Telephone</b><br>(028)71 266 946",
         "tel": "2871266946"
@@ -736,8 +778,7 @@
       "address": "Ebrington Parade Ground,<br>Derry-Londonderry,<br>BT47 1JY",
       "lat": 54.998182,
       "long": -7.311228
-    }
-  ,
+    },
     {
       "name": "St. Mary's Hall",
       "img": "stmarys.jpg",
