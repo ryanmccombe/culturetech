@@ -80,13 +80,6 @@ angular.module('cultureTech')
                 }
             ];
 
-            vm.mapOptions = {
-                styles: mapStyle,
-                disableDefaultUI: true
-            };
-
-            vm.markerIcon= { url:"../img/mapmarker.png" };
-
 
             // Network
             vm.getNetwork = function(automatic){
@@ -132,6 +125,12 @@ angular.module('cultureTech')
             // Marker and map center must be different objects - center object is updated as user scrolls
             uiGmapGoogleMapApi.then(function(maps) {
                 vm.locationCoords = { latitude: vm.location.lat, longitude: vm.location.long };
+                vm.mapOptions = {
+                    styles: mapStyle,
+                    disableDefaultUI: true
+                };
+
+                vm.markerIcon= { url:"img/mapmarker.png" };
             });
 
             // Recenter map on the location coords

@@ -53,14 +53,19 @@
       22,
       34,
       39,
-      43
+      43,
+      47,
+      50,
+      51,
+      52
     ],
     [
       13,
       18,
-      23
+      23,
+      48
     ],
-    []
+    [49]
   ],
   "schedule": [
     {
@@ -391,6 +396,49 @@
       "location": 14,
       "start": 1411063200000,
       "end": 1411070400000
+    },
+    {
+      "id": 47,
+      "event": 25,
+      "location": 15,
+      "start": 1411113600000,
+      "end": 1411165800000
+    },
+    {
+      "id": 48,
+      "event": 25,
+      "location": 15,
+      "start": 1411200000000,
+      "end": 1411252200000
+    },
+    {
+      "id": 49,
+      "event": 25,
+      "location": 15,
+      "start": 1411286400000,
+      "end": 1411338600000
+    }
+  ,
+    {
+      "id": 50,
+      "event": 26,
+      "location": 4,
+      "start": 1411115400000,
+      "end": 1411138800000
+    },
+    {
+      "id": 51,
+      "event": 27,
+      "location": 16,
+      "start": 1411117200000,
+      "end": 1411124400000
+    },
+    {
+      "id": 52,
+      "event": 28,
+      "location": 17,
+      "start": 1411128000000,
+      "end": 1411140600000
     }
   ],
   "events": [
@@ -672,6 +720,47 @@
       "tags": ["Free"]
     },
     {
+      "name": "MTV Crashes",
+      "img": "mtv.jpg",
+      "desc_short": "MTV Crashes to Derry-Londonderry, bringing a packed programme of events across the week to an amazing close.",
+      "desc_full": "CultureTECH are delighted to be working in partnership with Derry City Council to welcome MTV Crashes to Derry-Londonderry, bringing a packed programme of events across the week to an amazing close.<br><br>Tickets go on sale on August 9th",
+      "tags": ["Ticket Required"],
+      "rsvp": {
+        "instructions": "<b>Ticket Required</b><br>Tickets go on sale on August 9th"
+      }
+    },
+    {
+      "name": "BMF @ CultureTECH",
+      "img": "bmf.jpg",
+      "desc_short": "BMF@CultureTech will help you to think differently about your content. Learn how to exploit your existing and future Intellectual Property in innovative ways.",
+      "desc_full": "How content producers can meet emerging audience needs?<br><br>Can you help your company to stay at the forefront of digital innovation? If you're working in the creative or media industries, this is an unmissable day for getting onto the fast track<br><br>BMF@CultureTech will help you to think differently about your content. Learn how to exploit your existing and future Intellectual Property in innovative ways.<br><br><b>Programme</b><br><br><b>Keynote: Colin McDonald</b><br>Head of Games Channel 4<br><br><b><em>\"Gaming - what's in it for you?\"</em></b><br>Colin will give an insight into the opportunities around gaming, in particular where there’s crossover with television. He will talk about the opportunities in gaming which your existing IP presents. He will also present the challenges, insights and lessons learned from the development and release of some of Channel 4’s hit games, talking through the steps involved in making a chart-topping game.<br><br><b>Creative Team from Dog Ears</b><br><br><b><em>\"Animation and beyond.\"</b></em><br>Using Puffin Rock as a case study, the Dog Ears team will discuss their approach to IP creation, innovative ways to reach your audience and possibilities for collaboration. With storytelling and great characters at the heart of everything they make, Dog Ears will give an insight into their multi-platform creative thought processes.<br><br><b>Keynote: Jon Vanhala</b><br>Director Thesis Fund<br><br><b><i>\"Getting investor-ready. Moving from concept to commercial reality\"</i></b><br>As an experienced investor, Jon will talk about what it takes to bring a great idea to a wide consumer market. Using case studies from his own investment stable, he will present the opportunities open to great content creators and talk about some of the pitfalls he has encountered along the way.<br><br><b>Funding Creative Experimentation</b><br>Panel with funders of creative industries. Chaired by Michael Tumelty, BBC<br><br>Transport from a central Belfast location provided. Please indicate on your registration (via the RSVP link below) if you will require transport and we will confirm details nearer the time.<br><br>If you wish to book a one-on-one session with funders, we will be giving you that opportunity in the afternoon after the funding panel session has taken place. We will be in contact with all registered attendees to make those arrangements in the next few weeks.<br><br><em>Honeycomb – Creative Works is financed by the European Union’s European Regional Development Fund through the INTERREG IVA Cross-border Programme managed by the Special EU Programmes Body</em>",
+      "tags": ["RSVP Required"],
+      "rsvp": {
+        "instructions": "<b>RSVP Online</b><br>thehoneycomb.net/events/bmf",
+        "url": "http://thehoneycomb.net/events/bmf"
+      }
+    },
+    {
+      "nameShort": "Kinship Care",
+      "name": "Kinship Care Digital Coffee Morning",
+      "img": "kinship.jpg",
+      "desc_short": "Come and join the guys in the office to find out a little more about how digital technology can help carers and those that they care for over a cup of coffee and a biscuit.",
+      "desc_full": "Kinship Care NI is a charitable organisation committed to helping family relatives who are caring for children of their extended families. We provide free, impartial and experienced advice and support regardless of race, political affiliation, religious belief, sexual orientation, gender or nationality.<br><br>Come and join the guys in the office to find out a little more about how digital technology can help carers and those that they care for over a cup of coffee and a biscuit.",
+      "tags": ["Free"]
+    },
+    {
+      "nameShort": "Performing Arts Seminar",
+      "name": "Digital Arts Seminar - Performing Arts",
+      "img": "performingarts.jpg",
+      "desc_short": "Digital technology is changing the performing arts - from how artists engage with audiences to how technology can empower the live experience. This seminar will explore case studies of digital performing arts in action",
+      "desc_full": "Digital technology is changing the performing arts - from how artists engage with audiences to how technology can empower the live experience. This seminar will explore case studies of digital performing arts in action.<br><br><b>Sarah Ellis, Royal Shakespeare Company</b><br>Sarah Ellis is an award winning producer currently working as Digital Producer for the Royal Shakespeare Company. In 2013 she was listed in the top 100 most influential people working in Gaming and Technology by The Hospital Club. In partnership with Google, she recently produced Midsummer Night’s Dreaming. In 2012, she produced myShakespeare for the World Shakespeare Festival. In 2011, she was the producer of the RSC’s Adelaide Road, which mixed live performance with an app and website map.<br><br><b>Members of Derry's AnNua: Paul Moore, Fiachra O'Longain and Chris McAlinden</b><br>AnNua draw on traditional Irish forms including dance, puppeteering, live music and the visual arts and combine these with gathered audio and visual material. AnNua use digital technologies to research, to script and in design. AnNua will perform an extract from their current work 'Home' and discuss their techniques in regards to creation and performance.<br><br><b>Director Paula Simms</b><br>Paula currently directs through Hope Street Theatre, Walk the Plank and John Moores University Liverpool. As a director Paula has worked across Europe and on several new works that incorporate digital technologies.<br><br><b>Composer Patrick Dineen</b><br>Patrick has developed own recording studio through which he applies digital technology to create virtual orchestras and ‘sampling’ techniques. He has worked as a composer and director on several large scale multi media productions including the opening of Liverpool City of Culture and 'The World Tipped'<br><br><b>Dancer and filmmaker Sarah Black</b><br>Sarah Black is a dance lecturer at Hope University, her main research focuses on site-based dance practices, and dance film installation.   Her PhD research is the articulation of domestic sites ‘home as site’, at Middlesex University.   Sarah trained and taught at the Limon Institute New York and teaches in Humphrey/Limon technique. Sarah has performed and taught dance internationally.<br><br>This session is supported by Honeycomb - Creative Works. Honeycomb – Creative Works is financed by the European Union’s European Regional Development Fund through the INTERREG IVA Cross-border Programme managed by the Special EU Programmes Body",
+      "tags": ["RSVP Required"],
+      "rsvp": {
+        "instructions": "<b>RSVP Online</b><br>thehoneycomb.net/events/digital-arts",
+        "url": "http://www.thehoneycomb.net/events/digital-arts"
+      }
+    },
+    {
       "name": "",
       "img": "",
       "desc_short": "",
@@ -785,6 +874,24 @@
       "address": "Muff,<br>County Donegal,<br>Ireland",
       "lat": 55.072374,
       "long": -7.267899
+    },
+    {
+      "name": "Ebrington Outdoor",
+      "img": "ebrington.jpg",
+      "address": "Ebrington,<br>Derry-Londonderry,<br>BT47 1JY",
+      "lat": 54.998182,
+      "long": -7.311228
+    },
+    {
+      "name": "Kinship Care",
+      "img": "kinship.jpg",
+      "address": "67 Carlisle Road,<br>Derry-Londonderry,<br>BT47 1JY",
+      "lat": 54.992371,
+      "long": -7.319769
+    },
+    {
+      "abstract": true,
+      "name": "Location TBC"
     }
   ]
 }
