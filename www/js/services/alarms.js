@@ -17,9 +17,15 @@ angular.module('cultureTech')
         }
 
         function clearAll(){
-            $cordovaLocalNotification.cancelAll().then(function () {
-                console.log("All Cancelled");
-            });
+            try {
+                $cordovaLocalNotification.cancelAll().then(function () {
+                    console.log("All Cancelled");
+                });
+            }
+            catch(err) {
+                // Emulator
+            }
+
             $window.localStorage.alarms = '[]';
         }
 

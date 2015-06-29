@@ -1,6 +1,14 @@
-<ion-view>
-    <ion-nav-title>{{vm.partner.name}}</ion-nav-title>
-    <ion-content>
+<ion-view hide-nav-bar="true">
+    <div class="bar bar-header">
+        <button ng-click="$ionicGoBack()" class="button back-button buttons button-clear header-item">
+            <i class="icon ion-ios-arrow-back"></i>
+        </button>
+        <div class="title title-left">
+            {{vm.partner.name}}
+        </div>
+
+    </div>
+    <ion-content style="margin-top: 43px" has-bouncing="false">
 
         <div class="header-photo" ng-style="{
             'background': 'url(img/partners/'+vm.partner.id+'_p.jpg) no-repeat center center',

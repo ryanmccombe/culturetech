@@ -57,15 +57,27 @@
       47,
       50,
       51,
-      52
+      52,
+      53,
+      54,
+      57,
+      60,
+      61,
+      62
     ],
     [
       13,
       18,
       23,
-      48
+      48,
+      55,
+      58
     ],
-    [49]
+    [
+      49,
+      56,
+      59
+    ]
   ],
   "schedule": [
     {
@@ -417,8 +429,7 @@
       "location": 15,
       "start": 1411286400000,
       "end": 1411338600000
-    }
-  ,
+    },
     {
       "id": 50,
       "event": 26,
@@ -439,6 +450,76 @@
       "location": 17,
       "start": 1411128000000,
       "end": 1411140600000
+    },
+    {
+      "id": 53,
+      "event": 29,
+      "location": 7,
+      "start": 1411131600000,
+      "end": 1411135200000
+    },
+    {
+      "id": 54,
+      "event": 30,
+      "location": 18,
+      "start": 1411135200000,
+      "end": 1411156800000
+    },
+    {
+      "id": 55,
+      "event": 30,
+      "location": 18,
+      "start": 1411203600000,
+      "end": 1411243200000
+    },
+    {
+      "id": 56,
+      "event": 30,
+      "location": 18,
+      "start": 1411297200000,
+      "end": 1411318800000
+    },
+    {
+      "id": 57,
+      "event": 31,
+      "location": 18,
+      "start": 1411138800000,
+      "end": 1411165800000
+    },
+    {
+      "id": 58,
+      "event": 31,
+      "location": 18,
+      "start": 1411225200000,
+      "end": 1411252200000
+    },
+    {
+      "id": 59,
+      "event": 31,
+      "location": 18,
+      "start": 1411311600000,
+      "end": 1411338600000
+    },
+    {
+      "id": 60,
+      "event": 32,
+      "location": 7,
+      "start": 1411146000000,
+      "end": 1411160400000
+    },
+    {
+      "id": 61,
+      "event": 33,
+      "location": 7,
+      "start": 1411146000000,
+      "end": 1411156800000
+    },
+    {
+      "id": 62,
+      "event": 34,
+      "location": 3,
+      "start": 1411147800000,
+      "end": 1411156800000
     }
   ],
   "events": [
@@ -648,6 +729,7 @@
       "tags": ["Free"]
     },
     {
+      "nameShort": "Music Bootcamp",
       "name": "48 Hour Music Bootcamp",
       "img": "musicbootcamp.jpg",
       "desc_short": "Over 48 hours, experience the entire process of two artists creating a song together and bringing it into the public domain",
@@ -749,7 +831,7 @@
       "tags": ["Free"]
     },
     {
-      "nameShort": "Performing Arts Seminar",
+      "nameShort": "Arts Seminar",
       "name": "Digital Arts Seminar - Performing Arts",
       "img": "performingarts.jpg",
       "desc_short": "Digital technology is changing the performing arts - from how artists engage with audiences to how technology can empower the live experience. This seminar will explore case studies of digital performing arts in action",
@@ -758,6 +840,64 @@
       "rsvp": {
         "instructions": "<b>RSVP Online</b><br>thehoneycomb.net/events/digital-arts",
         "url": "http://www.thehoneycomb.net/events/digital-arts"
+      }
+    },
+    {
+      "nameShort": "PeaceTechLab",
+      "name": "Launch: PeaceTechLab",
+      "img": "peacetechlab.jpg",
+      "desc_short": "Explore with us how technology and new media can be used to enhance peacebuilding practice",
+      "desc_full": "The International Conflict Research Institute (INCORE) at the University of Ulster in Northern Ireland, in partnership with The Nerve Centre in Derry, The Young Foundation, The Agirre Lehendakaria Center for Social and Political Studies in the Basque Country, New York based Culture Shock, and Scensei in Washington invite you to explore with us how technology and new media can be used to enhance peacebuilding practice.<br><br>At the event we will formally launch the Peacebuilding and Technology Laboratory (The PeaceTechLab) which will be based in the FabLab at the Nerve Centre.",
+      "tags": ["RSVP Required"],
+      "rsvp": {
+        "instructions": "<b>RSVP Online</b><br>nervecentre.org",
+        "url": "http://www.nervecentre.org"
+      }
+    },
+    {
+      "nameShort": "Minecraft",
+      "name": "City Arcade: Minecraft Tournament",
+      "img": "minecraft.jpg",
+      "desc_short": "Come join the team from Multiplay and put your Minecraft skills to the test as part of one of the largest video games events in Ireland",
+      "desc_full": "Come join the team from Multiplay and put your Minecraft skills to the test as part of one of the largest video games events in Ireland.<br><br>Forty machines on floor plus eight more on stage will make up one of the biggest Minecraft events ever held on the island - complete with lighting, shoutcasters, viewing stage and all the action on the big screen.<br><br>The action kicks off at 3pm on Friday and runs through to Sunday evening. There'll be plenty of gaming, exhibitors in the halls and prizes to be won. Just make sure you're there early!",
+      "tags": ["Free"]
+    },
+    {
+      "nameShort": "Music City Dome",
+      "name": "Music City 2014 Dome",
+      "img": "musiccity.jpg",
+      "desc_short": "An amazing lineup of screenings and musical performances in an 11m HD video dome",
+      "desc_full": "The Music City 2014 Dome is an 11m HD video dome plonked squarely into Guildhall Square and featuring an amazing lineup of screenings and musical performances from Boxcutter, Ghosts, Sync Music Promise and more. Check out the printed programme for more details.",
+      "tags": ["Free"]
+    },
+    {
+      "nameShort": "Pop-Up Studio",
+      "name": "Pop-Up Recording Studio",
+      "img": "popup.jpeg",
+      "desc_short": "Have you a burning ambition to record a song in a recording studio? Why not do just that for free during Culture Night at the Nerve Centre’s Creative Evolution studio?",
+      "desc_full": "Have you a burning ambition to record a song in a recording studio? Why not do just that for free during Culture Night at the Nerve Centre’s Creative Evolution studio?<br><br>You will receive a copy of the song and will have the option of seeing your song featured on the Nerve Centre’s website, social networking channels and Soundcloud.",
+      "tags": ["Free", "RSVP Required"],
+      "rsvp": {
+        "instructions": "<b>E-Mail to Book Slot</b><br>g.rosborough@nervecentre.org",
+        "email": "g.rosborough@nervecentre.org"
+      }
+    },
+    {
+      "name": "FabLab Open Night",
+      "img": "fablabopen.jpg",
+      "desc_short": "Fab Lab (fabrication laboratory) is a place where you can make almost anything. Using a combination of open source design software and computer controlled machines, users can turn their creative or commercial ideas into reality",
+      "desc_full": "Fab Lab (fabrication laboratory) is a place where you can make almost anything. Using a combination of open source design software and computer controlled machines, users can turn their creative or commercial ideas into reality.<br><br>Fab Lab will be hosting tours, demonstrations and hands on workshops using 3D printers, laser cutters, vinyl cutters and routers.<br><br>So, if you have ever wanted to design and print your own T-shirt, make some jewellery, art or even furniture, come along on the night and be amazed at what you can achieve.",
+      "tags": ["Free"]
+    },
+    {
+      "name": "Writer's Return",
+      "img": "writersreturn.jpg",
+      "desc_short": "Two of the most celebrated poets in Northern Ireland – Colette Bryce and Leontia Flynn – read poems about journeys and discuss how travel, with the British Council and on their own steam, inspires and informs new writing",
+      "desc_full": "Two of the most celebrated poets in Northern Ireland – Colette Bryce and Leontia Flynn – read poems about journeys and discuss how travel, with the British Council and on their own steam, inspires and informs new writing. From Prague to Qatar, join them on an epic journey in the Verbal Arts Centre, Derry-Londonderry on 19 September, from 6.30pm onwards.<br><br><b>Colette Bryce</b> was born in Derry, Northern Ireland. She lived in London for ten years before moving to Scotland in 2002, and later to the North of England where she currently works as a freelance writer and editor. Her poetry collections with Picador include The Heel of Bernadette (2000), The Full Indian Rope Trick(2004) and Self-Portrait in the Dark (2008). Colette has held literary fellowships at the Universities of Dundee, Newcastle and Durham, and from 2009 to 2013 she was Poetry Editor at Poetry London. She received the Cholmondeley Award in 2010. Her new collection, The Whole & Rain-domed Universe, has been short-listed for the Forward Prize.<br><br><b>Leontia Flynn</b> has published three collections of poetry. Her most recent, Profit and Loss (Jonathan Cape) was Poetry Book Society Choice for Autumn 2011 and Shortlisted for the T S Eliot Prize.  She has been awarded the Forward Prize for Best First Collection, the Rooney Prize, the Lawrence O’Shaughnessy Prize for Irish Literature and was this year’s recipient of the AWB Vincent American Ireland Fund Literary Award. She has also written a book about reading the poetry of Medbh McGuckian.  Leontia Flynn lives in Belfast and is research fellow at the Seamus Heaney Centre for Poetry.<br><br>The discussion will be chaired by Ted Hodgkinson.<br><br>Tickets are free of charge. For more information please visit the Verbal Arts Centre website.",
+      "tags": ["Free", "RSVP Required"],
+      "rsvp": {
+        "instructions": "<b>Book Free Ticket Online</b><br>theverbal.co",
+        "url": "http://www.theverbal.co"
       }
     },
     {
@@ -892,6 +1032,13 @@
     {
       "abstract": true,
       "name": "Location TBC"
+    },
+    {
+      "name": "The Guildhall",
+      "img": "guildhall.jpg",
+      "address": "Guildhall Street,<br>Derry-Londonderry,<br>BT48 6DQ",
+      "lat": 54.997604,
+      "long": -7.319172
     }
   ]
 }
