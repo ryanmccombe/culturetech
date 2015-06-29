@@ -36,6 +36,11 @@ $home-buttons: rgb(178, 178, 178);
 
 /* Utilities */
 
+*{
+  /* cursor: url("../finger.png") 32 32, auto !important; */
+  cursor: pointer !important;
+}
+
 @mixin background-opacity($color, $opacity: 1) {
   background: $color; /* The Fallback */
   background: rgba($color, $opacity);

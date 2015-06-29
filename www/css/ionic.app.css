@@ -7676,6 +7676,10 @@ a.button {
   transition-duration: 0s; }
 
 /* Utilities */
+* {
+  /* cursor: url("../finger.png") 32 32, auto !important; */
+  cursor: pointer !important; }
+
 .no-margin {
   margin: 0 !important; }
 

@@ -22,15 +22,17 @@ angular.module('cultureTech')
                 if (!vm.menuExpanded) {
                     vm.setMargin('0');
                     vm.menuExpanded = true;
-                } else {
-                    vm.menuExpanded = false;
                 }
             };
 
-            vm.setPage = function (page) {
+            vm.setPage = function (page, $event) {
                 if (vm.page != page) {
                     vm.page = page;
                     $ionicScrollDelegate.scrollTop(true);
+                }
+                if (vm.menuExpanded){
+                    vm.menuExpanded = false;
+                    $event.stopPropagation();
                 }
                 vm.setMargin();
             };

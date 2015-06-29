@@ -1,17 +1,17 @@
 <ion-view hide-nav-bar="true" title="Events">
     <div class="bar title dropdown-menu" ng-class="({'dropdown-menu-expanded': vm.menuExpanded})">
         <div id="innerPage" class="dropdown-menu-inner" ng-click="vm.expandMenu()">
-            <button ng-click="vm.setPage(0)" class="dropdown-menu-option button icon-right ink"
+            <button ng-click="vm.setPage(0, $event)" class="dropdown-menu-option button icon-right ink"
                     ng-class="({'ion-chevron-up': vm.page == 0 && vm.menuExpanded,
                                 'ion-chevron-down': vm.page == 0 && !vm.menuExpanded})">
                 About the Festival
             </button>
-            <button ng-click="vm.setPage(1)" class="dropdown-menu-option button icon-right ink"
+            <button ng-click="vm.setPage(1, $event)" class="dropdown-menu-option button icon-right ink"
                     ng-class="({'ion-chevron-up': vm.page == 1 && vm.menuExpanded,
                                 'ion-chevron-down': vm.page == 1 && !vm.menuExpanded})">
                 Visitor Info
             </button>
-            <button ng-click="vm.setPage(2)" class="dropdown-menu-option button icon-right ink"
+            <button ng-click="vm.setPage(2, $event)" class="dropdown-menu-option button icon-right ink"
                     ng-class="({'ion-chevron-up': vm.page == 2 && vm.menuExpanded,
                                 'ion-chevron-down': vm.page == 2 && !vm.menuExpanded})">
                 The Company

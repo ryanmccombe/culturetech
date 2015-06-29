@@ -48,17 +48,19 @@ angular.module('cultureTech')
                 if (!vm.selectingDate) {
                     vm.setMargin('0');
                     vm.selectingDate = true;
-                } else {
-                    vm.selectingDate = false;
                 }
             };
 
             // Change date, unless user selected the current date
-            vm.setDate = function (index) {
+            vm.setDate = function (index, $event) {
                 if (vm.date != index) {
                     vm.date = index;
                     vm.random = getRandom();
                     $ionicScrollDelegate.scrollTop(true);
+                }
+                if (vm.selectingDate){
+                    vm.selectingDate = false;
+                    $event.stopPropagation();
                 }
                 vm.setMargin();
             };
