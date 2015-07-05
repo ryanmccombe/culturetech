@@ -7,14 +7,14 @@
     </div>
     <ion-content style="margin-top: 43px">
         <ion-list>
-            <ion-item ng-repeat="item in vm.partners" ng-class="{'ink': app.effects}"
+            <ion-item ng-repeat="item in vm.partners" ng-class="::{'ink': app.effects}"
                       class="partner item-text-wrap item-avatar-left item-icon-right"
                       ui-sref="tabs.partnerDetail({id: $index})">
-                <img class="partner-logo" ng-src="img/partners/{{item.image}}" alt="{{item.name}} Logo"/>
+                <img class="partner-logo" ng-src="img/partners/{{::item.image}}" alt="{{::item.name}} Logo"/>
                 <i class="icon ion-arrow-right-b"></i>
 
-                <div class="partner-title">{{item.title}}</div>
-                <div class="partner-name">{{item.name}}</div>
+                <div class="partner-title">{{::item.title}}</div>
+                <div class="partner-name">{{::item.name}}</div>
             </ion-item>
         </ion-list>
     </ion-content>

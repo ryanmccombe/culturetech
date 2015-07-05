@@ -5,13 +5,13 @@
             <i class="icon ion-ios-arrow-back"></i>
         </button>
         <div class="title title-left">
-            {{vm.location.name}}
+            {{::vm.location.name}}
         </div>
 
     </div>
 
     <ion-content data-tap-disabled="true">
-        <div class="header-photo" ng-style="{
+        <div class="header-photo" ng-style="::{
             'background': 'url(img/locations/'+vm.location.img+') no-repeat center center',
             'background-size': 'cover'
             }" ng-class="({'hide-photo': vm.expandMap})">
@@ -19,10 +19,10 @@
 
         <div class="info-box" style="height: 88px;" ng-class="({'map-address-bar': vm.expandMap})">
             <div class="padding float-left">
-                <div class="text-info" ng-bind-html="vm.location.address"></div>
+                <div class="text-info" ng-bind-html="::vm.location.address"></div>
             </div>
             <div class="float-right" style="width: 70px;">
-                <a ng-show="vm.expandMap" ng-click="vm.recenterMap()"
+                <a ng-show="vm.expandMap" ng-click="::vm.recenterMap()"
                    class="button button-icon icon ion-ios-location recenter-map flat ink"></a>
             </div>
 

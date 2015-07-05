@@ -4,7 +4,7 @@
             <i class="icon ion-ios-arrow-back"></i>
         </button>
         <div class="title title-left">
-            {{vm.event.nameShort || vm.event.name}}
+            {{::vm.event.nameShort || vm.event.name}}
         </div>
 
     </div>
@@ -18,7 +18,7 @@
             }">
             <div class="header-photo-overlay">
                 <div class="header-photo-content" ng-show="vm.event.tags">
-                    <span class="event-tag" ng-repeat="tag in vm.event.tags">{{tag}}</span>
+                    <span class="event-tag" ng-repeat="tag in vm.event.tags">{{::tag}}</span>
                 </div>
 
             </div>
@@ -26,10 +26,10 @@
 
         <div class="info-box" style="height: 88px;">
             <div class="padding float-left" style="width: 60%">
-                <div class="text-header no-margin text-info no-wrap">{{vm.locations[vm.event.clickedSchedule.location].name}}</div>
-                {{vm.event.clickedSchedule.start | date:'EEEE, d MMMM'}}<br>
-                {{vm.event.clickedSchedule.start | date:'H:mm a'}} -
-                {{vm.event.clickedSchedule.end | date:'H:mm a'}}
+                <div class="text-header no-margin text-info no-wrap">{{::vm.locations[vm.event.clickedSchedule.location].name}}</div>
+                {{::vm.event.clickedSchedule.start | date:'EEEE, d MMMM'}}<br>
+                {{::vm.event.clickedSchedule.start | date:'H:mm a'}} -
+                {{::vm.event.clickedSchedule.end | date:'H:mm a'}}
             </div>
             <div class="float-right" style="width: 140px;">
                 <a class="button button-icon icon ion-ios-bell flat ink" style="float: right;"
@@ -49,23 +49,23 @@
 
         <div class="" ng-show="vm.event.rsvp">
             <div class="item-header">
-                {{vm.event.rsvp.heading || 'RSVP Required'}}
+                {{::vm.event.rsvp.heading || 'RSVP Required'}}
             </div>
             <div class="info-box" style="height: 63px;">
-                <div class="rsvp-info float-left text-info no-wrap no-overflow" ng-bind-html="vm.event.rsvp.instructions"></div>
-                <a ng-show="vm.event.rsvp.tel" class="button button-icon icon rsvp-icon ion-ios-telephone flat ink"
-                   ng-click="app.call('44', vm.event.rsvp.tel)"></a>
-                <a ng-show="vm.event.rsvp.url" class="button button-icon icon rsvp-icon ion-ios-world flat ink"
-                   ng-click="app.loadExternalUrl(vm.event.rsvp.url)"></a>
-                <a ng-show="vm.event.rsvp.email" class="button button-icon icon rsvp-icon ion-ios-email flat ink"
-                   ng-click="app.sendEmail(vm.event.rsvp.email, 'RSVP for ' + vm.event.name)"></a>
+                <div class="rsvp-info float-left text-info no-wrap no-overflow" ng-bind-html="::vm.event.rsvp.instructions"></div>
+                <a ng-show="::vm.event.rsvp.tel" class="button button-icon icon rsvp-icon ion-ios-telephone flat ink"
+                   ng-click="::app.call('44', vm.event.rsvp.tel)"></a>
+                <a ng-show="::vm.event.rsvp.url" class="button button-icon icon rsvp-icon ion-ios-world flat ink"
+                   ng-click="::app.loadExternalUrl(vm.event.rsvp.url)"></a>
+                <a ng-show="::vm.event.rsvp.email" class="button button-icon icon rsvp-icon ion-ios-email flat ink"
+                   ng-click="::app.sendEmail(vm.event.rsvp.email, 'RSVP for ' + vm.event.name)"></a>
 
             </div>
 
 
         </div>
 
-        <div class="list event-time-list" ng-show="vm.schedule.length > 1">
+        <div class="list event-time-list" ng-show="::vm.schedule.length > 1">
             <div class="item-header">
                 All Times
             </div>
@@ -73,18 +73,18 @@
 
             <div class="info-box clear no-border-bottom" style="height: 88px;" ng-repeat="listing in vm.schedule">
                 <div class="padding float-left no-padding-bottom">
-                    <div class="text-header no-margin text-info">{{vm.locations[listing.location].name}}</div>
-                    {{listing.start | date:'EEEE, d MMMM'}}<br>
-                    {{listing.start | date:'H:mm a'}} -
-                    {{listing.end | date:'H:mm a'}}
+                    <div class="text-header no-margin text-info">{{::vm.locations[listing.location].name}}</div>
+                    {{::listing.start | date:'EEEE, d MMMM'}}<br>
+                    {{::listing.start | date:'H:mm a'}} -
+                    {{::listing.end | date:'H:mm a'}}
                 </div>
                 <div class="float-right" style="width: 140px;">
                     <a class="button button-icon icon ion-ios-bell flat ink" style="float: right;"
-                       ng-class="{'alarm-set': vm.isScheduled(listing.id)}"
-                       ng-click="vm.toggleNotification(listing)">
+                       ng-class="::{'alarm-set': vm.isScheduled(listing.id)}"
+                       ng-click="::vm.toggleNotification(listing)">
 
                     </a>
-                    <a ng-show="!vm.locations[listing.location].abstract"
+                    <a ng-show="::!vm.locations[listing.location].abstract"
                        ui-sref="tabs.location({id: listing.location})"
                        class="button button-icon icon ion-ios-location flat ink"></a>
                 </div>
@@ -95,14 +95,3 @@
     </ion-content>
 
 </ion-view>
-
-<script id="my-modal.html" type="text/ng-template">
-    <ion-modal-view>
-        <ion-header-bar>
-            <h1 class="title">My Modal title</h1>
-        </ion-header-bar>
-        <ion-content>
-            Hello!
-        </ion-content>
-    </ion-modal-view>
-</script>

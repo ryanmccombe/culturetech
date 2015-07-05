@@ -4,13 +4,13 @@
             <i class="icon ion-ios-arrow-back"></i>
         </button>
         <div class="title title-left">
-            {{vm.partner.name}}
+            {{::vm.partner.name}}
         </div>
 
     </div>
     <ion-content style="margin-top: 43px" has-bouncing="false">
 
-        <div class="header-photo" ng-style="{
+        <div class="header-photo" ng-style="::{
             'background': 'url(img/partners/'+vm.partner.id+'_p.jpg) no-repeat center center',
             'background-size': 'cover'
             }">
@@ -18,18 +18,18 @@
 
         <div class="row partner-navigation border-bottom">
             <div class="col ink partner-back"
-                 ng-click="vm.previous ? vm.previousPartner() : ''">
-                <div ng-if="vm.previous" class="partner-title">Previous</div>
-                <div class="partner-name">{{vm.previous.nameShort || vm.previous.name}}</div>
+                 ng-click="::vm.previous ? vm.previousPartner() : ''">
+                <div ng-if="::vm.previous" class="partner-title">Previous</div>
+                <div class="partner-name">{{::vm.previous.nameShort || vm.previous.name}}</div>
             </div>
             <div class="col ink partner-forward"
-                 ng-click="vm.next ? vm.nextPartner() : ''">
-                <div ng-if="vm.next" class="partner-title" style="text-align: right;">Next</div>
-                <div class="partner-name" style="text-align: right;">{{vm.next.nameShort || vm.next.name}}</div>
+                 ng-click="::vm.next ? vm.nextPartner() : ''">
+                <div ng-if="::vm.next" class="partner-title" style="text-align: right;">Next</div>
+                <div class="partner-name" style="text-align: right;">{{::vm.next.nameShort || vm.next.name}}</div>
             </div>
         </div>
 
-        <div class="double-padding partner-description" ng-bind-html="vm.partner.description">
+        <div class="double-padding partner-description" ng-bind-html="::vm.partner.description">
         </div>
     </ion-content>
 </ion-view>
